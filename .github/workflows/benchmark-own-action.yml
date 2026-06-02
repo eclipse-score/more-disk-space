@@ -1,0 +1,182 @@
+# *******************************************************************************
+# Copyright (c) 2026 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+name: Benchmark Own Action
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '*/20 * * * *'  # every 20 minutes — enable when actively calibrating
+
+# Measures the real freed GiB and duration of each individual cleanup step.
+# Uses debug-steps: true so each step is isolated rather than batched via rmz.
+# Results are uploaded as CSV artifacts and combined into a summary.
+#
+# Two jobs per image:
+#   - measure-steps: runs the full action with debug-steps=true, all steps included
+#   - measure-android-split: runs android cleanup sub-paths individually to
+#     determine how to split android-sdk into finer steps
+
+jobs:
+  measure-steps:
+    name: Steps | ${{ matrix.image }}
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [ubuntu-24.04]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Measure before
+        id: before
+        uses: ./.github/actions/measure-before
+
+      - name: Run more-disk-space (all steps, debug mode)
+        uses: ./
+        with:
+          ensure-free: 0
+          min-cleanup: 999
+          debug-steps: 'true'
+
+      - name: Measure after and collect debug output
+        shell: bash
+        env:
+          IMAGE: ${{ matrix.image }}
+          BEFORE_ROOT: ${{ steps.before.outputs.root_avail }}
+          START_TS: ${{ steps.before.outputs.start_ts }}
+        run: |
+          set -euo pipefail
+          END_TS=$(date +%s%3N)
+          DURATION=$((END_TS - START_TS))
+          AFTER_ROOT=$(df --output=avail -B1 / | tail -1)
+          FREED=$(( AFTER_ROOT - BEFORE_ROOT ))
+          FREED_GIB=$(echo "scale=2; $FREED / 1073741824" | bc)
+          echo "Total freed: ${FREED_GIB} GiB in ${DURATION}ms"
+
+      - name: Upload job log (for per-step extraction)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: step-debug-${{ matrix.image }}
+          path: |
+            /tmp/step-debug.txt
+          if-no-files-found: ignore
+
+  measure-android-split:
+    name: Android split | ${{ matrix.image }}
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [ubuntu-24.04]
+        path:
+          - name: system-images
+            path: /usr/local/lib/android/sdk/system-images
+          - name: emulator
+            path: /usr/local/lib/android/sdk/emulator
+          - name: ndk
+            path: /usr/local/lib/android/sdk/ndk
+          - name: build-tools
+            path: /usr/local/lib/android/sdk/build-tools
+          - name: platforms
+            path: /usr/local/lib/android/sdk/platforms
+          - name: platform-tools
+            path: /usr/local/lib/android/sdk/platform-tools
+          - name: cmdline-tools
+            path: /usr/local/lib/android/sdk/cmdline-tools
+          - name: extras
+            path: /usr/local/lib/android/sdk/extras
+          - name: sdk-root-rest
+            path: /usr/local/lib/android
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Measure before
+        id: before
+        uses: ./.github/actions/measure-before
+
+      - name: Check path existence and size
+        id: pathinfo
+        shell: bash
+        run: |
+          PATH_TO_CHECK="${{ matrix.path.path }}"
+          if [[ -e "$PATH_TO_CHECK" ]]; then
+            SIZE=$(sudo du -sb "$PATH_TO_CHECK" 2>/dev/null | cut -f1 || echo 0)
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "size_bytes=$SIZE" >> "$GITHUB_OUTPUT"
+            echo "Path exists: $PATH_TO_CHECK ($SIZE bytes)"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "size_bytes=0" >> "$GITHUB_OUTPUT"
+            echo "Path does not exist: $PATH_TO_CHECK"
+          fi
+
+      - name: Remove path
+        if: steps.pathinfo.outputs.exists == 'true'
+        shell: bash
+        run: |
+          sudo rm -rf "${{ matrix.path.path }}" || true
+
+      - name: Measure after
+        uses: ./.github/actions/measure-after
+        with:
+          image: ${{ matrix.image }}
+          option: android-split
+          intensity: ${{ matrix.path.name }}
+          repeat: 1
+          before_root_avail: ${{ steps.before.outputs.root_avail }}
+          before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+          start_ts: ${{ steps.before.outputs.start_ts }}
+
+  aggregate:
+    name: Aggregate
+    runs-on: ubuntu-24.04
+    needs: [measure-steps, measure-android-split]
+    if: always()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download all metrics
+        uses: actions/download-artifact@v4
+        with:
+          path: all-metrics
+
+      - name: Combine and summarize
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT=combined.csv
+          echo "image,option,intensity,repeat,before_root,after_root,freed_root,before_ws,after_ws,freed_ws,duration_ms" > "$OUT"
+          find all-metrics -name "metrics.csv" -print0 \
+            | xargs -0 -I{} sh -c 'tail -n +2 "{}"' >> "$OUT" 2>/dev/null || true
+          wc -l "$OUT"
+
+          echo "## Android Split Results" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Path | Freed (GiB) | Duration |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---:|---:|" >> "$GITHUB_STEP_SUMMARY"
+          tail -n +2 "$OUT" | while IFS=, read -r image option intensity repeat before_root after_root freed_root rest; do
+            freed_gib=$(echo "scale=2; $freed_root / 1073741824" | bc)
+            dur_ms=$(echo "$rest" | cut -d, -f5)
+            echo "| \`$intensity\` | $freed_gib | ${dur_ms}ms |" >> "$GITHUB_STEP_SUMMARY"
+          done
+
+      - name: Upload combined CSV
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-split-metrics
+          path: combined.csv
