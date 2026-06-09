@@ -17,6 +17,9 @@ on:
   workflow_call:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 # Captures a snapshot of the runner filesystem (root, 2 levels deep) and
 # disk usage per top-level directory. Committed to runner-inventory/ as a
 # long-lived reference for estimating cleanup step sizes.
