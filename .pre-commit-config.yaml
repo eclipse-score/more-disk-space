@@ -1,0 +1,16 @@
+repos:
+  - repo: local
+    hooks:
+      - id: report-ours
+        name: Regenerate README and perf chart from steps.json / results.json
+        language: system
+        entry: node benchmark/report-ours.js
+        files: ^(steps\.json|benchmark/results\.json)$
+        pass_filenames: false
+
+      - id: report-others
+        name: Regenerate results-others.md and perf-chart-others.svg
+        language: system
+        entry: node benchmark/report-others.js
+        files: ^benchmark/results-others\.csv$
+        pass_filenames: false

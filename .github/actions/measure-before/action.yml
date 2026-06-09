@@ -27,15 +27,11 @@ outputs:
     description: Available bytes on workspace filesystem
     value: ${{ steps.before.outputs.ws_avail }}
   start_ts:
-    description: Start timestamp in seconds
+    description: Start timestamp in milliseconds
     value: ${{ steps.timer.outputs.start_ts }}
 runs:
   using: composite
   steps:
-    - name: Prepare metrics dir
-      shell: bash
-      run: mkdir -p metrics
-
     - name: Measure space before
       id: before
       shell: bash
@@ -50,4 +46,4 @@ runs:
     - name: Start timer
       id: timer
       shell: bash
-      run: echo "start_ts=$(date +%s)" >> "$GITHUB_OUTPUT"
+      run: echo "start_ts=$(date +%s%3N)" >> "$GITHUB_OUTPUT"

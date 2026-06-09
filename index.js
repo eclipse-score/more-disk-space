@@ -9,8 +9,8 @@
 
 //  SPDX-License-Identifier: Apache-2.0
 
-const { execFileSync } = require('child_process');
 const fs = require('fs');
+const { performCleanup, getAvailableSpaceGiB, selectSteps } = require('./cleanup');
 
 
 // Detect the runner environment from RUNNER_ENVIRONMENT variable
@@ -44,118 +44,46 @@ function persistForPostStep(stateObject) {
   }
 }
 
-// Recursively remove a directory using 'rm -rf'
-// Continues silently if removal fails (e.g., permission denied)
-function rmRf(path) {
-  try {
-    execFileSync('sudo', ['rm', '-rf', path], { stdio: 'inherit' });
-  } catch (error) {
-    // Continue even if removal fails
-    console.error(`Warning: Failed to remove ${path}`);
-  }
-}
-
-// Execute cleanup for the specified level
-// Level determines which directories to remove (1-4 progressively more)
-function performCleanup(levelNum) {
-  // Level 1: swift, chromium (fastest items, 4-6 GiB/sec)
-  if (levelNum >= 1) {
-    console.log('Removing swift...');
-    rmRf('/usr/share/swift');
-    console.log('Removing chromium...');
-    rmRf('/usr/local/share/chromium');
-  }
-
-  // Level 2: + aws-cli, haskell (fast items, 0.5-0.6 GiB/sec)
-  if (levelNum >= 2) {
-    console.log('Removing aws-cli...');
-    rmRf('/usr/local/aws-cli');
-    console.log('Removing haskell...');
-    rmRf('/usr/local/.ghcup');
-    rmRf('/opt/ghc');
-  }
-
-  // Level 3: + miniconda, dotnet (medium items, 0.2 GiB/sec)
-  if (levelNum >= 3) {
-    console.log('Removing miniconda...');
-    rmRf('/usr/share/miniconda');
-    console.log('Removing dotnet...');
-    rmRf('/usr/share/dotnet');
-  }
-
-  // Level 4: + android (bottleneck, 0.1 GiB/sec)
-  if (levelNum >= 4) {
-    console.log('Removing android...');
-    rmRf('/usr/local/lib/android');
-  }
-}
-
-function getAvailableSpaceGiB() {
-  const out = execFileSync(
-    'df',
-    ['--output=avail', '-B1G', '/'],
-    { encoding: 'utf8' }
-  );
-
-  return Number(out.trim().split('\n')[1]);
-}
-
-function parseLevel() {
-  const level = process.env.INPUT_LEVEL || '2';
-
-  // Validate level
-  if (!/^[1-4]$/.test(level)) {
-    console.error(`❌ Error: Invalid level '${level}'. Must be 1, 2, 3, or 4.`);
-    process.exit(1);
-  }
-
-  return parseInt(level);
-}
-
 async function run() {
   try {
-    const level = parseLevel();
     const githubHosted = isGithubHosted();
     const supportedPlatform = isLinux();
 
-    persistForPostStep({ level, githubHosted, supportedPlatform });
-
-    console.log(`🗑️  More Disk Space - Level ${level} cleanup`);
-    console.log('');
-
-    // Check if running on Linux
     if (!supportedPlatform) {
       console.log(`ℹ️  Unsupported platform: ${platform()}`);
       console.log('⏭️  This action only runs on Linux');
       console.log('');
+      persistForPostStep({ before: 0, after: 0, githubHosted, supportedPlatform });
       return;
     }
 
-
-    // Measure before
     const before = getAvailableSpaceGiB();
+    const levelRaw = process.env['INPUT_LEVEL'] ?? '2';
+    const level = parseInt(levelRaw, 10);
+    if (!Number.isInteger(level) || level < 1 || level > 4) {
+      console.error(`❌ Error: Invalid level '${levelRaw}'. Must be 1, 2, 3, or 4.`);
+      process.exit(1);
+    }
+    const steps = selectSteps(level);
+
+    console.log(`🗑️  More Disk Space - running ${steps.length} step${steps.length !== 1 ? 's' : ''} (level ${level})`);
+    console.log('');
     console.log(`Available space before: ${before} GiB`);
     console.log('');
 
-    // Skip cleanup if not GitHub-hosted
     if (githubHosted) {
-      console.log('✅ Running on GitHub-hosted runner');
-      console.log('');
-
-      // Perform cleanup
-      performCleanup(level);
-
-      // Measure after
+      performCleanup(steps);
       const after = getAvailableSpaceGiB();
       const freed = after - before;
       console.log('');
       console.log('✅ Cleanup complete!');
       console.log(`Available space after: ${after} GiB`);
       console.log(`Space freed: ${freed} GiB`);
-    }
-    else {
+      persistForPostStep({ before, after, githubHosted, supportedPlatform });
+    } else {
       console.log('ℹ️  Running on Self-hosted runner - cleanup skipped');
       console.log('');
+      persistForPostStep({ before, after: before, githubHosted, supportedPlatform });
     }
 
   } catch (error) {

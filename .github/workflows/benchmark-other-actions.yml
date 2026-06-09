@@ -1,0 +1,442 @@
+# *******************************************************************************
+# Copyright (c) 2026 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+name: Benchmark Other Actions (ubuntu-24.04)
+
+permissions:
+  actions: write
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+# Matrix design:
+# - generate-matrices produces pure combination lists (no image dimension)
+# - image is fixed per workflow (split to stay under GitHub's 256 jobs/matrix limit)
+# - each matrix stays at ≤ 255 entries (GitHub's hard per-matrix limit)
+
+
+jobs:
+    generate-matrices:
+        name: Generate test matrices
+        runs-on: ubuntu-24.04
+        outputs:
+            jlumbroso: ${{ steps.gen.outputs.jlumbroso }}
+            adityagarg: ${{ steps.gen.outputs.adityagarg }}
+            enderson: ${{ steps.gen.outputs.enderson }}
+        steps:
+            - id: gen
+              shell: python3 {0}
+              run: |
+                import json, itertools, os
+
+                def combos(params):
+                    """Generate all non-trivial boolean combinations (at least one True)."""
+                    keys = list(params.keys())
+                    result = []
+                    for vals in itertools.product([True, False], repeat=len(keys)):
+                        if not any(vals):
+                            continue
+                        entry = dict(zip(keys, vals))
+                        entry['id'] = '_'.join(k[:3] for k, v in entry.items() if v) or 'none'
+                        result.append(entry)
+                    return result
+
+                # jlumbroso: 7 boolean params → 127 combos
+                jlumbroso_params = {
+                    'tool_cache': False, 'android': False, 'dotnet': False,
+                    'haskell': False, 'large_packages': False, 'docker_images': False,
+                    'swap_storage': False
+                }
+
+                # adityagarg: 8 boolean params → 255 combos
+                adi_params = {
+                    'dotnet': False, 'android': False, 'haskell': False, 'codeql': False,
+                    'docker_images': False, 'large_packages': False, 'cached_tools': False,
+                    'swapfile': False
+                }
+
+                # enderson: 5 boolean params × 2 rm_cmd → 62 combos
+                enderson_bool_params = {
+                    'remove_android': False, 'remove_dotnet': False, 'remove_haskell': False,
+                    'remove_tool_cache': False, 'remove_swap': False
+                }
+                enderson = []
+                for c in combos(enderson_bool_params):
+                    for rm_cmd in ['rm', 'rmz']:
+                        entry = dict(c)
+                        entry['rm_cmd'] = rm_cmd
+                        entry['id'] = c['id'] + '_' + rm_cmd
+                        enderson.append(entry)
+
+                out = os.environ['GITHUB_OUTPUT']
+                with open(out, 'a') as f:
+                    f.write(f"jlumbroso={json.dumps({'include': combos(jlumbroso_params)})}\n")
+                    f.write(f"adityagarg={json.dumps({'include': combos(adi_params)})}\n")
+                    f.write(f"enderson={json.dumps({'include': enderson})}\n")
+
+    manual:
+        name: Manual | ${{ matrix.image }} | ${{ matrix.tool }}
+        runs-on: ${{ matrix.image }}
+        strategy:
+            fail-fast: false
+            matrix:
+                image: [ubuntu-24.04]
+                tool: [swift, powershell, chromium, gradle, haskell, julia, aws-cli, dotnet, azure-cli, miniconda, android, aws-sam-cli, level4-parallel, level4-rmz]
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Measure before
+              id: before
+              uses: ./.github/actions/measure-before
+
+            - name: Manual cleanup (${{ matrix.tool }})
+              shell: bash
+              # Removes individual tools from GitHub runners, one per matrix run
+              # Tools sorted by efficiency (GiB/sec) from fastest to slowest
+              # See alternatives.md for full classification
+              run: |
+                set -ex
+                TOOL="${{ matrix.tool }}"
+                echo "Removing $TOOL..."
+
+                case "$TOOL" in
+                  swift)
+                    which swift
+                    sudo rm -rf /usr/share/swift || true
+                    ;;
+                  chromium)
+                    which chromium-browser || which chromium
+                    sudo rm -rf /usr/local/share/chromium || true
+                    ;;
+                  aws-cli)
+                    which aws
+                    sudo rm -rf /usr/local/aws-cli || true
+                    ;;
+                  haskell)
+                    which ghc || which cabal
+                    sudo rm -rf /usr/local/.ghcup || true
+                    sudo rm -rf /opt/ghc || true
+                    ;;
+                  miniconda)
+                    which conda
+                    sudo rm -rf /usr/share/miniconda || true
+                    ;;
+                  dotnet)
+                    which dotnet
+                    sudo rm -rf /usr/share/dotnet || true
+                    ;;
+                  android)
+                    ls /usr/local -al
+                    ls /usr/local/lib -al
+                    sudo rm -rf /usr/local/lib/android || true
+                    ;;
+                  gradle)
+                    which gradle || true
+                    sudo rm -rf /usr/share/gradle* || true
+                    ;;
+                  julia)
+                    which julia || true
+                    sudo rm -rf /usr/local/julia* || true
+                    ;;
+                  level4-parallel)
+                    # Same file set as action level 4, removed in parallel to measure serial vs parallel delta
+                    sudo rm -rf /usr/share/swift &
+                    sudo rm -rf /usr/local/share/chromium &
+                    sudo rm -rf /usr/local/aws-cli &
+                    sudo rm -rf /usr/local/.ghcup &
+                    sudo rm -rf /opt/ghc &
+                    sudo rm -rf /usr/share/miniconda &
+                    sudo rm -rf /usr/share/dotnet &
+                    sudo rm -rf /usr/local/lib/android &
+                    wait
+                    ;;
+                  level4-rmz)
+                    # Same file set as level4-parallel but using rmz (includes binary download as that would be real cost)
+                    curl -fsSL https://github.com/SUPERCILEX/fuc/releases/latest/download/x86_64-unknown-linux-gnu-rmz -o /usr/local/bin/rmz
+                    chmod +x /usr/local/bin/rmz
+                    sudo rmz --force /usr/share/swift /usr/local/share/chromium /usr/local/aws-cli /usr/local/.ghcup /opt/ghc /usr/share/miniconda /usr/share/dotnet /usr/local/lib/android
+                    ;;
+                  aws-sam-cli)
+                    which sam
+                    sudo rm -rf /usr/local/aws-sam-cli || true
+                    ;;
+                  powershell)
+                    which pwsh
+                    sudo rm -rf /usr/local/share/powershell || true
+                    ;;
+                  azure-cli)
+                    which az
+                    sudo rm -rf /usr/share/az* || true
+                    ;;
+                  *)
+                    echo "Unknown tool: $TOOL"
+                    exit 1
+                    ;;
+                esac
+                echo ""
+                echo "Cleanup complete."
+
+            - name: Measure after
+              uses: ./.github/actions/measure-after
+              with:
+                  image: ${{ matrix.image }}
+                  option: manual
+                  intensity: ${{ matrix.tool }}
+                  repeat: 1
+                  before_root_avail: ${{ steps.before.outputs.root_avail }}
+                  before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+                  start_ts: ${{ steps.before.outputs.start_ts }}
+
+    jlumbroso-24:
+        name: jlumbroso | ubuntu-24.04 | ${{ matrix.entry.id }}
+        needs: generate-matrices
+        runs-on: ubuntu-24.04
+        strategy:
+            fail-fast: false
+            matrix:
+                entry: ${{ fromJSON(needs.generate-matrices.outputs.jlumbroso).include }}
+        steps:
+            - uses: actions/checkout@v6
+            - id: before
+              uses: ./.github/actions/measure-before
+            - uses: jlumbroso/free-disk-space@v1.3.1
+              continue-on-error: true
+              with:
+                  tool-cache: ${{ matrix.entry.tool_cache }}
+                  android: ${{ matrix.entry.android }}
+                  dotnet: ${{ matrix.entry.dotnet }}
+                  haskell: ${{ matrix.entry.haskell }}
+                  large-packages: ${{ matrix.entry.large_packages }}
+                  docker-images: ${{ matrix.entry.docker_images }}
+                  swap-storage: ${{ matrix.entry.swap_storage }}
+            - uses: ./.github/actions/measure-after
+              continue-on-error: true
+              with:
+                  image: ubuntu-24.04
+                  option: jlumbroso
+                  intensity: ${{ matrix.entry.id }}
+                  repeat: 1
+                  before_root_avail: ${{ steps.before.outputs.root_avail }}
+                  before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+                  start_ts: ${{ steps.before.outputs.start_ts }}
+
+    adityagarg-24:
+        name: adityagarg | ubuntu-24.04 | ${{ matrix.entry.id }}
+        needs: generate-matrices
+        runs-on: ubuntu-24.04
+        strategy:
+            fail-fast: false
+            matrix:
+                entry: ${{ fromJSON(needs.generate-matrices.outputs.adityagarg).include }}
+        steps:
+            - uses: actions/checkout@v6
+            - id: before
+              uses: ./.github/actions/measure-before
+            - uses: AdityaGarg8/remove-unwanted-software@v5
+              continue-on-error: true
+              with:
+                  remove-dotnet: ${{ matrix.entry.dotnet }}
+                  remove-android: ${{ matrix.entry.android }}
+                  remove-haskell: ${{ matrix.entry.haskell }}
+                  remove-codeql: ${{ matrix.entry.codeql }}
+                  remove-docker-images: ${{ matrix.entry.docker_images }}
+                  remove-large-packages: ${{ matrix.entry.large_packages }}
+                  remove-cached-tools: ${{ matrix.entry.cached_tools }}
+                  remove-swapfile: ${{ matrix.entry.swapfile }}
+                  verbose: false
+            - uses: ./.github/actions/measure-after
+              continue-on-error: true
+              with:
+                  image: ubuntu-24.04
+                  option: adityagarg
+                  intensity: ${{ matrix.entry.id }}
+                  repeat: 1
+                  before_root_avail: ${{ steps.before.outputs.root_avail }}
+                  before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+                  start_ts: ${{ steps.before.outputs.start_ts }}
+
+    enderson-24:
+        name: enderson | ubuntu-24.04 | ${{ matrix.entry.id }}
+        needs: generate-matrices
+        runs-on: ubuntu-24.04
+        strategy:
+            fail-fast: false
+            matrix:
+                entry: ${{ fromJSON(needs.generate-matrices.outputs.enderson).include }}
+        steps:
+            - uses: actions/checkout@v6
+            - id: before
+              uses: ./.github/actions/measure-before
+            - uses: endersonmenezes/free-disk-space@v3
+              continue-on-error: true
+              with:
+                  remove_android: ${{ matrix.entry.remove_android }}
+                  remove_dotnet: ${{ matrix.entry.remove_dotnet }}
+                  remove_haskell: ${{ matrix.entry.remove_haskell }}
+                  remove_tool_cache: ${{ matrix.entry.remove_tool_cache }}
+                  remove_swap: ${{ matrix.entry.remove_swap }}
+                  remove_folders: "/usr/share/swift /usr/share/miniconda /usr/share/az* /usr/local/share/chromium /usr/local/share/powershell /usr/local/julia /usr/local/aws-cli /usr/local/aws-sam-cli /usr/share/gradle"
+                  remove_packages_one_command: false
+                  rm_cmd: ${{ matrix.entry.rm_cmd }}
+            - uses: ./.github/actions/measure-after
+              continue-on-error: true
+              with:
+                  image: ubuntu-24.04
+                  option: enderson
+                  intensity: ${{ matrix.entry.id }}
+                  repeat: 1
+                  before_root_avail: ${{ steps.before.outputs.root_avail }}
+                  before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+                  start_ts: ${{ steps.before.outputs.start_ts }}
+
+    easimon:
+        name: easimon | ${{ matrix.image }} | ${{ matrix.intensity }}
+        runs-on: ${{ matrix.image }}
+        strategy:
+            fail-fast: false
+            matrix:
+                image: [ubuntu-24.04]
+                intensity: [default, light, standard, max]
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Measure before
+              id: before
+              uses: ./.github/actions/measure-before
+
+            - name: easimon (default)
+              if: ${{ matrix.intensity == 'default' }}
+              uses: easimon/maximize-build-space@v10
+
+            - name: easimon (light)
+              if: ${{ matrix.intensity == 'light' }}
+              uses: easimon/maximize-build-space@v10
+              with:
+                  root-reserve-mb: "1024"
+                  temp-reserve-mb: "100"
+                  swap-size-mb: "4096"
+                  overprovision-lvm: false
+                  remove-dotnet: false
+                  remove-android: false
+                  remove-haskell: false
+                  remove-codeql: false
+                  remove-docker-images: false
+
+            - name: easimon (standard)
+              if: ${{ matrix.intensity == 'standard' }}
+              uses: easimon/maximize-build-space@v10
+              with:
+                  root-reserve-mb: "1024"
+                  temp-reserve-mb: "100"
+                  swap-size-mb: "4096"
+                  overprovision-lvm: false
+                  remove-dotnet: true
+                  remove-android: true
+                  remove-haskell: false
+                  remove-codeql: false
+                  remove-docker-images: false
+
+            - name: easimon (max)
+              if: ${{ matrix.intensity == 'max' }}
+              uses: easimon/maximize-build-space@v10
+              with:
+                  root-reserve-mb: "512"
+                  temp-reserve-mb: "50"
+                  swap-size-mb: "1024"
+                  overprovision-lvm: true
+                  remove-dotnet: true
+                  remove-android: true
+                  remove-haskell: true
+                  remove-codeql: true
+                  remove-docker-images: false
+
+            - name: Measure space after
+              id: after
+              shell: bash
+              run: |
+                set -euo pipefail
+                ROOT_AVAIL=$(df --output=avail -B1 / | tail -1)
+                WS_PATH=${GITHUB_WORKSPACE:-$PWD}
+                WS_AVAIL=$(df --output=avail -B1 "$WS_PATH" | tail -1)
+                echo "root_avail=$ROOT_AVAIL" >> "$GITHUB_OUTPUT"
+                echo "ws_path=$WS_PATH" >> "$GITHUB_OUTPUT"
+                echo "ws_avail=$WS_AVAIL" >> "$GITHUB_OUTPUT"
+
+            - name: Compute metrics CSV
+              shell: bash
+              run: |
+                set -euo pipefail
+                END_TS=$(date +%s%3N)
+                START_TS="${{ steps.before.outputs.start_ts }}"
+                DURATION=$((END_TS - START_TS))
+                FREED_ROOT=$(( ${{ steps.after.outputs.root_avail }} - ${{ steps.before.outputs.root_avail }} ))
+                FREED_WS=$(( ${{ steps.after.outputs.ws_avail }} - ${{ steps.before.outputs.ws_avail }} ))
+
+                mkdir -p metrics
+                OUT=metrics/metrics.csv
+                if [[ ! -f "$OUT" ]]; then
+                  echo "run_id,image,option,intensity,before_root,after_root,freed_root,before_ws,after_ws,freed_ws,duration_ms" > "$OUT"
+                fi
+                echo "$GITHUB_RUN_ID,${{ matrix.image }},easimon,${{ matrix.intensity }},${{ steps.before.outputs.root_avail }},${{ steps.after.outputs.root_avail }},$FREED_ROOT,${{ steps.before.outputs.ws_avail }},${{ steps.after.outputs.ws_avail }},$FREED_WS,$DURATION" >> "$OUT"
+
+            - name: Upload metrics artifact
+              uses: actions/upload-artifact@v7
+              with:
+                  name: raw-metrics-${{ matrix.image }}-easimon-${{ matrix.intensity }}-1
+                  path: metrics/metrics.csv
+
+    aggregate:
+        name: Aggregate results
+        runs-on: ubuntu-24.04
+        needs:
+            - manual
+            - jlumbroso-24
+            - adityagarg-24
+            - enderson-24
+            - easimon
+            - generate-matrices
+        if: always()
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+            - name: Download raw metrics
+              uses: actions/download-artifact@v8
+              with:
+                  pattern: raw-metrics-*
+                  path: all-metrics
+
+            - name: Combine CSVs
+              shell: bash
+              run: |
+                  set -euo pipefail
+                  OUT=combined.csv
+                  echo "run_id,image,option,intensity,before_root,after_root,freed_root,before_ws,after_ws,freed_ws,duration_ms" > "$OUT"
+                  find all-metrics -name "metrics.csv" -print0 | xargs -0 -I{} sh -c 'tail -n +2 "{}"' >> "$OUT"
+                  wc -l "$OUT" || true
+
+            - name: Upload combined CSV
+              uses: actions/upload-artifact@v7
+              with:
+                  name: combined-metrics
+                  path: combined.csv
+
+            - name: Delete raw metrics artifacts
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+                    --paginate -q '.artifacts[] | select(.name | startswith("raw-metrics-")) | .id' |
+                  xargs -P 20 -I {} gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/{}"

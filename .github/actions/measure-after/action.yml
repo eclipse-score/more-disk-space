@@ -28,8 +28,12 @@ inputs:
     description: Intensity level (fast/standard/max)
     required: true
   repeat:
-    description: Repeat number
+    description: Repeat index (for unique artifact naming when running matrix repeats)
     required: true
+  batch:
+    description: Batch index (for scoped artifact naming and deletion)
+    required: false
+    default: ''
   before_root_avail:
     description: Available bytes on root before cleanup
     required: true
@@ -37,7 +41,7 @@ inputs:
     description: Available bytes on workspace before cleanup
     required: true
   start_ts:
-    description: Start timestamp in seconds from measure-before
+    description: Start timestamp in milliseconds from measure-before
     required: true
 runs:
   using: composite
@@ -56,29 +60,20 @@ runs:
     - name: Compute metrics CSV
       shell: bash
       run: |
-        END_TS=$(date +%s)
+        END_TS=$(date +%s%3N)
         START_TS="${{ inputs.start_ts }}"
         DURATION=$((END_TS - START_TS))
         FREED_ROOT=$(( ${{ steps.after.outputs.root_avail }} - ${{ inputs.before_root_avail }} ))
         FREED_WS=$(( ${{ steps.after.outputs.ws_avail }} - ${{ inputs.before_ws_avail }} ))
-        
-        # Validate that cleanup freed at least 100 Bytes on either filesystem
-        MIN_THRESHOLD=100
-        if [[ $FREED_WS -lt $MIN_THRESHOLD && $FREED_ROOT -lt $MIN_THRESHOLD ]]; then
-          echo "❌ Error: Cleanup freed less than 100 Bytes (freed_ws=$(echo "scale=2; $FREED_WS / 1073741824" | bc) GiB, freed_root=$(echo "scale=2; $FREED_ROOT / 1073741824" | bc) GiB)"
-          echo "This indicates the cleanup configuration is not working properly."
-          exit 1
-        fi
-        
         mkdir -p metrics
         OUT=metrics/metrics.csv
         if [[ ! -f "$OUT" ]]; then
-          echo "image,option,intensity,repeat,before_root,after_root,freed_root,before_ws,after_ws,freed_ws,duration_seconds" > "$OUT"
+          echo "run_id,image,option,intensity,before_root,after_root,freed_root,before_ws,after_ws,freed_ws,duration_ms" > "$OUT"
         fi
-        echo "${{ inputs.image }},${{ inputs.option }},${{ inputs.intensity }},${{ inputs.repeat }},${{ inputs.before_root_avail }},${{ steps.after.outputs.root_avail }},$FREED_ROOT,${{ inputs.before_ws_avail }},${{ steps.after.outputs.ws_avail }},$FREED_WS,$DURATION" >> "$OUT"
+        echo "$GITHUB_RUN_ID,${{ inputs.image }},${{ inputs.option }},${{ inputs.intensity }},${{ inputs.before_root_avail }},${{ steps.after.outputs.root_avail }},$FREED_ROOT,${{ inputs.before_ws_avail }},${{ steps.after.outputs.ws_avail }},$FREED_WS,$DURATION" >> "$OUT"
 
     - name: Upload metrics artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
-        name: metrics-${{ inputs.image }}-${{ inputs.option }}-${{ inputs.intensity }}-${{ inputs.repeat }}
+        name: raw-metrics-${{ inputs.batch && format('{0}-', inputs.batch) || '' }}${{ inputs.image }}-${{ inputs.option }}-${{ inputs.intensity }}-${{ inputs.repeat }}
         path: metrics/metrics.csv

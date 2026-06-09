@@ -1,0 +1,126 @@
+# *******************************************************************************
+# Copyright (c) 2026 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+# Deleting benchmark runner — dispatched by benchmark/measure-ours.js.
+# Measures a single combo (one or more steps deleted together) over N rounds.
+# One workflow run = one combo. measure-ours.js dispatches in parallel for each combo.
+
+name: Benchmark Deleting
+
+permissions:
+  actions: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      names:
+        description: Comma-separated steps to delete (e.g. "android-ndk,dotnet")
+        required: true
+        type: string
+      rounds:
+        description: Number of rounds
+        required: true
+        type: number
+        default: 7
+      pause_s:
+        description: Pause between rounds in seconds
+        required: true
+        type: number
+        default: 12
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-24.04
+    outputs:
+      rounds: ${{ steps.gen.outputs.rounds }}
+    steps:
+      - id: gen
+        run: |
+          node -e "
+            const arr = Array.from({length: ${{ inputs.rounds }}}, (_, i) => i + 1);
+            require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'rounds=' + JSON.stringify(arr) + '\n');
+          "
+
+  round:
+    name: Round ${{ matrix.round }}
+    needs: [setup]
+    strategy:
+      matrix:
+        round: ${{ fromJson(needs.setup.outputs.rounds) }}
+      max-parallel: 1
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Wait ${{ inputs.pause_s }} seconds
+        if: ${{ matrix.round > 1 }}
+        run: sleep ${{ inputs.pause_s }}
+
+      - uses: actions/checkout@v6
+
+      - name: Measure before
+        id: before
+        uses: ./.github/actions/measure-before
+
+      - name: Run more-disk-space (combo=${{ inputs.names }})
+        env:
+          NAMES: ${{ inputs.names }}
+        run: node .github/scripts/delete-by-names.js
+
+      - name: Compute intensity
+        id: intensity
+        shell: bash
+        run: echo "value=only-$(echo '${{ inputs.names }}' | tr ',' '+')" >> "$GITHUB_OUTPUT"
+
+      - name: Measure after
+        uses: ./.github/actions/measure-after
+        with:
+          image: ubuntu-24.04
+          option: isolation
+          intensity: ${{ steps.intensity.outputs.value }}
+          repeat: ${{ matrix.round }}
+          batch: isolation
+          before_root_avail: ${{ steps.before.outputs.root_avail }}
+          before_ws_avail: ${{ steps.before.outputs.ws_avail }}
+          start_ts: ${{ steps.before.outputs.start_ts }}
+
+  aggregate:
+    name: Aggregate
+    runs-on: ubuntu-24.04
+    needs: [round]
+    if: ${{ !cancelled() && (needs.round.result == 'success' || needs.round.result == 'failure') }}
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: raw-metrics-isolation-*
+          path: all-metrics
+      
+      - run: |
+          mkdir -p aggregate
+          node .github/scripts/summarize-ours.js all-metrics --output-csv aggregate/combined.csv | tee aggregate/summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: ours-metrics
+          path: aggregate/
+
+      - name: Delete raw metrics artifacts
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+            --paginate -q '.artifacts[] | select(.name | startswith("raw-metrics-isolation-")) | .id' |
+          xargs -P 20 -I {} gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/{}"

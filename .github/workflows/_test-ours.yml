@@ -1,0 +1,135 @@
+# *******************************************************************************
+# Copyright (c) 2026 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+name: Test
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Tests each level: freed space must reach the expected minimum.
+  # Thresholds are ~10% below the 100-round benchmark medians (results.md).
+  test-levels:
+    name: level ${{ matrix.level }} | ${{ matrix.image }}
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # min_gib: conservative floor ~10% below 100-round benchmark median
+          - image: ubuntu-24.04
+            level: 1
+            min_gib: 15
+          - image: ubuntu-24.04
+            level: 2
+            min_gib: 20
+          - image: ubuntu-24.04
+            level: 3
+            min_gib: 24
+          - image: ubuntu-24.04
+            level: 4
+            min_gib: 25
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Measure before
+        id: before
+        uses: ./.github/actions/measure-before
+
+      - name: Run more-disk-space
+        uses: ./
+        with:
+          level: ${{ matrix.level }}
+
+      - name: Measure after
+        shell: bash
+        env:
+          LEVEL: ${{ matrix.level }}
+          MIN_GIB: ${{ matrix.min_gib }}
+          IMAGE: ${{ matrix.image }}
+          BEFORE_ROOT: ${{ steps.before.outputs.root_avail }}
+          START_TS: ${{ steps.before.outputs.start_ts }}
+        run: |
+          set -euo pipefail
+
+          END_TS=$(date +%s%3N)
+          DURATION=$((END_TS - START_TS))
+
+          AFTER_ROOT=$(df --output=avail -B1 / | tail -1)
+          FREED_ROOT=$(( AFTER_ROOT - BEFORE_ROOT ))
+
+          to_gib() { echo "scale=1; $1 / 1073741824" | bc; }
+          BEFORE_GIB=$(to_gib "$BEFORE_ROOT")
+          AFTER_GIB=$(to_gib "$AFTER_ROOT")
+          FREED_GIB=$(to_gib "$FREED_ROOT")
+
+          FREED_GIB_EXACT=$(echo "scale=4; $FREED_ROOT / 1073741824" | bc)
+          if (( $(echo "$FREED_GIB_EXACT < $MIN_GIB" | bc -l) )); then STATUS=fail; else STATUS=pass; fi
+
+          mkdir -p result
+          echo "${LEVEL},${MIN_GIB},${IMAGE},${BEFORE_GIB},${AFTER_GIB},${FREED_GIB},${DURATION},${STATUS}" > result/result.csv
+
+      - name: Upload result
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: result-level-${{ matrix.level }}-${{ matrix.image }}
+          path: result/result.csv
+
+  summary:
+    name: Summary
+    runs-on: ubuntu-24.04
+    needs: [test-levels]
+    if: always()
+    steps:
+      - name: Download results
+        uses: actions/download-artifact@v8
+        with:
+          pattern: result-*
+          path: results
+
+      - name: Build summary table
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ALL=$(find results -name "result.csv" -exec cat {} \;)
+
+          PASS=$(echo "$ALL" | grep -c ',pass$' || true)
+          FAIL=$(echo "$ALL" | grep -c ',fail$' || true)
+
+          {
+            echo "## Test Results"
+            echo ""
+            echo "### Levels 1–4"
+            echo ""
+            echo "| Image | Level | Min (GiB) | Before | After | Freed | Duration | |"
+            echo "|---|---:|---:|---:|---:|---:|---:|:---:|"
+            echo "$ALL" \
+              | sort -t, -k3,3 -k1,1n \
+              | while IFS=, read -r level min_gib image before after freed duration status; do
+                  if [[ "$status" == pass ]]; then icon="✅"; else icon="❌"; fi
+                  echo "| \`${image}\` | ${level} | ${min_gib} | ${before} | ${after} | ${freed} | ${duration}ms | ${icon} |"
+                done
+            echo ""
+            echo "${PASS} passed, ${FAIL} failed"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          echo "${PASS} passed, ${FAIL} failed"
+          [[ "$FAIL" -eq 0 ]]

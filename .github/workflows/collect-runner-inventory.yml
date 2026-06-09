@@ -1,0 +1,106 @@
+# *******************************************************************************
+# Copyright (c) 2026 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+name: Collect Runner Inventory
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+# Captures a snapshot of the runner filesystem (root, 2 levels deep) and
+# disk usage per top-level directory. Committed to runner-inventory/ as a
+# long-lived reference for estimating cleanup step sizes.
+
+jobs:
+  inventory:
+    name: Inventory | ${{ matrix.image }}
+    runs-on: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [ubuntu-22.04, ubuntu-24.04]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: df
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p inventory
+
+          # Overall disk layout
+          df -h | tee inventory/df.txt
+
+      - name: du - 1st level
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # du for each top-level dir, sorted by size
+          sudo du -sh /usr/share/* /usr/local/* /opt/* /home/runner 2>/dev/null \
+            | sort -rh | tee inventory/du-top.txt || true
+
+      - name: du - 2nd level
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # du 2-level deep from root (skip proc/sys/dev)
+          sudo du -d 2 -h \
+            /usr/share /usr/local /opt /home/runner /var \
+            2>/dev/null | sort -rh | tee inventory/du-2level.txt || true
+
+      - name: du - android
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # List /usr/local/lib/android specifically
+          if [[ -d /usr/local/lib/android ]]; then
+            sudo du -sh /usr/local/lib/android/sdk/* 2>/dev/null \
+              | sort -rh | tee inventory/du-android.txt || true
+          fi
+
+      - name: apt - top 100
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Installed apt packages with sizes
+          dpkg-query -Wf '${Installed-Size}\t${Package}\n' \
+            | sort -rn | tee inventory/apt-top100.txt | head -100
+
+      - name: env
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Environment variables (useful for ImageOS etc)
+          env | sort | tee inventory/env.txt
+
+      - name: list inventory files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "Done. Files:"
+          ls -lh inventory/
+
+      - name: Upload inventory
+        uses: actions/upload-artifact@v7
+        # upload even if the inventory step fails or was cancelled
+        if: always()
+        with:
+          name: runner-inventory-${{ matrix.image }}
+          path: inventory/

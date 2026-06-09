@@ -1,0 +1,8586 @@
+{
+  "100": [
+    {
+      "run_id": 27001294649,
+      "date": "2026-06-05",
+      "freed_root": -9846784,
+      "duration_ms": 372,
+      "n": 100
+    },
+    {
+      "run_id": 27015449932,
+      "date": "2026-06-05",
+      "freed_root": -9846784,
+      "duration_ms": 379,
+      "n": 100
+    },
+    {
+      "run_id": 27041597574,
+      "date": "2026-06-05",
+      "freed_root": -9844736,
+      "duration_ms": 347,
+      "n": 100
+    }
+  ],
+  "android-ndk": [
+    {
+      "run_id": 26921132676,
+      "date": "2026-06-04",
+      "freed_root": 6902104064,
+      "duration_ms": 3480,
+      "n": 1
+    },
+    {
+      "run_id": 26922084406,
+      "date": "2026-06-04",
+      "freed_root": 6902087680,
+      "duration_ms": 2015,
+      "n": 30
+    },
+    {
+      "run_id": 27013645896,
+      "date": "2026-06-05",
+      "freed_root": 6902083584,
+      "duration_ms": 1909,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk": [
+    {
+      "run_id": 26922727815,
+      "date": "2026-06-04",
+      "freed_root": 10904498176,
+      "duration_ms": 7200,
+      "n": 30
+    },
+    {
+      "run_id": 27033079107,
+      "date": "2026-06-05",
+      "freed_root": 10904496128,
+      "duration_ms": 7114,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell": [
+    {
+      "run_id": 26956081722,
+      "date": "2026-06-04",
+      "freed_root": 26045435904,
+      "duration_ms": 37780,
+      "n": 30
+    },
+    {
+      "run_id": 27044024955,
+      "date": "2026-06-05",
+      "freed_root": 26045407232,
+      "duration_ms": 17112,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26946914745,
+      "date": "2026-06-04",
+      "freed_root": 29574950912,
+      "duration_ms": 38842,
+      "n": 30
+    },
+    {
+      "run_id": 27044034079,
+      "date": "2026-06-05",
+      "freed_root": 29574942720,
+      "duration_ms": 11980,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+swift": [
+    {
+      "run_id": 26956083667,
+      "date": "2026-06-04",
+      "freed_root": 28223229952,
+      "duration_ms": 18660,
+      "n": 30
+    },
+    {
+      "run_id": 27044025744,
+      "date": "2026-06-05",
+      "freed_root": 28223229952,
+      "duration_ms": 15601,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 27044014249,
+      "date": "2026-06-05",
+      "freed_root": 25147342848,
+      "duration_ms": 12700,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26956085592,
+      "date": "2026-06-04",
+      "freed_root": 28676882432,
+      "duration_ms": 20135,
+      "n": 30
+    },
+    {
+      "run_id": 27044023990,
+      "date": "2026-06-05",
+      "freed_root": 28676878336,
+      "duration_ms": 10273,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 27044015222,
+      "date": "2026-06-05",
+      "freed_root": 27325165568,
+      "duration_ms": 12049,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+miniconda+powershell+swift": [
+    {
+      "run_id": 26956087299,
+      "date": "2026-06-04",
+      "freed_root": 28498112512,
+      "duration_ms": 18029,
+      "n": 30
+    },
+    {
+      "run_id": 27044026489,
+      "date": "2026-06-05",
+      "freed_root": 28498108416,
+      "duration_ms": 12090,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 27044016237,
+      "date": "2026-06-05",
+      "freed_root": 27600044032,
+      "duration_ms": 10929,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956089808,
+      "date": "2026-06-04",
+      "freed_root": 25651939328,
+      "duration_ms": 19358,
+      "n": 30
+    },
+    {
+      "run_id": 27044027271,
+      "date": "2026-06-05",
+      "freed_root": 25651933184,
+      "duration_ms": 11608,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 27044017267,
+      "date": "2026-06-05",
+      "freed_root": 24753868800,
+      "duration_ms": 12640,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956091897,
+      "date": "2026-06-04",
+      "freed_root": 29416826880,
+      "duration_ms": 17826,
+      "n": 30
+    },
+    {
+      "run_id": 27044027972,
+      "date": "2026-06-05",
+      "freed_root": 29416824832,
+      "duration_ms": 17628,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27044018144,
+      "date": "2026-06-05",
+      "freed_root": 28518760448,
+      "duration_ms": 14105,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956093762,
+      "date": "2026-06-04",
+      "freed_root": 24292964352,
+      "duration_ms": 17492,
+      "n": 30
+    },
+    {
+      "run_id": 27044028968,
+      "date": "2026-06-05",
+      "freed_root": 24292958208,
+      "duration_ms": 13597,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27044018941,
+      "date": "2026-06-05",
+      "freed_root": 23394893824,
+      "duration_ms": 9589,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956095599,
+      "date": "2026-06-04",
+      "freed_root": 28891248640,
+      "duration_ms": 19161,
+      "n": 30
+    },
+    {
+      "run_id": 27044030080,
+      "date": "2026-06-05",
+      "freed_root": 28891236352,
+      "duration_ms": 13361,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+azure-cli+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27044019759,
+      "date": "2026-06-05",
+      "freed_root": 27993174016,
+      "duration_ms": 10532,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956097219,
+      "date": "2026-06-04",
+      "freed_root": 28306415616,
+      "duration_ms": 39084,
+      "n": 30
+    },
+    {
+      "run_id": 27044030866,
+      "date": "2026-06-05",
+      "freed_root": 28306399232,
+      "duration_ms": 11004,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+aws-sam-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27041594690,
+      "date": "2026-06-05",
+      "freed_root": 27408334848,
+      "duration_ms": 10764,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell": [
+    {
+      "run_id": 26954569840,
+      "date": "2026-06-04",
+      "freed_root": 25823840256,
+      "duration_ms": 19780,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26946916076,
+      "date": "2026-06-04",
+      "freed_root": 29353365504,
+      "duration_ms": 38166,
+      "n": 30
+    },
+    {
+      "run_id": 27044031508,
+      "date": "2026-06-05",
+      "freed_root": 29353365504,
+      "duration_ms": 11190,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+swift": [
+    {
+      "run_id": 26954571753,
+      "date": "2026-06-04",
+      "freed_root": 28001654784,
+      "duration_ms": 25406,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26953287132,
+      "date": "2026-06-04",
+      "freed_root": 24925771776,
+      "duration_ms": 32008,
+      "n": 30
+    },
+    {
+      "run_id": 27044005702,
+      "date": "2026-06-05",
+      "freed_root": 24925765632,
+      "duration_ms": 10245,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26946917106,
+      "date": "2026-06-04",
+      "freed_root": 28455305216,
+      "duration_ms": 12694,
+      "n": 30
+    },
+    {
+      "run_id": 27044020707,
+      "date": "2026-06-05",
+      "freed_root": 28455301120,
+      "duration_ms": 10008,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26953290329,
+      "date": "2026-06-04",
+      "freed_root": 27103592448,
+      "duration_ms": 12508,
+      "n": 30
+    },
+    {
+      "run_id": 27044006485,
+      "date": "2026-06-05",
+      "freed_root": 27103588352,
+      "duration_ms": 10346,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+miniconda+powershell+swift": [
+    {
+      "run_id": 26954573713,
+      "date": "2026-06-04",
+      "freed_root": 28276527104,
+      "duration_ms": 20969,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26953292881,
+      "date": "2026-06-04",
+      "freed_root": 27378472960,
+      "duration_ms": 13273,
+      "n": 30
+    },
+    {
+      "run_id": 27044007492,
+      "date": "2026-06-05",
+      "freed_root": 27378468864,
+      "duration_ms": 9707,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954576024,
+      "date": "2026-06-04",
+      "freed_root": 25430366208,
+      "duration_ms": 40282,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26953294658,
+      "date": "2026-06-04",
+      "freed_root": 24532297728,
+      "duration_ms": 27337,
+      "n": 30
+    },
+    {
+      "run_id": 27044008480,
+      "date": "2026-06-05",
+      "freed_root": 24532291584,
+      "duration_ms": 10062,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954578027,
+      "date": "2026-06-04",
+      "freed_root": 29195247616,
+      "duration_ms": 18100,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26946918338,
+      "date": "2026-06-04",
+      "freed_root": 28297183232,
+      "duration_ms": 26103,
+      "n": 30
+    },
+    {
+      "run_id": 27044009519,
+      "date": "2026-06-05",
+      "freed_root": 28297183232,
+      "duration_ms": 10911,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954580080,
+      "date": "2026-06-04",
+      "freed_root": 24071389184,
+      "duration_ms": 26438,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26953296611,
+      "date": "2026-06-04",
+      "freed_root": 23173316608,
+      "duration_ms": 13206,
+      "n": 30
+    },
+    {
+      "run_id": 27044010426,
+      "date": "2026-06-05",
+      "freed_root": 23173316608,
+      "duration_ms": 8981,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954581896,
+      "date": "2026-06-04",
+      "freed_root": 28669661184,
+      "duration_ms": 20280,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+azure-cli+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26953298756,
+      "date": "2026-06-04",
+      "freed_root": 27771596800,
+      "duration_ms": 16216,
+      "n": 30
+    },
+    {
+      "run_id": 27044011358,
+      "date": "2026-06-05",
+      "freed_root": 27771596800,
+      "duration_ms": 10554,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954583793,
+      "date": "2026-06-04",
+      "freed_root": 28084834304,
+      "duration_ms": 37365,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26952183336,
+      "date": "2026-06-04",
+      "freed_root": 23657230336,
+      "duration_ms": 10218,
+      "n": 30
+    },
+    {
+      "run_id": 27043997876,
+      "date": "2026-06-05",
+      "freed_root": 23657222144,
+      "duration_ms": 9300,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26949057375,
+      "date": "2026-06-04",
+      "freed_root": 27186767872,
+      "duration_ms": 10762,
+      "n": 30
+    },
+    {
+      "run_id": 27044004187,
+      "date": "2026-06-05",
+      "freed_root": 27186757632,
+      "duration_ms": 9440,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26952184744,
+      "date": "2026-06-04",
+      "freed_root": 25835044864,
+      "duration_ms": 10054,
+      "n": 30
+    },
+    {
+      "run_id": 27043998782,
+      "date": "2026-06-05",
+      "freed_root": 25835040768,
+      "duration_ms": 8688,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26952181800,
+      "date": "2026-06-04",
+      "freed_root": 26109923328,
+      "duration_ms": 16282,
+      "n": 30
+    },
+    {
+      "run_id": 27043999602,
+      "date": "2026-06-05",
+      "freed_root": 26109923328,
+      "duration_ms": 8997,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26952185981,
+      "date": "2026-06-04",
+      "freed_root": 23263748096,
+      "duration_ms": 27628,
+      "n": 30
+    },
+    {
+      "run_id": 27044000381,
+      "date": "2026-06-05",
+      "freed_root": 23263748096,
+      "duration_ms": 8851,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26946919656,
+      "date": "2026-06-04",
+      "freed_root": 27028643840,
+      "duration_ms": 10269,
+      "n": 30
+    },
+    {
+      "run_id": 27043997077,
+      "date": "2026-06-05",
+      "freed_root": 27028639744,
+      "duration_ms": 9326,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26952187246,
+      "date": "2026-06-04",
+      "freed_root": 21904773120,
+      "duration_ms": 13835,
+      "n": 30
+    },
+    {
+      "run_id": 27044001178,
+      "date": "2026-06-05",
+      "freed_root": 21904773120,
+      "duration_ms": 7796,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-cli+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26952188634,
+      "date": "2026-06-04",
+      "freed_root": 26503055360,
+      "duration_ms": 12554,
+      "n": 30
+    },
+    {
+      "run_id": 27044001909,
+      "date": "2026-06-05",
+      "freed_root": 26503053312,
+      "duration_ms": 9046,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956098844,
+      "date": "2026-06-04",
+      "freed_root": 29297584128,
+      "duration_ms": 18237,
+      "n": 30
+    },
+    {
+      "run_id": 27044032373,
+      "date": "2026-06-05",
+      "freed_root": 29297582080,
+      "duration_ms": 12490,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27044021537,
+      "date": "2026-06-05",
+      "freed_root": 28399517696,
+      "duration_ms": 11002,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954586190,
+      "date": "2026-06-04",
+      "freed_root": 29076008960,
+      "duration_ms": 35740,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26953300692,
+      "date": "2026-06-04",
+      "freed_root": 28177940480,
+      "duration_ms": 25770,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+chromium": [
+    {
+      "run_id": 26924341007,
+      "date": "2026-06-04",
+      "freed_root": 11588198400,
+      "duration_ms": 6432,
+      "n": 5
+    },
+    {
+      "run_id": 26941804502,
+      "date": "2026-06-04",
+      "freed_root": 11588202496,
+      "duration_ms": 25155,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+chromium+dotnet": [
+    {
+      "run_id": 26924538682,
+      "date": "2026-06-04",
+      "freed_root": 16870182912,
+      "duration_ms": 25603,
+      "n": 5
+    },
+    {
+      "run_id": 26941805841,
+      "date": "2026-06-04",
+      "freed_root": 16870187008,
+      "duration_ms": 30772,
+      "n": 30
+    },
+    {
+      "run_id": 27015296018,
+      "date": "2026-06-05",
+      "freed_root": 16870187008,
+      "duration_ms": 21706,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26952190051,
+      "date": "2026-06-04",
+      "freed_root": 26909392896,
+      "duration_ms": 27365,
+      "n": 30
+    },
+    {
+      "run_id": 27044002642,
+      "date": "2026-06-05",
+      "freed_root": 26909401088,
+      "duration_ms": 8946,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+gradle": [
+    {
+      "run_id": 26924535412,
+      "date": "2026-06-04",
+      "freed_root": 11746324480,
+      "duration_ms": 6246,
+      "n": 5
+    },
+    {
+      "run_id": 26941807366,
+      "date": "2026-06-04",
+      "freed_root": 11746316288,
+      "duration_ms": 25170,
+      "n": 30
+    },
+    {
+      "run_id": 27015297513,
+      "date": "2026-06-05",
+      "freed_root": 11746320384,
+      "duration_ms": 24291,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+haskell": [
+    {
+      "run_id": 26924531253,
+      "date": "2026-06-04",
+      "freed_root": 15511203840,
+      "duration_ms": 7388,
+      "n": 5
+    },
+    {
+      "run_id": 26941808529,
+      "date": "2026-06-04",
+      "freed_root": 15511212032,
+      "duration_ms": 25801,
+      "n": 30
+    },
+    {
+      "run_id": 27015298622,
+      "date": "2026-06-05",
+      "freed_root": 15511207936,
+      "duration_ms": 21629,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+julia": [
+    {
+      "run_id": 26924542806,
+      "date": "2026-06-04",
+      "freed_root": 12665032704,
+      "duration_ms": 6973,
+      "n": 5
+    },
+    {
+      "run_id": 26941810054,
+      "date": "2026-06-04",
+      "freed_root": 12665034752,
+      "duration_ms": 25679,
+      "n": 30
+    },
+    {
+      "run_id": 27015299799,
+      "date": "2026-06-05",
+      "freed_root": 12665036800,
+      "duration_ms": 24862,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+powershell": [
+    {
+      "run_id": 26924543699,
+      "date": "2026-06-04",
+      "freed_root": 12939911168,
+      "duration_ms": 6746,
+      "n": 5
+    },
+    {
+      "run_id": 26941811445,
+      "date": "2026-06-04",
+      "freed_root": 12939915264,
+      "duration_ms": 25417,
+      "n": 30
+    },
+    {
+      "run_id": 27015301041,
+      "date": "2026-06-05",
+      "freed_root": 12939915264,
+      "duration_ms": 7668,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+chromium+swift": [
+    {
+      "run_id": 26924541328,
+      "date": "2026-06-04",
+      "freed_root": 15117742080,
+      "duration_ms": 24641,
+      "n": 5
+    },
+    {
+      "run_id": 26941812887,
+      "date": "2026-06-04",
+      "freed_root": 15117737984,
+      "duration_ms": 25474,
+      "n": 30
+    },
+    {
+      "run_id": 27015302169,
+      "date": "2026-06-05",
+      "freed_root": 15117737984,
+      "duration_ms": 8173,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+dotnet": [
+    {
+      "run_id": 26924365019,
+      "date": "2026-06-04",
+      "freed_root": 16186474496,
+      "duration_ms": 7460,
+      "n": 5
+    },
+    {
+      "run_id": 26941814484,
+      "date": "2026-06-04",
+      "freed_root": 16186482688,
+      "duration_ms": 30169,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+dotnet+gradle": [
+    {
+      "run_id": 26924588424,
+      "date": "2026-06-04",
+      "freed_root": 16344604672,
+      "duration_ms": 25179,
+      "n": 5
+    },
+    {
+      "run_id": 26941815723,
+      "date": "2026-06-04",
+      "freed_root": 16344600576,
+      "duration_ms": 26261,
+      "n": 30
+    },
+    {
+      "run_id": 27015303197,
+      "date": "2026-06-05",
+      "freed_root": 16344604672,
+      "duration_ms": 25515,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+dotnet+haskell": [
+    {
+      "run_id": 26924580356,
+      "date": "2026-06-04",
+      "freed_root": 20109500416,
+      "duration_ms": 9169,
+      "n": 5
+    },
+    {
+      "run_id": 26941816889,
+      "date": "2026-06-04",
+      "freed_root": 20109488128,
+      "duration_ms": 31486,
+      "n": 30
+    },
+    {
+      "run_id": 27015304225,
+      "date": "2026-06-05",
+      "freed_root": 20109488128,
+      "duration_ms": 12133,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+dotnet+julia": [
+    {
+      "run_id": 26924597252,
+      "date": "2026-06-04",
+      "freed_root": 17263316992,
+      "duration_ms": 8927,
+      "n": 5
+    },
+    {
+      "run_id": 26941818562,
+      "date": "2026-06-04",
+      "freed_root": 17263316992,
+      "duration_ms": 30829,
+      "n": 30
+    },
+    {
+      "run_id": 27015305496,
+      "date": "2026-06-05",
+      "freed_root": 17263316992,
+      "duration_ms": 12148,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+dotnet+powershell": [
+    {
+      "run_id": 26924597925,
+      "date": "2026-06-04",
+      "freed_root": 17538195456,
+      "duration_ms": 7975,
+      "n": 5
+    },
+    {
+      "run_id": 26941819826,
+      "date": "2026-06-04",
+      "freed_root": 17538195456,
+      "duration_ms": 14427,
+      "n": 30
+    },
+    {
+      "run_id": 27015306500,
+      "date": "2026-06-05",
+      "freed_root": 17538195456,
+      "duration_ms": 9018,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+dotnet+swift": [
+    {
+      "run_id": 26924595639,
+      "date": "2026-06-04",
+      "freed_root": 19716022272,
+      "duration_ms": 7780,
+      "n": 5
+    },
+    {
+      "run_id": 26941821172,
+      "date": "2026-06-04",
+      "freed_root": 19716016128,
+      "duration_ms": 20089,
+      "n": 30
+    },
+    {
+      "run_id": 27015307574,
+      "date": "2026-06-05",
+      "freed_root": 19716018176,
+      "duration_ms": 11528,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+gradle": [
+    {
+      "run_id": 26924356858,
+      "date": "2026-06-04",
+      "freed_root": 11062616064,
+      "duration_ms": 25047,
+      "n": 5
+    },
+    {
+      "run_id": 26941822743,
+      "date": "2026-06-04",
+      "freed_root": 11062614016,
+      "duration_ms": 7796,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+gradle+haskell": [
+    {
+      "run_id": 26924577037,
+      "date": "2026-06-04",
+      "freed_root": 14985621504,
+      "duration_ms": 6893,
+      "n": 5
+    },
+    {
+      "run_id": 26941824124,
+      "date": "2026-06-04",
+      "freed_root": 14985625600,
+      "duration_ms": 25350,
+      "n": 30
+    },
+    {
+      "run_id": 27015308619,
+      "date": "2026-06-05",
+      "freed_root": 14985625600,
+      "duration_ms": 12565,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+gradle+julia": [
+    {
+      "run_id": 26924592601,
+      "date": "2026-06-04",
+      "freed_root": 12139450368,
+      "duration_ms": 26129,
+      "n": 5
+    },
+    {
+      "run_id": 26941825310,
+      "date": "2026-06-04",
+      "freed_root": 12139450368,
+      "duration_ms": 25474,
+      "n": 30
+    },
+    {
+      "run_id": 27015309732,
+      "date": "2026-06-05",
+      "freed_root": 12139450368,
+      "duration_ms": 10027,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+gradle+powershell": [
+    {
+      "run_id": 26924593378,
+      "date": "2026-06-04",
+      "freed_root": 12414328832,
+      "duration_ms": 7332,
+      "n": 5
+    },
+    {
+      "run_id": 26941826721,
+      "date": "2026-06-04",
+      "freed_root": 12414324736,
+      "duration_ms": 25610,
+      "n": 30
+    },
+    {
+      "run_id": 27015311048,
+      "date": "2026-06-05",
+      "freed_root": 12414328832,
+      "duration_ms": 12186,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+gradle+swift": [
+    {
+      "run_id": 26924590825,
+      "date": "2026-06-04",
+      "freed_root": 14592151552,
+      "duration_ms": 8719,
+      "n": 5
+    },
+    {
+      "run_id": 26941828315,
+      "date": "2026-06-04",
+      "freed_root": 14592149504,
+      "duration_ms": 25351,
+      "n": 30
+    },
+    {
+      "run_id": 27015312067,
+      "date": "2026-06-05",
+      "freed_root": 14592151552,
+      "duration_ms": 7475,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+haskell": [
+    {
+      "run_id": 26924362712,
+      "date": "2026-06-04",
+      "freed_root": 14827511808,
+      "duration_ms": 8316,
+      "n": 5
+    },
+    {
+      "run_id": 26941829663,
+      "date": "2026-06-04",
+      "freed_root": 14827507712,
+      "duration_ms": 26269,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+haskell+julia": [
+    {
+      "run_id": 26924584420,
+      "date": "2026-06-04",
+      "freed_root": 15904350208,
+      "duration_ms": 7466,
+      "n": 5
+    },
+    {
+      "run_id": 26941831003,
+      "date": "2026-06-04",
+      "freed_root": 15904342016,
+      "duration_ms": 26863,
+      "n": 30
+    },
+    {
+      "run_id": 27015313354,
+      "date": "2026-06-05",
+      "freed_root": 15904342016,
+      "duration_ms": 8159,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+haskell+powershell": [
+    {
+      "run_id": 26924585252,
+      "date": "2026-06-04",
+      "freed_root": 16179212288,
+      "duration_ms": 7422,
+      "n": 5
+    },
+    {
+      "run_id": 26941832621,
+      "date": "2026-06-04",
+      "freed_root": 16179216384,
+      "duration_ms": 25901,
+      "n": 30
+    },
+    {
+      "run_id": 27015314455,
+      "date": "2026-06-05",
+      "freed_root": 16179220480,
+      "duration_ms": 10141,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+haskell+swift": [
+    {
+      "run_id": 26924582793,
+      "date": "2026-06-04",
+      "freed_root": 18357039104,
+      "duration_ms": 24447,
+      "n": 5
+    },
+    {
+      "run_id": 26941833944,
+      "date": "2026-06-04",
+      "freed_root": 18357041152,
+      "duration_ms": 12450,
+      "n": 30
+    },
+    {
+      "run_id": 27015315603,
+      "date": "2026-06-05",
+      "freed_root": 18357043200,
+      "duration_ms": 20915,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+julia": [
+    {
+      "run_id": 26924364257,
+      "date": "2026-06-04",
+      "freed_root": 11981332480,
+      "duration_ms": 6724,
+      "n": 5
+    },
+    {
+      "run_id": 26941835272,
+      "date": "2026-06-04",
+      "freed_root": 11981332480,
+      "duration_ms": 25406,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+julia+powershell": [
+    {
+      "run_id": 26924601114,
+      "date": "2026-06-04",
+      "freed_root": 13333037056,
+      "duration_ms": 25740,
+      "n": 5
+    },
+    {
+      "run_id": 26941838032,
+      "date": "2026-06-04",
+      "freed_root": 13333045248,
+      "duration_ms": 26057,
+      "n": 30
+    },
+    {
+      "run_id": 27015316862,
+      "date": "2026-06-05",
+      "freed_root": 13333045248,
+      "duration_ms": 11318,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+julia+swift": [
+    {
+      "run_id": 26924599443,
+      "date": "2026-06-04",
+      "freed_root": 15510867968,
+      "duration_ms": 25191,
+      "n": 5
+    },
+    {
+      "run_id": 26941839531,
+      "date": "2026-06-04",
+      "freed_root": 15510867968,
+      "duration_ms": 25885,
+      "n": 30
+    },
+    {
+      "run_id": 27015317991,
+      "date": "2026-06-05",
+      "freed_root": 15510867968,
+      "duration_ms": 21179,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+powershell": [
+    {
+      "run_id": 26924360376,
+      "date": "2026-06-04",
+      "freed_root": 12256210944,
+      "duration_ms": 6770,
+      "n": 5
+    },
+    {
+      "run_id": 26941841273,
+      "date": "2026-06-04",
+      "freed_root": 12256210944,
+      "duration_ms": 17655,
+      "n": 30
+    }
+  ],
+  "android-ndk+android-sdk+powershell+swift": [
+    {
+      "run_id": 26924600264,
+      "date": "2026-06-04",
+      "freed_root": 15785746432,
+      "duration_ms": 25593,
+      "n": 5
+    },
+    {
+      "run_id": 26941842867,
+      "date": "2026-06-04",
+      "freed_root": 15785746432,
+      "duration_ms": 16191,
+      "n": 30
+    },
+    {
+      "run_id": 27015319440,
+      "date": "2026-06-05",
+      "freed_root": 15785746432,
+      "duration_ms": 7285,
+      "n": 100
+    }
+  ],
+  "android-ndk+android-sdk+swift": [
+    {
+      "run_id": 26924323997,
+      "date": "2026-06-04",
+      "freed_root": 14434037760,
+      "duration_ms": 6996,
+      "n": 5
+    },
+    {
+      "run_id": 26941844348,
+      "date": "2026-06-04",
+      "freed_root": 14434031616,
+      "duration_ms": 24859,
+      "n": 30
+    }
+  ],
+  "android-ndk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956079905,
+      "date": "2026-06-04",
+      "freed_root": 25572075520,
+      "duration_ms": 15424,
+      "n": 30
+    },
+    {
+      "run_id": 27044023188,
+      "date": "2026-06-05",
+      "freed_root": 25572077568,
+      "duration_ms": 6818,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27041595727,
+      "date": "2026-06-05",
+      "freed_root": 24674013184,
+      "duration_ms": 4670,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+aws-sam-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 27041596660,
+      "date": "2026-06-05",
+      "freed_root": 24303534080,
+      "duration_ms": 5780,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+aws-sam-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27041593778,
+      "date": "2026-06-05",
+      "freed_root": 23405469696,
+      "duration_ms": 5202,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954567511,
+      "date": "2026-06-04",
+      "freed_root": 25350500352,
+      "duration_ms": 10836,
+      "n": 30
+    }
+  ],
+  "android-ndk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26953284012,
+      "date": "2026-06-04",
+      "freed_root": 24452435968,
+      "duration_ms": 7848,
+      "n": 30
+    },
+    {
+      "run_id": 27044004945,
+      "date": "2026-06-05",
+      "freed_root": 24452435968,
+      "duration_ms": 3686,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26951507690,
+      "date": "2026-06-04",
+      "freed_root": 19654356992,
+      "duration_ms": 3803,
+      "n": 30
+    },
+    {
+      "run_id": 27001266636,
+      "date": "2026-06-05",
+      "freed_root": 19654356992,
+      "duration_ms": 5445,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26948453026,
+      "date": "2026-06-04",
+      "freed_root": 23183892480,
+      "duration_ms": 4486,
+      "n": 30
+    },
+    {
+      "run_id": 27001267747,
+      "date": "2026-06-05",
+      "freed_root": 23183892480,
+      "duration_ms": 4387,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26951508686,
+      "date": "2026-06-04",
+      "freed_root": 21832175616,
+      "duration_ms": 4279,
+      "n": 30
+    },
+    {
+      "run_id": 27001268889,
+      "date": "2026-06-05",
+      "freed_root": 21832179712,
+      "duration_ms": 9303,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26951509740,
+      "date": "2026-06-04",
+      "freed_root": 22107062272,
+      "duration_ms": 3485,
+      "n": 30
+    },
+    {
+      "run_id": 27001270303,
+      "date": "2026-06-05",
+      "freed_root": 22107058176,
+      "duration_ms": 7926,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26951511171,
+      "date": "2026-06-04",
+      "freed_root": 19260882944,
+      "duration_ms": 4349,
+      "n": 30
+    },
+    {
+      "run_id": 27001271402,
+      "date": "2026-06-05",
+      "freed_root": 19260882944,
+      "duration_ms": 4230,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26946920910,
+      "date": "2026-06-04",
+      "freed_root": 23025774592,
+      "duration_ms": 4343,
+      "n": 30
+    },
+    {
+      "run_id": 27001272552,
+      "date": "2026-06-05",
+      "freed_root": 23025774592,
+      "duration_ms": 4366,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26951506453,
+      "date": "2026-06-04",
+      "freed_root": 17901903872,
+      "duration_ms": 3985,
+      "n": 30
+    },
+    {
+      "run_id": 27001273770,
+      "date": "2026-06-05",
+      "freed_root": 17901903872,
+      "duration_ms": 3821,
+      "n": 100
+    }
+  ],
+  "android-ndk+aws-cli+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26951513043,
+      "date": "2026-06-04",
+      "freed_root": 22500188160,
+      "duration_ms": 4189,
+      "n": 30
+    },
+    {
+      "run_id": 27001275042,
+      "date": "2026-06-05",
+      "freed_root": 22500188160,
+      "duration_ms": 5333,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium": [
+    {
+      "run_id": 26922726222,
+      "date": "2026-06-04",
+      "freed_root": 7585792000,
+      "duration_ms": 2168,
+      "n": 30
+    },
+    {
+      "run_id": 27033077876,
+      "date": "2026-06-05",
+      "freed_root": 7585787904,
+      "duration_ms": 1694,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet": [
+    {
+      "run_id": 26924340181,
+      "date": "2026-06-04",
+      "freed_root": 12867792896,
+      "duration_ms": 10628,
+      "n": 5
+    },
+    {
+      "run_id": 26941846300,
+      "date": "2026-06-04",
+      "freed_root": 12867780608,
+      "duration_ms": 10087,
+      "n": 30
+    },
+    {
+      "run_id": 27036009192,
+      "date": "2026-06-05",
+      "freed_root": 12867780608,
+      "duration_ms": 5471,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle": [
+    {
+      "run_id": 26924531944,
+      "date": "2026-06-04",
+      "freed_root": 13025439744,
+      "duration_ms": 6040,
+      "n": 5
+    },
+    {
+      "run_id": 26941848193,
+      "date": "2026-06-04",
+      "freed_root": 13025437696,
+      "duration_ms": 7027,
+      "n": 30
+    },
+    {
+      "run_id": 27015320670,
+      "date": "2026-06-05",
+      "freed_root": 13025439744,
+      "duration_ms": 2390,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell": [
+    {
+      "run_id": 26936350808,
+      "date": "2026-06-04",
+      "freed_root": 16948449280,
+      "duration_ms": 3288,
+      "n": 5
+    },
+    {
+      "run_id": 26941849846,
+      "date": "2026-06-04",
+      "freed_root": 16948445184,
+      "duration_ms": 8156,
+      "n": 30
+    },
+    {
+      "run_id": 27038184312,
+      "date": "2026-06-05",
+      "freed_root": 16948445184,
+      "duration_ms": 2981,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+julia": [
+    {
+      "run_id": 26937024643,
+      "date": "2026-06-04",
+      "freed_root": 18025277440,
+      "duration_ms": 8926,
+      "n": 10
+    },
+    {
+      "run_id": 26944181909,
+      "date": "2026-06-04",
+      "freed_root": 18025283584,
+      "duration_ms": 8761,
+      "n": 30
+    },
+    {
+      "run_id": 27040174284,
+      "date": "2026-06-05",
+      "freed_root": 18025283584,
+      "duration_ms": 2825,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26937307726,
+      "date": "2026-06-04",
+      "freed_root": 19376990208,
+      "duration_ms": 6872,
+      "n": 10
+    },
+    {
+      "run_id": 26944183417,
+      "date": "2026-06-04",
+      "freed_root": 19376992256,
+      "duration_ms": 3960,
+      "n": 30
+    },
+    {
+      "run_id": 27001276055,
+      "date": "2026-06-05",
+      "freed_root": 19376996352,
+      "duration_ms": 7866,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937764244,
+      "date": "2026-06-04",
+      "freed_root": 22906531840,
+      "duration_ms": 5494,
+      "n": 10
+    },
+    {
+      "run_id": 26944184963,
+      "date": "2026-06-04",
+      "freed_root": 22906531840,
+      "duration_ms": 8978,
+      "n": 30
+    },
+    {
+      "run_id": 27043995633,
+      "date": "2026-06-05",
+      "freed_root": 22906531840,
+      "duration_ms": 2744,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26937308627,
+      "date": "2026-06-04",
+      "freed_root": 21554819072,
+      "duration_ms": 3784,
+      "n": 10
+    },
+    {
+      "run_id": 26944186108,
+      "date": "2026-06-04",
+      "freed_root": 21554814976,
+      "duration_ms": 6576,
+      "n": 30
+    },
+    {
+      "run_id": 27001277043,
+      "date": "2026-06-05",
+      "freed_root": 21554814976,
+      "duration_ms": 7667,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+powershell": [
+    {
+      "run_id": 26937028262,
+      "date": "2026-06-04",
+      "freed_root": 18300162048,
+      "duration_ms": 2885,
+      "n": 10
+    },
+    {
+      "run_id": 26944187436,
+      "date": "2026-06-04",
+      "freed_root": 18300162048,
+      "duration_ms": 8573,
+      "n": 30
+    },
+    {
+      "run_id": 27040172184,
+      "date": "2026-06-05",
+      "freed_root": 18300157952,
+      "duration_ms": 3016,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26937305704,
+      "date": "2026-06-04",
+      "freed_root": 21829697536,
+      "duration_ms": 8554,
+      "n": 10
+    },
+    {
+      "run_id": 26944188777,
+      "date": "2026-06-04",
+      "freed_root": 21829693440,
+      "duration_ms": 3621,
+      "n": 30
+    },
+    {
+      "run_id": 27001278261,
+      "date": "2026-06-05",
+      "freed_root": 21829697536,
+      "duration_ms": 3224,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+haskell+swift": [
+    {
+      "run_id": 26937020367,
+      "date": "2026-06-04",
+      "freed_root": 20477982720,
+      "duration_ms": 2834,
+      "n": 10
+    },
+    {
+      "run_id": 26944190225,
+      "date": "2026-06-04",
+      "freed_root": 20477984768,
+      "duration_ms": 5382,
+      "n": 30
+    },
+    {
+      "run_id": 27001279474,
+      "date": "2026-06-05",
+      "freed_root": 20477980672,
+      "duration_ms": 7296,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+julia": [
+    {
+      "run_id": 26936361334,
+      "date": "2026-06-04",
+      "freed_root": 14102274048,
+      "duration_ms": 8071,
+      "n": 5
+    },
+    {
+      "run_id": 26941851445,
+      "date": "2026-06-04",
+      "freed_root": 14102274048,
+      "duration_ms": 7851,
+      "n": 30
+    },
+    {
+      "run_id": 27038185267,
+      "date": "2026-06-05",
+      "freed_root": 14102274048,
+      "duration_ms": 2683,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+julia+powershell": [
+    {
+      "run_id": 26937034785,
+      "date": "2026-06-04",
+      "freed_root": 15453982720,
+      "duration_ms": 3599,
+      "n": 10
+    },
+    {
+      "run_id": 26944191812,
+      "date": "2026-06-04",
+      "freed_root": 15453986816,
+      "duration_ms": 5476,
+      "n": 30
+    },
+    {
+      "run_id": 27040177509,
+      "date": "2026-06-05",
+      "freed_root": 15453986816,
+      "duration_ms": 2772,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26937309570,
+      "date": "2026-06-04",
+      "freed_root": 18983520256,
+      "duration_ms": 5856,
+      "n": 10
+    },
+    {
+      "run_id": 26944193014,
+      "date": "2026-06-04",
+      "freed_root": 18983520256,
+      "duration_ms": 5962,
+      "n": 30
+    },
+    {
+      "run_id": 27001280460,
+      "date": "2026-06-05",
+      "freed_root": 18983522304,
+      "duration_ms": 3784,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+julia+swift": [
+    {
+      "run_id": 26937030390,
+      "date": "2026-06-04",
+      "freed_root": 17631805440,
+      "duration_ms": 2627,
+      "n": 10
+    },
+    {
+      "run_id": 26944194315,
+      "date": "2026-06-04",
+      "freed_root": 17631805440,
+      "duration_ms": 5119,
+      "n": 30
+    },
+    {
+      "run_id": 27040178666,
+      "date": "2026-06-05",
+      "freed_root": 17631805440,
+      "duration_ms": 2495,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+powershell": [
+    {
+      "run_id": 26936362671,
+      "date": "2026-06-04",
+      "freed_root": 14377152512,
+      "duration_ms": 7461,
+      "n": 5
+    },
+    {
+      "run_id": 26941853426,
+      "date": "2026-06-04",
+      "freed_root": 14377152512,
+      "duration_ms": 7724,
+      "n": 30
+    },
+    {
+      "run_id": 27038171562,
+      "date": "2026-06-05",
+      "freed_root": 14377152512,
+      "duration_ms": 2482,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+powershell+swift": [
+    {
+      "run_id": 26937033509,
+      "date": "2026-06-04",
+      "freed_root": 17906683904,
+      "duration_ms": 2580,
+      "n": 10
+    },
+    {
+      "run_id": 26944195746,
+      "date": "2026-06-04",
+      "freed_root": 17906683904,
+      "duration_ms": 3361,
+      "n": 30
+    },
+    {
+      "run_id": 27001281624,
+      "date": "2026-06-05",
+      "freed_root": 17906688000,
+      "duration_ms": 3457,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+gradle+swift": [
+    {
+      "run_id": 26936357631,
+      "date": "2026-06-04",
+      "freed_root": 16554971136,
+      "duration_ms": 2192,
+      "n": 5
+    },
+    {
+      "run_id": 26941855215,
+      "date": "2026-06-04",
+      "freed_root": 16554973184,
+      "duration_ms": 6331,
+      "n": 30
+    },
+    {
+      "run_id": 27038178580,
+      "date": "2026-06-05",
+      "freed_root": 16554971136,
+      "duration_ms": 2842,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell": [
+    {
+      "run_id": 26924528001,
+      "date": "2026-06-04",
+      "freed_root": 16790331392,
+      "duration_ms": 8321,
+      "n": 5
+    },
+    {
+      "run_id": 26941857022,
+      "date": "2026-06-04",
+      "freed_root": 16790333440,
+      "duration_ms": 8396,
+      "n": 30
+    },
+    {
+      "run_id": 27015321837,
+      "date": "2026-06-05",
+      "freed_root": 16790331392,
+      "duration_ms": 3846,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+julia": [
+    {
+      "run_id": 26936347494,
+      "date": "2026-06-04",
+      "freed_root": 17867165696,
+      "duration_ms": 3049,
+      "n": 5
+    },
+    {
+      "run_id": 26941858924,
+      "date": "2026-06-04",
+      "freed_root": 17867161600,
+      "duration_ms": 8847,
+      "n": 30
+    },
+    {
+      "run_id": 27038186307,
+      "date": "2026-06-05",
+      "freed_root": 17867161600,
+      "duration_ms": 3721,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+julia+powershell": [
+    {
+      "run_id": 26937027147,
+      "date": "2026-06-04",
+      "freed_root": 19218876416,
+      "duration_ms": 7186,
+      "n": 10
+    },
+    {
+      "run_id": 26944197136,
+      "date": "2026-06-04",
+      "freed_root": 19218882560,
+      "duration_ms": 4261,
+      "n": 30
+    },
+    {
+      "run_id": 27001282834,
+      "date": "2026-06-05",
+      "freed_root": 19218878464,
+      "duration_ms": 4012,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937310593,
+      "date": "2026-06-04",
+      "freed_root": 22748413952,
+      "duration_ms": 8859,
+      "n": 10
+    },
+    {
+      "run_id": 26944198446,
+      "date": "2026-06-04",
+      "freed_root": 22748413952,
+      "duration_ms": 8845,
+      "n": 30
+    },
+    {
+      "run_id": 27041854420,
+      "date": "2026-06-05",
+      "freed_root": 22748409856,
+      "duration_ms": 2918,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+julia+swift": [
+    {
+      "run_id": 26937017440,
+      "date": "2026-06-04",
+      "freed_root": 21396699136,
+      "duration_ms": 3651,
+      "n": 10
+    },
+    {
+      "run_id": 26944199864,
+      "date": "2026-06-04",
+      "freed_root": 21396705280,
+      "duration_ms": 3705,
+      "n": 30
+    },
+    {
+      "run_id": 27001284065,
+      "date": "2026-06-05",
+      "freed_root": 21396701184,
+      "duration_ms": 3620,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+powershell": [
+    {
+      "run_id": 26936349687,
+      "date": "2026-06-04",
+      "freed_root": 18142044160,
+      "duration_ms": 6891,
+      "n": 5
+    },
+    {
+      "run_id": 26941860473,
+      "date": "2026-06-04",
+      "freed_root": 18142044160,
+      "duration_ms": 8583,
+      "n": 30
+    },
+    {
+      "run_id": 27038172605,
+      "date": "2026-06-05",
+      "freed_root": 18142040064,
+      "duration_ms": 3084,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+powershell+swift": [
+    {
+      "run_id": 26937022351,
+      "date": "2026-06-04",
+      "freed_root": 21671581696,
+      "duration_ms": 5919,
+      "n": 10
+    },
+    {
+      "run_id": 26944201112,
+      "date": "2026-06-04",
+      "freed_root": 21671577600,
+      "duration_ms": 8111,
+      "n": 30
+    },
+    {
+      "run_id": 27040170138,
+      "date": "2026-06-05",
+      "freed_root": 21671577600,
+      "duration_ms": 2913,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+haskell+swift": [
+    {
+      "run_id": 26936343875,
+      "date": "2026-06-04",
+      "freed_root": 20319866880,
+      "duration_ms": 3024,
+      "n": 5
+    },
+    {
+      "run_id": 26944202166,
+      "date": "2026-06-04",
+      "freed_root": 20319866880,
+      "duration_ms": 5141,
+      "n": 30
+    },
+    {
+      "run_id": 27001285325,
+      "date": "2026-06-05",
+      "freed_root": 20319862784,
+      "duration_ms": 2984,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+julia": [
+    {
+      "run_id": 26924536981,
+      "date": "2026-06-04",
+      "freed_root": 13944160256,
+      "duration_ms": 2682,
+      "n": 5
+    },
+    {
+      "run_id": 26941863738,
+      "date": "2026-06-04",
+      "freed_root": 13944152064,
+      "duration_ms": 7801,
+      "n": 30
+    },
+    {
+      "run_id": 27015322833,
+      "date": "2026-06-05",
+      "freed_root": 13944156160,
+      "duration_ms": 5348,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+julia+powershell": [
+    {
+      "run_id": 26936359947,
+      "date": "2026-06-04",
+      "freed_root": 15295868928,
+      "duration_ms": 3056,
+      "n": 5
+    },
+    {
+      "run_id": 26941865316,
+      "date": "2026-06-04",
+      "freed_root": 15295868928,
+      "duration_ms": 8201,
+      "n": 30
+    },
+    {
+      "run_id": 27038173982,
+      "date": "2026-06-05",
+      "freed_root": 15295868928,
+      "duration_ms": 3172,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+julia+powershell+swift": [
+    {
+      "run_id": 26937032331,
+      "date": "2026-06-04",
+      "freed_root": 18825406464,
+      "duration_ms": 6105,
+      "n": 10
+    },
+    {
+      "run_id": 26944203480,
+      "date": "2026-06-04",
+      "freed_root": 18825404416,
+      "duration_ms": 8181,
+      "n": 30
+    },
+    {
+      "run_id": 27040176493,
+      "date": "2026-06-05",
+      "freed_root": 18825404416,
+      "duration_ms": 2507,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+julia+swift": [
+    {
+      "run_id": 26936354096,
+      "date": "2026-06-04",
+      "freed_root": 17473695744,
+      "duration_ms": 2992,
+      "n": 5
+    },
+    {
+      "run_id": 26941867029,
+      "date": "2026-06-04",
+      "freed_root": 17473691648,
+      "duration_ms": 8017,
+      "n": 30
+    },
+    {
+      "run_id": 27038179751,
+      "date": "2026-06-05",
+      "freed_root": 17473691648,
+      "duration_ms": 2838,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+powershell": [
+    {
+      "run_id": 26924537801,
+      "date": "2026-06-04",
+      "freed_root": 14219030528,
+      "duration_ms": 2496,
+      "n": 5
+    },
+    {
+      "run_id": 26941868789,
+      "date": "2026-06-04",
+      "freed_root": 14219034624,
+      "duration_ms": 7765,
+      "n": 30
+    },
+    {
+      "run_id": 27015324110,
+      "date": "2026-06-05",
+      "freed_root": 14219034624,
+      "duration_ms": 5513,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+powershell+swift": [
+    {
+      "run_id": 26936356320,
+      "date": "2026-06-04",
+      "freed_root": 17748574208,
+      "duration_ms": 7825,
+      "n": 5
+    },
+    {
+      "run_id": 26941870325,
+      "date": "2026-06-04",
+      "freed_root": 17748576256,
+      "duration_ms": 7819,
+      "n": 30
+    },
+    {
+      "run_id": 27038166990,
+      "date": "2026-06-05",
+      "freed_root": 17748566016,
+      "duration_ms": 2594,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+dotnet+swift": [
+    {
+      "run_id": 26924536161,
+      "date": "2026-06-04",
+      "freed_root": 16396861440,
+      "duration_ms": 1952,
+      "n": 5
+    },
+    {
+      "run_id": 26941871998,
+      "date": "2026-06-04",
+      "freed_root": 16396857344,
+      "duration_ms": 7483,
+      "n": 30
+    },
+    {
+      "run_id": 27015325367,
+      "date": "2026-06-05",
+      "freed_root": 16396857344,
+      "duration_ms": 2443,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle": [
+    {
+      "run_id": 26924337159,
+      "date": "2026-06-04",
+      "freed_root": 7743913984,
+      "duration_ms": 2673,
+      "n": 5
+    },
+    {
+      "run_id": 26941873597,
+      "date": "2026-06-04",
+      "freed_root": 7743913984,
+      "duration_ms": 2663,
+      "n": 30
+    },
+    {
+      "run_id": 27036004769,
+      "date": "2026-06-05",
+      "freed_root": 7743909888,
+      "duration_ms": 1779,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell": [
+    {
+      "run_id": 26924527403,
+      "date": "2026-06-04",
+      "freed_root": 11666456576,
+      "duration_ms": 1458,
+      "n": 5
+    },
+    {
+      "run_id": 26941875145,
+      "date": "2026-06-04",
+      "freed_root": 11666460672,
+      "duration_ms": 2732,
+      "n": 30
+    },
+    {
+      "run_id": 27015326695,
+      "date": "2026-06-05",
+      "freed_root": 11666460672,
+      "duration_ms": 2396,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+julia": [
+    {
+      "run_id": 26936346289,
+      "date": "2026-06-04",
+      "freed_root": 12743294976,
+      "duration_ms": 2324,
+      "n": 5
+    },
+    {
+      "run_id": 26941876681,
+      "date": "2026-06-04",
+      "freed_root": 12743299072,
+      "duration_ms": 3504,
+      "n": 30
+    },
+    {
+      "run_id": 27038187346,
+      "date": "2026-06-05",
+      "freed_root": 12743294976,
+      "duration_ms": 2022,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26937023322,
+      "date": "2026-06-04",
+      "freed_root": 14095011840,
+      "duration_ms": 2848,
+      "n": 10
+    },
+    {
+      "run_id": 26944204863,
+      "date": "2026-06-04",
+      "freed_root": 14095007744,
+      "duration_ms": 3422,
+      "n": 30
+    },
+    {
+      "run_id": 27040171125,
+      "date": "2026-06-05",
+      "freed_root": 14095007744,
+      "duration_ms": 1996,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937306607,
+      "date": "2026-06-04",
+      "freed_root": 17624543232,
+      "duration_ms": 2269,
+      "n": 10
+    },
+    {
+      "run_id": 26944206371,
+      "date": "2026-06-04",
+      "freed_root": 17624543232,
+      "duration_ms": 3992,
+      "n": 30
+    },
+    {
+      "run_id": 27001286564,
+      "date": "2026-06-05",
+      "freed_root": 17624543232,
+      "duration_ms": 3737,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26937012981,
+      "date": "2026-06-04",
+      "freed_root": 16272830464,
+      "duration_ms": 2749,
+      "n": 10
+    },
+    {
+      "run_id": 26944207865,
+      "date": "2026-06-04",
+      "freed_root": 16272834560,
+      "duration_ms": 3585,
+      "n": 30
+    },
+    {
+      "run_id": 27040173263,
+      "date": "2026-06-05",
+      "freed_root": 16272830464,
+      "duration_ms": 1775,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+powershell": [
+    {
+      "run_id": 26936348567,
+      "date": "2026-06-04",
+      "freed_root": 13018177536,
+      "duration_ms": 3295,
+      "n": 5
+    },
+    {
+      "run_id": 26941878410,
+      "date": "2026-06-04",
+      "freed_root": 13018173440,
+      "duration_ms": 3269,
+      "n": 30
+    },
+    {
+      "run_id": 27038175182,
+      "date": "2026-06-05",
+      "freed_root": 13018173440,
+      "duration_ms": 2031,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26937019352,
+      "date": "2026-06-04",
+      "freed_root": 16547710976,
+      "duration_ms": 2017,
+      "n": 10
+    },
+    {
+      "run_id": 26944209386,
+      "date": "2026-06-04",
+      "freed_root": 16547708928,
+      "duration_ms": 3258,
+      "n": 30
+    },
+    {
+      "run_id": 27040169199,
+      "date": "2026-06-05",
+      "freed_root": 16547708928,
+      "duration_ms": 1629,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+haskell+swift": [
+    {
+      "run_id": 26936342912,
+      "date": "2026-06-04",
+      "freed_root": 15196000256,
+      "duration_ms": 3227,
+      "n": 5
+    },
+    {
+      "run_id": 26941879722,
+      "date": "2026-06-04",
+      "freed_root": 15195996160,
+      "duration_ms": 2269,
+      "n": 30
+    },
+    {
+      "run_id": 27038180854,
+      "date": "2026-06-05",
+      "freed_root": 15195996160,
+      "duration_ms": 1779,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+julia": [
+    {
+      "run_id": 26924533566,
+      "date": "2026-06-04",
+      "freed_root": 8820281344,
+      "duration_ms": 966,
+      "n": 5
+    },
+    {
+      "run_id": 26941881341,
+      "date": "2026-06-04",
+      "freed_root": 8820285440,
+      "duration_ms": 2386,
+      "n": 30
+    },
+    {
+      "run_id": 27015327894,
+      "date": "2026-06-05",
+      "freed_root": 8820281344,
+      "duration_ms": 2163,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+julia+powershell": [
+    {
+      "run_id": 26936358799,
+      "date": "2026-06-04",
+      "freed_root": 10172002304,
+      "duration_ms": 3010,
+      "n": 5
+    },
+    {
+      "run_id": 26941883020,
+      "date": "2026-06-04",
+      "freed_root": 10172002304,
+      "duration_ms": 2852,
+      "n": 30
+    },
+    {
+      "run_id": 27038176406,
+      "date": "2026-06-05",
+      "freed_root": 10171998208,
+      "duration_ms": 1910,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26937029311,
+      "date": "2026-06-04",
+      "freed_root": 13701535744,
+      "duration_ms": 2869,
+      "n": 10
+    },
+    {
+      "run_id": 26944210728,
+      "date": "2026-06-04",
+      "freed_root": 13701533696,
+      "duration_ms": 1948,
+      "n": 30
+    },
+    {
+      "run_id": 27040175317,
+      "date": "2026-06-05",
+      "freed_root": 13701533696,
+      "duration_ms": 1715,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+julia+swift": [
+    {
+      "run_id": 26936352996,
+      "date": "2026-06-04",
+      "freed_root": 12349816832,
+      "duration_ms": 2303,
+      "n": 5
+    },
+    {
+      "run_id": 26941884611,
+      "date": "2026-06-04",
+      "freed_root": 12349825024,
+      "duration_ms": 2143,
+      "n": 30
+    },
+    {
+      "run_id": 27038182011,
+      "date": "2026-06-05",
+      "freed_root": 12349820928,
+      "duration_ms": 1524,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+powershell": [
+    {
+      "run_id": 26924534477,
+      "date": "2026-06-04",
+      "freed_root": 9095163904,
+      "duration_ms": 2325,
+      "n": 5
+    },
+    {
+      "run_id": 26941886113,
+      "date": "2026-06-04",
+      "freed_root": 9095161856,
+      "duration_ms": 2273,
+      "n": 30
+    },
+    {
+      "run_id": 27015329016,
+      "date": "2026-06-05",
+      "freed_root": 9095159808,
+      "duration_ms": 2156,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+powershell+swift": [
+    {
+      "run_id": 26936355208,
+      "date": "2026-06-04",
+      "freed_root": 12624699392,
+      "duration_ms": 1382,
+      "n": 5
+    },
+    {
+      "run_id": 26941887669,
+      "date": "2026-06-04",
+      "freed_root": 12624699392,
+      "duration_ms": 2466,
+      "n": 30
+    },
+    {
+      "run_id": 27038168271,
+      "date": "2026-06-05",
+      "freed_root": 12624695296,
+      "duration_ms": 1455,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+gradle+swift": [
+    {
+      "run_id": 26924532783,
+      "date": "2026-06-04",
+      "freed_root": 11272986624,
+      "duration_ms": 2115,
+      "n": 5
+    },
+    {
+      "run_id": 26941889092,
+      "date": "2026-06-04",
+      "freed_root": 11272982528,
+      "duration_ms": 1939,
+      "n": 30
+    },
+    {
+      "run_id": 27015330416,
+      "date": "2026-06-05",
+      "freed_root": 11272986624,
+      "duration_ms": 1240,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell": [
+    {
+      "run_id": 26924338496,
+      "date": "2026-06-04",
+      "freed_root": 11508338688,
+      "duration_ms": 1182,
+      "n": 5
+    },
+    {
+      "run_id": 26941890544,
+      "date": "2026-06-04",
+      "freed_root": 11508342784,
+      "duration_ms": 2763,
+      "n": 30
+    },
+    {
+      "run_id": 27036007095,
+      "date": "2026-06-05",
+      "freed_root": 11508342784,
+      "duration_ms": 1621,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+julia": [
+    {
+      "run_id": 26924529594,
+      "date": "2026-06-04",
+      "freed_root": 12585177088,
+      "duration_ms": 2135,
+      "n": 5
+    },
+    {
+      "run_id": 26941892153,
+      "date": "2026-06-04",
+      "freed_root": 12585181184,
+      "duration_ms": 3439,
+      "n": 30
+    },
+    {
+      "run_id": 27015331542,
+      "date": "2026-06-05",
+      "freed_root": 12585177088,
+      "duration_ms": 2188,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+julia+powershell": [
+    {
+      "run_id": 26936345075,
+      "date": "2026-06-04",
+      "freed_root": 13936885760,
+      "duration_ms": 4064,
+      "n": 5
+    },
+    {
+      "run_id": 26941893448,
+      "date": "2026-06-04",
+      "freed_root": 13936893952,
+      "duration_ms": 4001,
+      "n": 30
+    },
+    {
+      "run_id": 27038177527,
+      "date": "2026-06-05",
+      "freed_root": 13936889856,
+      "duration_ms": 2185,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937016359,
+      "date": "2026-06-04",
+      "freed_root": 17466433536,
+      "duration_ms": 3332,
+      "n": 10
+    },
+    {
+      "run_id": 26944212063,
+      "date": "2026-06-04",
+      "freed_root": 17466425344,
+      "duration_ms": 3621,
+      "n": 30
+    },
+    {
+      "run_id": 27001287563,
+      "date": "2026-06-05",
+      "freed_root": 17466425344,
+      "duration_ms": 2985,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+julia+swift": [
+    {
+      "run_id": 26936340420,
+      "date": "2026-06-04",
+      "freed_root": 16114712576,
+      "duration_ms": 3680,
+      "n": 5
+    },
+    {
+      "run_id": 26941894798,
+      "date": "2026-06-04",
+      "freed_root": 16114716672,
+      "duration_ms": 3094,
+      "n": 30
+    },
+    {
+      "run_id": 27038183123,
+      "date": "2026-06-05",
+      "freed_root": 16114716672,
+      "duration_ms": 2200,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+powershell": [
+    {
+      "run_id": 26924530506,
+      "date": "2026-06-04",
+      "freed_root": 12860051456,
+      "duration_ms": 3240,
+      "n": 5
+    },
+    {
+      "run_id": 26941896301,
+      "date": "2026-06-04",
+      "freed_root": 12860057600,
+      "duration_ms": 3312,
+      "n": 30
+    },
+    {
+      "run_id": 27015332771,
+      "date": "2026-06-05",
+      "freed_root": 12860055552,
+      "duration_ms": 3005,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+powershell+swift": [
+    {
+      "run_id": 26936341664,
+      "date": "2026-06-04",
+      "freed_root": 16389591040,
+      "duration_ms": 1681,
+      "n": 5
+    },
+    {
+      "run_id": 26941897787,
+      "date": "2026-06-04",
+      "freed_root": 16389595136,
+      "duration_ms": 3473,
+      "n": 30
+    },
+    {
+      "run_id": 27038169393,
+      "date": "2026-06-05",
+      "freed_root": 16389591040,
+      "duration_ms": 1853,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+haskell+swift": [
+    {
+      "run_id": 26924528772,
+      "date": "2026-06-04",
+      "freed_root": 15037878272,
+      "duration_ms": 1203,
+      "n": 5
+    },
+    {
+      "run_id": 26941899211,
+      "date": "2026-06-04",
+      "freed_root": 15037878272,
+      "duration_ms": 3045,
+      "n": 30
+    },
+    {
+      "run_id": 27015334070,
+      "date": "2026-06-05",
+      "freed_root": 15037878272,
+      "duration_ms": 2442,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+julia": [
+    {
+      "run_id": 26924339459,
+      "date": "2026-06-04",
+      "freed_root": 8662630400,
+      "duration_ms": 3096,
+      "n": 5
+    },
+    {
+      "run_id": 26941900656,
+      "date": "2026-06-04",
+      "freed_root": 8662626304,
+      "duration_ms": 3162,
+      "n": 30
+    },
+    {
+      "run_id": 27036008076,
+      "date": "2026-06-05",
+      "freed_root": 8662630400,
+      "duration_ms": 2589,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+julia+powershell": [
+    {
+      "run_id": 26924542076,
+      "date": "2026-06-04",
+      "freed_root": 10013876224,
+      "duration_ms": 1819,
+      "n": 5
+    },
+    {
+      "run_id": 26941902272,
+      "date": "2026-06-04",
+      "freed_root": 10013884416,
+      "duration_ms": 2557,
+      "n": 30
+    },
+    {
+      "run_id": 27015335318,
+      "date": "2026-06-05",
+      "freed_root": 10013880320,
+      "duration_ms": 1931,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+julia+powershell+swift": [
+    {
+      "run_id": 26936351996,
+      "date": "2026-06-04",
+      "freed_root": 13543419904,
+      "duration_ms": 2642,
+      "n": 5
+    },
+    {
+      "run_id": 26941903776,
+      "date": "2026-06-04",
+      "freed_root": 13543415808,
+      "duration_ms": 2013,
+      "n": 30
+    },
+    {
+      "run_id": 27038170489,
+      "date": "2026-06-05",
+      "freed_root": 13543415808,
+      "duration_ms": 1931,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+julia+swift": [
+    {
+      "run_id": 26924539575,
+      "date": "2026-06-04",
+      "freed_root": 12191707136,
+      "duration_ms": 2735,
+      "n": 5
+    },
+    {
+      "run_id": 26941905280,
+      "date": "2026-06-04",
+      "freed_root": 12191707136,
+      "duration_ms": 2575,
+      "n": 30
+    },
+    {
+      "run_id": 27015336625,
+      "date": "2026-06-05",
+      "freed_root": 12191682560,
+      "duration_ms": 2152,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+powershell": [
+    {
+      "run_id": 26924337899,
+      "date": "2026-06-04",
+      "freed_root": 8937512960,
+      "duration_ms": 2903,
+      "n": 5
+    },
+    {
+      "run_id": 26941906717,
+      "date": "2026-06-04",
+      "freed_root": 8937504768,
+      "duration_ms": 2967,
+      "n": 30
+    },
+    {
+      "run_id": 27036006113,
+      "date": "2026-06-05",
+      "freed_root": 8937504768,
+      "duration_ms": 1954,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+powershell+swift": [
+    {
+      "run_id": 26924540415,
+      "date": "2026-06-04",
+      "freed_root": 12466577408,
+      "duration_ms": 1553,
+      "n": 5
+    },
+    {
+      "run_id": 26941908099,
+      "date": "2026-06-04",
+      "freed_root": 12466581504,
+      "duration_ms": 2427,
+      "n": 30
+    },
+    {
+      "run_id": 27015337868,
+      "date": "2026-06-05",
+      "freed_root": 12466577408,
+      "duration_ms": 1452,
+      "n": 100
+    }
+  ],
+  "android-ndk+chromium+swift": [
+    {
+      "run_id": 26924313902,
+      "date": "2026-06-04",
+      "freed_root": 11115327488,
+      "duration_ms": 2259,
+      "n": 5
+    },
+    {
+      "run_id": 26941909738,
+      "date": "2026-06-04",
+      "freed_root": 11115331584,
+      "duration_ms": 2332,
+      "n": 30
+    },
+    {
+      "run_id": 27035996935,
+      "date": "2026-06-05",
+      "freed_root": 11115327488,
+      "duration_ms": 1938,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet": [
+    {
+      "run_id": 26922727037,
+      "date": "2026-06-04",
+      "freed_root": 12184072192,
+      "duration_ms": 8221,
+      "n": 30
+    },
+    {
+      "run_id": 27033080401,
+      "date": "2026-06-05",
+      "freed_root": 12184074240,
+      "duration_ms": 5710,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle": [
+    {
+      "run_id": 26924356084,
+      "date": "2026-06-04",
+      "freed_root": 12342198272,
+      "duration_ms": 5640,
+      "n": 5
+    },
+    {
+      "run_id": 26941911459,
+      "date": "2026-06-04",
+      "freed_root": 12342194176,
+      "duration_ms": 10203,
+      "n": 30
+    },
+    {
+      "run_id": 27036042916,
+      "date": "2026-06-05",
+      "freed_root": 12342194176,
+      "duration_ms": 5732,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell": [
+    {
+      "run_id": 26924573444,
+      "date": "2026-06-04",
+      "freed_root": 16264744960,
+      "duration_ms": 2653,
+      "n": 5
+    },
+    {
+      "run_id": 26941912894,
+      "date": "2026-06-04",
+      "freed_root": 16264744960,
+      "duration_ms": 3893,
+      "n": 30
+    },
+    {
+      "run_id": 27015339272,
+      "date": "2026-06-05",
+      "freed_root": 16264744960,
+      "duration_ms": 3874,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+julia": [
+    {
+      "run_id": 26936391451,
+      "date": "2026-06-04",
+      "freed_root": 17341575168,
+      "duration_ms": 3474,
+      "n": 5
+    },
+    {
+      "run_id": 26941914186,
+      "date": "2026-06-04",
+      "freed_root": 17341579264,
+      "duration_ms": 5371,
+      "n": 30
+    },
+    {
+      "run_id": 27038200391,
+      "date": "2026-06-05",
+      "freed_root": 17341577216,
+      "duration_ms": 2983,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26937025816,
+      "date": "2026-06-04",
+      "freed_root": 18693294080,
+      "duration_ms": 8467,
+      "n": 10
+    },
+    {
+      "run_id": 26944213928,
+      "date": "2026-06-04",
+      "freed_root": 18693298176,
+      "duration_ms": 9350,
+      "n": 30
+    },
+    {
+      "run_id": 27040182063,
+      "date": "2026-06-05",
+      "freed_root": 18693287936,
+      "duration_ms": 3252,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937311571,
+      "date": "2026-06-04",
+      "freed_root": 22222835712,
+      "duration_ms": 9726,
+      "n": 10
+    },
+    {
+      "run_id": 26944215252,
+      "date": "2026-06-04",
+      "freed_root": 22222827520,
+      "duration_ms": 9489,
+      "n": 30
+    },
+    {
+      "run_id": 27041855370,
+      "date": "2026-06-05",
+      "freed_root": 22222825472,
+      "duration_ms": 3092,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26937015182,
+      "date": "2026-06-04",
+      "freed_root": 20871116800,
+      "duration_ms": 6209,
+      "n": 10
+    },
+    {
+      "run_id": 26944216878,
+      "date": "2026-06-04",
+      "freed_root": 20871114752,
+      "duration_ms": 3263,
+      "n": 30
+    },
+    {
+      "run_id": 27001288687,
+      "date": "2026-06-05",
+      "freed_root": 20871114752,
+      "duration_ms": 8421,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+powershell": [
+    {
+      "run_id": 26936392479,
+      "date": "2026-06-04",
+      "freed_root": 17616457728,
+      "duration_ms": 2969,
+      "n": 5
+    },
+    {
+      "run_id": 26941915674,
+      "date": "2026-06-04",
+      "freed_root": 17616457728,
+      "duration_ms": 8643,
+      "n": 30
+    },
+    {
+      "run_id": 27038193985,
+      "date": "2026-06-05",
+      "freed_root": 17616453632,
+      "duration_ms": 3051,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26937021437,
+      "date": "2026-06-04",
+      "freed_root": 21145991168,
+      "duration_ms": 4103,
+      "n": 10
+    },
+    {
+      "run_id": 26944218475,
+      "date": "2026-06-04",
+      "freed_root": 21145993216,
+      "duration_ms": 7119,
+      "n": 30
+    },
+    {
+      "run_id": 27040180962,
+      "date": "2026-06-05",
+      "freed_root": 21145989120,
+      "duration_ms": 2732,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+haskell+swift": [
+    {
+      "run_id": 26936387652,
+      "date": "2026-06-04",
+      "freed_root": 19794276352,
+      "duration_ms": 8448,
+      "n": 5
+    },
+    {
+      "run_id": 26941917132,
+      "date": "2026-06-04",
+      "freed_root": 19794278400,
+      "duration_ms": 7371,
+      "n": 30
+    },
+    {
+      "run_id": 27038197027,
+      "date": "2026-06-05",
+      "freed_root": 19794276352,
+      "duration_ms": 7301,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+julia": [
+    {
+      "run_id": 26924586882,
+      "date": "2026-06-04",
+      "freed_root": 13418557440,
+      "duration_ms": 3493,
+      "n": 5
+    },
+    {
+      "run_id": 26941918601,
+      "date": "2026-06-04",
+      "freed_root": 13418565632,
+      "duration_ms": 7684,
+      "n": 30
+    },
+    {
+      "run_id": 27015340491,
+      "date": "2026-06-05",
+      "freed_root": 13418569728,
+      "duration_ms": 2663,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+julia+powershell": [
+    {
+      "run_id": 26936398547,
+      "date": "2026-06-04",
+      "freed_root": 14770286592,
+      "duration_ms": 3074,
+      "n": 5
+    },
+    {
+      "run_id": 26941920060,
+      "date": "2026-06-04",
+      "freed_root": 14770286592,
+      "duration_ms": 8371,
+      "n": 30
+    },
+    {
+      "run_id": 27038194911,
+      "date": "2026-06-05",
+      "freed_root": 14770282496,
+      "duration_ms": 3092,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26937031291,
+      "date": "2026-06-04",
+      "freed_root": 18299813888,
+      "duration_ms": 5028,
+      "n": 10
+    },
+    {
+      "run_id": 26944219951,
+      "date": "2026-06-04",
+      "freed_root": 18299817984,
+      "duration_ms": 3747,
+      "n": 30
+    },
+    {
+      "run_id": 27001289785,
+      "date": "2026-06-05",
+      "freed_root": 18299817984,
+      "duration_ms": 3633,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+julia+swift": [
+    {
+      "run_id": 26936395903,
+      "date": "2026-06-04",
+      "freed_root": 16948109312,
+      "duration_ms": 2662,
+      "n": 5
+    },
+    {
+      "run_id": 26941921743,
+      "date": "2026-06-04",
+      "freed_root": 16948105216,
+      "duration_ms": 8012,
+      "n": 30
+    },
+    {
+      "run_id": 27038198039,
+      "date": "2026-06-05",
+      "freed_root": 16948105216,
+      "duration_ms": 2721,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+powershell": [
+    {
+      "run_id": 26924587663,
+      "date": "2026-06-04",
+      "freed_root": 13693444096,
+      "duration_ms": 2559,
+      "n": 5
+    },
+    {
+      "run_id": 26941923002,
+      "date": "2026-06-04",
+      "freed_root": 13693450240,
+      "duration_ms": 7710,
+      "n": 30
+    },
+    {
+      "run_id": 27015341478,
+      "date": "2026-06-05",
+      "freed_root": 13693446144,
+      "duration_ms": 7152,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+powershell+swift": [
+    {
+      "run_id": 26936397166,
+      "date": "2026-06-04",
+      "freed_root": 17222983680,
+      "duration_ms": 3377,
+      "n": 5
+    },
+    {
+      "run_id": 26941924593,
+      "date": "2026-06-04",
+      "freed_root": 17222979584,
+      "duration_ms": 6713,
+      "n": 30
+    },
+    {
+      "run_id": 27038188449,
+      "date": "2026-06-05",
+      "freed_root": 17222983680,
+      "duration_ms": 2753,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+gradle+swift": [
+    {
+      "run_id": 26924586109,
+      "date": "2026-06-04",
+      "freed_root": 15871270912,
+      "duration_ms": 2270,
+      "n": 5
+    },
+    {
+      "run_id": 26941926091,
+      "date": "2026-06-04",
+      "freed_root": 15871275008,
+      "duration_ms": 7488,
+      "n": 30
+    },
+    {
+      "run_id": 27015342940,
+      "date": "2026-06-05",
+      "freed_root": 15871266816,
+      "duration_ms": 2344,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell": [
+    {
+      "run_id": 26924361924,
+      "date": "2026-06-04",
+      "freed_root": 16106622976,
+      "duration_ms": 2344,
+      "n": 5
+    },
+    {
+      "run_id": 26941927473,
+      "date": "2026-06-04",
+      "freed_root": 16106622976,
+      "duration_ms": 3262,
+      "n": 30
+    },
+    {
+      "run_id": 27036048176,
+      "date": "2026-06-05",
+      "freed_root": 16106622976,
+      "duration_ms": 2833,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+julia": [
+    {
+      "run_id": 26924578717,
+      "date": "2026-06-04",
+      "freed_root": 17183457280,
+      "duration_ms": 8706,
+      "n": 5
+    },
+    {
+      "run_id": 26941928786,
+      "date": "2026-06-04",
+      "freed_root": 17183461376,
+      "duration_ms": 8770,
+      "n": 30
+    },
+    {
+      "run_id": 27015344265,
+      "date": "2026-06-05",
+      "freed_root": 17183461376,
+      "duration_ms": 3922,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+julia+powershell": [
+    {
+      "run_id": 26936390088,
+      "date": "2026-06-04",
+      "freed_root": 18535182336,
+      "duration_ms": 9563,
+      "n": 5
+    },
+    {
+      "run_id": 26941930109,
+      "date": "2026-06-04",
+      "freed_root": 18535172096,
+      "duration_ms": 4554,
+      "n": 30
+    },
+    {
+      "run_id": 27001290779,
+      "date": "2026-06-05",
+      "freed_root": 18535170048,
+      "duration_ms": 4484,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937018447,
+      "date": "2026-06-04",
+      "freed_root": 22064707584,
+      "duration_ms": 9524,
+      "n": 10
+    },
+    {
+      "run_id": 26944221465,
+      "date": "2026-06-04",
+      "freed_root": 22064709632,
+      "duration_ms": 5131,
+      "n": 30
+    },
+    {
+      "run_id": 27001291847,
+      "date": "2026-06-05",
+      "freed_root": 22064705536,
+      "duration_ms": 4524,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+julia+swift": [
+    {
+      "run_id": 26936383772,
+      "date": "2026-06-04",
+      "freed_root": 20712996864,
+      "duration_ms": 7878,
+      "n": 5
+    },
+    {
+      "run_id": 26941931599,
+      "date": "2026-06-04",
+      "freed_root": 20712992768,
+      "duration_ms": 4374,
+      "n": 30
+    },
+    {
+      "run_id": 27001292772,
+      "date": "2026-06-05",
+      "freed_root": 20712996864,
+      "duration_ms": 4236,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+powershell": [
+    {
+      "run_id": 26924579479,
+      "date": "2026-06-04",
+      "freed_root": 17458335744,
+      "duration_ms": 2661,
+      "n": 5
+    },
+    {
+      "run_id": 26941933305,
+      "date": "2026-06-04",
+      "freed_root": 17458339840,
+      "duration_ms": 8487,
+      "n": 30
+    },
+    {
+      "run_id": 27015345514,
+      "date": "2026-06-05",
+      "freed_root": 17458339840,
+      "duration_ms": 3607,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+powershell+swift": [
+    {
+      "run_id": 26936386414,
+      "date": "2026-06-04",
+      "freed_root": 20987871232,
+      "duration_ms": 9022,
+      "n": 5
+    },
+    {
+      "run_id": 26941934830,
+      "date": "2026-06-04",
+      "freed_root": 20987871232,
+      "duration_ms": 3424,
+      "n": 30
+    },
+    {
+      "run_id": 27001293679,
+      "date": "2026-06-05",
+      "freed_root": 20987873280,
+      "duration_ms": 4450,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+haskell+swift": [
+    {
+      "run_id": 26924577860,
+      "date": "2026-06-04",
+      "freed_root": 19636162560,
+      "duration_ms": 2486,
+      "n": 5
+    },
+    {
+      "run_id": 26941936270,
+      "date": "2026-06-04",
+      "freed_root": 19636158464,
+      "duration_ms": 8485,
+      "n": 30
+    },
+    {
+      "run_id": 27015346685,
+      "date": "2026-06-05",
+      "freed_root": 19636162560,
+      "duration_ms": 3144,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+julia": [
+    {
+      "run_id": 26924363495,
+      "date": "2026-06-04",
+      "freed_root": 13260910592,
+      "duration_ms": 12244,
+      "n": 5
+    },
+    {
+      "run_id": 26941937858,
+      "date": "2026-06-04",
+      "freed_root": 13260910592,
+      "duration_ms": 10694,
+      "n": 30
+    },
+    {
+      "run_id": 27036049187,
+      "date": "2026-06-05",
+      "freed_root": 13260910592,
+      "duration_ms": 6253,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+julia+powershell": [
+    {
+      "run_id": 26924596418,
+      "date": "2026-06-04",
+      "freed_root": 14612164608,
+      "duration_ms": 8162,
+      "n": 5
+    },
+    {
+      "run_id": 26941939717,
+      "date": "2026-06-04",
+      "freed_root": 14612168704,
+      "duration_ms": 8343,
+      "n": 30
+    },
+    {
+      "run_id": 27015347931,
+      "date": "2026-06-05",
+      "freed_root": 14612164608,
+      "duration_ms": 4104,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+julia+powershell+swift": [
+    {
+      "run_id": 26936394704,
+      "date": "2026-06-04",
+      "freed_root": 18141704192,
+      "duration_ms": 2838,
+      "n": 5
+    },
+    {
+      "run_id": 26941941306,
+      "date": "2026-06-04",
+      "freed_root": 18141702144,
+      "duration_ms": 8472,
+      "n": 30
+    },
+    {
+      "run_id": 27038189695,
+      "date": "2026-06-05",
+      "freed_root": 18141696000,
+      "duration_ms": 3143,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+julia+swift": [
+    {
+      "run_id": 26924593940,
+      "date": "2026-06-04",
+      "freed_root": 16789991424,
+      "duration_ms": 2739,
+      "n": 5
+    },
+    {
+      "run_id": 26941942999,
+      "date": "2026-06-04",
+      "freed_root": 16789987328,
+      "duration_ms": 3780,
+      "n": 30
+    },
+    {
+      "run_id": 27015349133,
+      "date": "2026-06-05",
+      "freed_root": 16789987328,
+      "duration_ms": 3538,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+powershell": [
+    {
+      "run_id": 26924359562,
+      "date": "2026-06-04",
+      "freed_root": 13535793152,
+      "duration_ms": 5101,
+      "n": 5
+    },
+    {
+      "run_id": 26941944444,
+      "date": "2026-06-04",
+      "freed_root": 13535793152,
+      "duration_ms": 10721,
+      "n": 30
+    },
+    {
+      "run_id": 27036045997,
+      "date": "2026-06-05",
+      "freed_root": 13535793152,
+      "duration_ms": 6037,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+powershell+swift": [
+    {
+      "run_id": 26924594763,
+      "date": "2026-06-04",
+      "freed_root": 17064861696,
+      "duration_ms": 2138,
+      "n": 5
+    },
+    {
+      "run_id": 26941946000,
+      "date": "2026-06-04",
+      "freed_root": 17064865792,
+      "duration_ms": 7336,
+      "n": 30
+    },
+    {
+      "run_id": 27015350388,
+      "date": "2026-06-05",
+      "freed_root": 17064865792,
+      "duration_ms": 6725,
+      "n": 100
+    }
+  ],
+  "android-ndk+dotnet+swift": [
+    {
+      "run_id": 26924323131,
+      "date": "2026-06-04",
+      "freed_root": 15713611776,
+      "duration_ms": 4582,
+      "n": 5
+    },
+    {
+      "run_id": 26941947689,
+      "date": "2026-06-04",
+      "freed_root": 15713611776,
+      "duration_ms": 8968,
+      "n": 30
+    },
+    {
+      "run_id": 27036026326,
+      "date": "2026-06-05",
+      "freed_root": 15713611776,
+      "duration_ms": 6275,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle": [
+    {
+      "run_id": 26924162969,
+      "date": "2026-06-04",
+      "freed_root": 7060201472,
+      "duration_ms": 1384,
+      "n": 5
+    },
+    {
+      "run_id": 26941949304,
+      "date": "2026-06-04",
+      "freed_root": 7060205568,
+      "duration_ms": 2460,
+      "n": 30
+    }
+  ],
+  "android-ndk+gradle+haskell": [
+    {
+      "run_id": 26924354420,
+      "date": "2026-06-04",
+      "freed_root": 10982752256,
+      "duration_ms": 1294,
+      "n": 5
+    },
+    {
+      "run_id": 26941950546,
+      "date": "2026-06-04",
+      "freed_root": 10982756352,
+      "duration_ms": 2824,
+      "n": 30
+    },
+    {
+      "run_id": 27036040339,
+      "date": "2026-06-05",
+      "freed_root": 10982756352,
+      "duration_ms": 1531,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+julia": [
+    {
+      "run_id": 26924575244,
+      "date": "2026-06-04",
+      "freed_root": 12059586560,
+      "duration_ms": 3146,
+      "n": 5
+    },
+    {
+      "run_id": 26941952054,
+      "date": "2026-06-04",
+      "freed_root": 12059594752,
+      "duration_ms": 3375,
+      "n": 30
+    },
+    {
+      "run_id": 27015351453,
+      "date": "2026-06-05",
+      "freed_root": 12059590656,
+      "duration_ms": 2351,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26936388853,
+      "date": "2026-06-04",
+      "freed_root": 13411311616,
+      "duration_ms": 3828,
+      "n": 5
+    },
+    {
+      "run_id": 26941953526,
+      "date": "2026-06-04",
+      "freed_root": 13411307520,
+      "duration_ms": 3873,
+      "n": 30
+    },
+    {
+      "run_id": 27038195964,
+      "date": "2026-06-05",
+      "freed_root": 13411307520,
+      "duration_ms": 2392,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937014024,
+      "date": "2026-06-04",
+      "freed_root": 16940840960,
+      "duration_ms": 4043,
+      "n": 10
+    },
+    {
+      "run_id": 26944222782,
+      "date": "2026-06-04",
+      "freed_root": 16940843008,
+      "duration_ms": 3681,
+      "n": 30
+    },
+    {
+      "run_id": 27040179830,
+      "date": "2026-06-05",
+      "freed_root": 16940838912,
+      "duration_ms": 2044,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26936382477,
+      "date": "2026-06-04",
+      "freed_root": 15589122048,
+      "duration_ms": 1370,
+      "n": 5
+    },
+    {
+      "run_id": 26941954963,
+      "date": "2026-06-04",
+      "freed_root": 15589105664,
+      "duration_ms": 3730,
+      "n": 30
+    },
+    {
+      "run_id": 27038199006,
+      "date": "2026-06-05",
+      "freed_root": 15589122048,
+      "duration_ms": 2030,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+powershell": [
+    {
+      "run_id": 26924576064,
+      "date": "2026-06-04",
+      "freed_root": 12334465024,
+      "duration_ms": 3401,
+      "n": 5
+    },
+    {
+      "run_id": 26941956491,
+      "date": "2026-06-04",
+      "freed_root": 12334471168,
+      "duration_ms": 3330,
+      "n": 30
+    },
+    {
+      "run_id": 27015352367,
+      "date": "2026-06-05",
+      "freed_root": 12334469120,
+      "duration_ms": 2276,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26936385319,
+      "date": "2026-06-04",
+      "freed_root": 15864008704,
+      "duration_ms": 1969,
+      "n": 5
+    },
+    {
+      "run_id": 26941958049,
+      "date": "2026-06-04",
+      "freed_root": 15864006656,
+      "duration_ms": 3297,
+      "n": 30
+    },
+    {
+      "run_id": 27038190742,
+      "date": "2026-06-05",
+      "freed_root": 15864004608,
+      "duration_ms": 1904,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+haskell+swift": [
+    {
+      "run_id": 26924574327,
+      "date": "2026-06-04",
+      "freed_root": 14512300032,
+      "duration_ms": 3105,
+      "n": 5
+    },
+    {
+      "run_id": 26941959476,
+      "date": "2026-06-04",
+      "freed_root": 14512291840,
+      "duration_ms": 2977,
+      "n": 30
+    },
+    {
+      "run_id": 27015353479,
+      "date": "2026-06-05",
+      "freed_root": 14512291840,
+      "duration_ms": 1930,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+julia": [
+    {
+      "run_id": 26924355237,
+      "date": "2026-06-04",
+      "freed_root": 8137039872,
+      "duration_ms": 3580,
+      "n": 5
+    },
+    {
+      "run_id": 26941961045,
+      "date": "2026-06-04",
+      "freed_root": 8137046016,
+      "duration_ms": 3585,
+      "n": 30
+    },
+    {
+      "run_id": 27036041386,
+      "date": "2026-06-05",
+      "freed_root": 8137039872,
+      "duration_ms": 2680,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+julia+powershell": [
+    {
+      "run_id": 26924591628,
+      "date": "2026-06-04",
+      "freed_root": 9488297984,
+      "duration_ms": 1676,
+      "n": 5
+    },
+    {
+      "run_id": 26941962749,
+      "date": "2026-06-04",
+      "freed_root": 9488295936,
+      "duration_ms": 2811,
+      "n": 30
+    },
+    {
+      "run_id": 27015354812,
+      "date": "2026-06-05",
+      "freed_root": 9488293888,
+      "duration_ms": 2310,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26936393528,
+      "date": "2026-06-04",
+      "freed_root": 13017833472,
+      "duration_ms": 2255,
+      "n": 5
+    },
+    {
+      "run_id": 26941964014,
+      "date": "2026-06-04",
+      "freed_root": 13017831424,
+      "duration_ms": 3005,
+      "n": 30
+    },
+    {
+      "run_id": 27038191957,
+      "date": "2026-06-05",
+      "freed_root": 13017829376,
+      "duration_ms": 2118,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+julia+swift": [
+    {
+      "run_id": 26924589185,
+      "date": "2026-06-04",
+      "freed_root": 11666120704,
+      "duration_ms": 2644,
+      "n": 5
+    },
+    {
+      "run_id": 26944224189,
+      "date": "2026-06-04",
+      "freed_root": 11666120704,
+      "duration_ms": 2441,
+      "n": 30
+    },
+    {
+      "run_id": 27015356064,
+      "date": "2026-06-05",
+      "freed_root": 11666116608,
+      "duration_ms": 1598,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+powershell": [
+    {
+      "run_id": 26924353669,
+      "date": "2026-06-04",
+      "freed_root": 8411914240,
+      "duration_ms": 1686,
+      "n": 5
+    },
+    {
+      "run_id": 26941967007,
+      "date": "2026-06-04",
+      "freed_root": 8411922432,
+      "duration_ms": 3026,
+      "n": 30
+    },
+    {
+      "run_id": 27036039299,
+      "date": "2026-06-05",
+      "freed_root": 8411918336,
+      "duration_ms": 2247,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+powershell+swift": [
+    {
+      "run_id": 26924590013,
+      "date": "2026-06-04",
+      "freed_root": 11940990976,
+      "duration_ms": 1245,
+      "n": 5
+    },
+    {
+      "run_id": 26941968303,
+      "date": "2026-06-04",
+      "freed_root": 11940990976,
+      "duration_ms": 2361,
+      "n": 30
+    },
+    {
+      "run_id": 27015357129,
+      "date": "2026-06-05",
+      "freed_root": 11940990976,
+      "duration_ms": 2212,
+      "n": 100
+    }
+  ],
+  "android-ndk+gradle+swift": [
+    {
+      "run_id": 26924319813,
+      "date": "2026-06-04",
+      "freed_root": 10589745152,
+      "duration_ms": 2268,
+      "n": 5
+    },
+    {
+      "run_id": 26941969903,
+      "date": "2026-06-04",
+      "freed_root": 10589745152,
+      "duration_ms": 2941,
+      "n": 30
+    },
+    {
+      "run_id": 27036021617,
+      "date": "2026-06-05",
+      "freed_root": 10589741056,
+      "duration_ms": 2104,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell": [
+    {
+      "run_id": 26922721565,
+      "date": "2026-06-04",
+      "freed_root": 10824640512,
+      "duration_ms": 2774,
+      "n": 30
+    },
+    {
+      "run_id": 27033075308,
+      "date": "2026-06-05",
+      "freed_root": 10824638464,
+      "duration_ms": 1710,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+julia": [
+    {
+      "run_id": 26924361162,
+      "date": "2026-06-04",
+      "freed_root": 11901476864,
+      "duration_ms": 2129,
+      "n": 5
+    },
+    {
+      "run_id": 26941971314,
+      "date": "2026-06-04",
+      "freed_root": 11901476864,
+      "duration_ms": 3354,
+      "n": 30
+    },
+    {
+      "run_id": 27036047041,
+      "date": "2026-06-05",
+      "freed_root": 11901472768,
+      "duration_ms": 1977,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+julia+powershell": [
+    {
+      "run_id": 26924583705,
+      "date": "2026-06-04",
+      "freed_root": 13253185536,
+      "duration_ms": 2552,
+      "n": 5
+    },
+    {
+      "run_id": 26941972798,
+      "date": "2026-06-04",
+      "freed_root": 13253189632,
+      "duration_ms": 3707,
+      "n": 30
+    },
+    {
+      "run_id": 27015358470,
+      "date": "2026-06-05",
+      "freed_root": 13253189632,
+      "duration_ms": 2599,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26936381350,
+      "date": "2026-06-04",
+      "freed_root": 16782725120,
+      "duration_ms": 4046,
+      "n": 5
+    },
+    {
+      "run_id": 26941974398,
+      "date": "2026-06-04",
+      "freed_root": 16782725120,
+      "duration_ms": 3879,
+      "n": 30
+    },
+    {
+      "run_id": 27038193018,
+      "date": "2026-06-05",
+      "freed_root": 16782721024,
+      "duration_ms": 2718,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+julia+swift": [
+    {
+      "run_id": 26924581174,
+      "date": "2026-06-04",
+      "freed_root": 15431008256,
+      "duration_ms": 2525,
+      "n": 5
+    },
+    {
+      "run_id": 26941976121,
+      "date": "2026-06-04",
+      "freed_root": 15431008256,
+      "duration_ms": 3288,
+      "n": 30
+    },
+    {
+      "run_id": 27015359805,
+      "date": "2026-06-05",
+      "freed_root": 15431012352,
+      "duration_ms": 2461,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+powershell": [
+    {
+      "run_id": 26924357717,
+      "date": "2026-06-04",
+      "freed_root": 12176363520,
+      "duration_ms": 3169,
+      "n": 5
+    },
+    {
+      "run_id": 26941977295,
+      "date": "2026-06-04",
+      "freed_root": 12176351232,
+      "duration_ms": 3302,
+      "n": 30
+    },
+    {
+      "run_id": 27036043956,
+      "date": "2026-06-05",
+      "freed_root": 12176351232,
+      "duration_ms": 2471,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+powershell+swift": [
+    {
+      "run_id": 26924582001,
+      "date": "2026-06-04",
+      "freed_root": 15705894912,
+      "duration_ms": 2039,
+      "n": 5
+    },
+    {
+      "run_id": 26941978770,
+      "date": "2026-06-04",
+      "freed_root": 15705888768,
+      "duration_ms": 3150,
+      "n": 30
+    },
+    {
+      "run_id": 27015360994,
+      "date": "2026-06-05",
+      "freed_root": 15705888768,
+      "duration_ms": 2493,
+      "n": 100
+    }
+  ],
+  "android-ndk+haskell+swift": [
+    {
+      "run_id": 26924321382,
+      "date": "2026-06-04",
+      "freed_root": 14354190336,
+      "duration_ms": 2928,
+      "n": 5
+    },
+    {
+      "run_id": 26941980234,
+      "date": "2026-06-04",
+      "freed_root": 14354178048,
+      "duration_ms": 3018,
+      "n": 30
+    },
+    {
+      "run_id": 27036024029,
+      "date": "2026-06-05",
+      "freed_root": 14354169856,
+      "duration_ms": 1443,
+      "n": 100
+    }
+  ],
+  "android-ndk+julia": [
+    {
+      "run_id": 26924162227,
+      "date": "2026-06-04",
+      "freed_root": 7978921984,
+      "duration_ms": 2474,
+      "n": 5
+    },
+    {
+      "run_id": 26941981876,
+      "date": "2026-06-04",
+      "freed_root": 7978926080,
+      "duration_ms": 2871,
+      "n": 30
+    }
+  ],
+  "android-ndk+julia+powershell": [
+    {
+      "run_id": 26924358528,
+      "date": "2026-06-04",
+      "freed_root": 9330638848,
+      "duration_ms": 3409,
+      "n": 5
+    },
+    {
+      "run_id": 26941983395,
+      "date": "2026-06-04",
+      "freed_root": 9330638848,
+      "duration_ms": 3647,
+      "n": 30
+    },
+    {
+      "run_id": 27036045048,
+      "date": "2026-06-05",
+      "freed_root": 9330634752,
+      "duration_ms": 2862,
+      "n": 100
+    }
+  ],
+  "android-ndk+julia+powershell+swift": [
+    {
+      "run_id": 26924598674,
+      "date": "2026-06-04",
+      "freed_root": 12859711488,
+      "duration_ms": 2242,
+      "n": 5
+    },
+    {
+      "run_id": 26941984850,
+      "date": "2026-06-04",
+      "freed_root": 12859713536,
+      "duration_ms": 2491,
+      "n": 30
+    },
+    {
+      "run_id": 27015362219,
+      "date": "2026-06-05",
+      "freed_root": 12859711488,
+      "duration_ms": 2686,
+      "n": 100
+    }
+  ],
+  "android-ndk+julia+swift": [
+    {
+      "run_id": 26924322363,
+      "date": "2026-06-04",
+      "freed_root": 11508457472,
+      "duration_ms": 2067,
+      "n": 5
+    },
+    {
+      "run_id": 26941986326,
+      "date": "2026-06-04",
+      "freed_root": 11508461568,
+      "duration_ms": 3756,
+      "n": 30
+    },
+    {
+      "run_id": 27036025119,
+      "date": "2026-06-05",
+      "freed_root": 11508457472,
+      "duration_ms": 2644,
+      "n": 100
+    }
+  ],
+  "android-ndk+powershell": [
+    {
+      "run_id": 26922725524,
+      "date": "2026-06-04",
+      "freed_root": 8253800448,
+      "duration_ms": 1886,
+      "n": 30
+    },
+    {
+      "run_id": 27033076612,
+      "date": "2026-06-05",
+      "freed_root": 8253800448,
+      "duration_ms": 2103,
+      "n": 100
+    }
+  ],
+  "android-ndk+powershell+swift": [
+    {
+      "run_id": 26924320610,
+      "date": "2026-06-04",
+      "freed_root": 11783331840,
+      "duration_ms": 2058,
+      "n": 5
+    },
+    {
+      "run_id": 26941988233,
+      "date": "2026-06-04",
+      "freed_root": 11783337984,
+      "duration_ms": 3016,
+      "n": 30
+    },
+    {
+      "run_id": 27036022819,
+      "date": "2026-06-05",
+      "freed_root": 11783335936,
+      "duration_ms": 2217,
+      "n": 100
+    }
+  ],
+  "android-ndk+swift": [
+    {
+      "run_id": 26922717728,
+      "date": "2026-06-04",
+      "freed_root": 10431623168,
+      "duration_ms": 1677,
+      "n": 30
+    },
+    {
+      "run_id": 27033067796,
+      "date": "2026-06-05",
+      "freed_root": 10431623168,
+      "duration_ms": 1925,
+      "n": 100
+    }
+  ],
+  "android-sdk": [
+    {
+      "run_id": 26921139761,
+      "date": "2026-06-04",
+      "freed_root": 10904510464,
+      "duration_ms": 7218,
+      "n": 1
+    },
+    {
+      "run_id": 26922090182,
+      "date": "2026-06-04",
+      "freed_root": 10904496128,
+      "duration_ms": 6793,
+      "n": 30
+    },
+    {
+      "run_id": 27030238313,
+      "date": "2026-06-05",
+      "freed_root": 10904498176,
+      "duration_ms": 7364,
+      "n": 100
+    }
+  ],
+  "android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26956100641,
+      "date": "2026-06-04",
+      "freed_root": 29574946816,
+      "duration_ms": 19860,
+      "n": 30
+    },
+    {
+      "run_id": 27044033310,
+      "date": "2026-06-05",
+      "freed_root": 29574942720,
+      "duration_ms": 15965,
+      "n": 100
+    }
+  ],
+  "android-sdk+aws-cli+aws-sam-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 27044022385,
+      "date": "2026-06-05",
+      "freed_root": 28676878336,
+      "duration_ms": 10776,
+      "n": 100
+    }
+  ],
+  "android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+miniconda+powershell+swift": [
+    {
+      "run_id": 26954588147,
+      "date": "2026-06-04",
+      "freed_root": 29353371648,
+      "duration_ms": 36451,
+      "n": 30
+    }
+  ],
+  "android-sdk+aws-cli+azure-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26953302766,
+      "date": "2026-06-04",
+      "freed_root": 28455307264,
+      "duration_ms": 32540,
+      "n": 30
+    },
+    {
+      "run_id": 27044013289,
+      "date": "2026-06-05",
+      "freed_root": 28455301120,
+      "duration_ms": 11122,
+      "n": 100
+    }
+  ],
+  "android-sdk+aws-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26952191590,
+      "date": "2026-06-04",
+      "freed_root": 27186765824,
+      "duration_ms": 28062,
+      "n": 30
+    },
+    {
+      "run_id": 27044003417,
+      "date": "2026-06-05",
+      "freed_root": 27186757632,
+      "duration_ms": 8933,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium": [
+    {
+      "run_id": 26922732413,
+      "date": "2026-06-04",
+      "freed_root": 11588202496,
+      "duration_ms": 7588,
+      "n": 30
+    },
+    {
+      "run_id": 27033090669,
+      "date": "2026-06-05",
+      "freed_root": 11588206592,
+      "duration_ms": 7427,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+dotnet": [
+    {
+      "run_id": 26924352743,
+      "date": "2026-06-04",
+      "freed_root": 16870187008,
+      "duration_ms": 8165,
+      "n": 5
+    },
+    {
+      "run_id": 26941989726,
+      "date": "2026-06-04",
+      "freed_root": 16870184960,
+      "duration_ms": 30665,
+      "n": 30
+    }
+  ],
+  "android-sdk+chromium+dotnet+gradle": [
+    {
+      "run_id": 26924559045,
+      "date": "2026-06-04",
+      "freed_root": 17028304896,
+      "duration_ms": 10480,
+      "n": 5
+    },
+    {
+      "run_id": 26941991138,
+      "date": "2026-06-04",
+      "freed_root": 17028306944,
+      "duration_ms": 30486,
+      "n": 30
+    },
+    {
+      "run_id": 27015363421,
+      "date": "2026-06-05",
+      "freed_root": 17028304896,
+      "duration_ms": 8618,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+dotnet+haskell": [
+    {
+      "run_id": 26924550551,
+      "date": "2026-06-04",
+      "freed_root": 20793196544,
+      "duration_ms": 31682,
+      "n": 5
+    },
+    {
+      "run_id": 26941992644,
+      "date": "2026-06-04",
+      "freed_root": 20793194496,
+      "duration_ms": 31551,
+      "n": 30
+    },
+    {
+      "run_id": 27015364564,
+      "date": "2026-06-05",
+      "freed_root": 20793196544,
+      "duration_ms": 12387,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+dotnet+julia": [
+    {
+      "run_id": 26924568113,
+      "date": "2026-06-04",
+      "freed_root": 17947017216,
+      "duration_ms": 31384,
+      "n": 5
+    },
+    {
+      "run_id": 26941994147,
+      "date": "2026-06-04",
+      "freed_root": 17947021312,
+      "duration_ms": 27048,
+      "n": 30
+    },
+    {
+      "run_id": 27015365715,
+      "date": "2026-06-05",
+      "freed_root": 17947021312,
+      "duration_ms": 18910,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+dotnet+powershell": [
+    {
+      "run_id": 26924568904,
+      "date": "2026-06-04",
+      "freed_root": 18221907968,
+      "duration_ms": 7565,
+      "n": 5
+    },
+    {
+      "run_id": 26941995893,
+      "date": "2026-06-04",
+      "freed_root": 18221899776,
+      "duration_ms": 19785,
+      "n": 30
+    },
+    {
+      "run_id": 27015366954,
+      "date": "2026-06-05",
+      "freed_root": 18221899776,
+      "duration_ms": 12568,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+dotnet+swift": [
+    {
+      "run_id": 26924566339,
+      "date": "2026-06-04",
+      "freed_root": 20399722496,
+      "duration_ms": 30757,
+      "n": 5
+    },
+    {
+      "run_id": 26941997272,
+      "date": "2026-06-04",
+      "freed_root": 20399726592,
+      "duration_ms": 20844,
+      "n": 30
+    },
+    {
+      "run_id": 27015368183,
+      "date": "2026-06-05",
+      "freed_root": 20399722496,
+      "duration_ms": 10995,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+gradle": [
+    {
+      "run_id": 26924344588,
+      "date": "2026-06-04",
+      "freed_root": 11746316288,
+      "duration_ms": 24854,
+      "n": 5
+    },
+    {
+      "run_id": 26941998618,
+      "date": "2026-06-04",
+      "freed_root": 11746320384,
+      "duration_ms": 16897,
+      "n": 30
+    }
+  ],
+  "android-sdk+chromium+gradle+haskell": [
+    {
+      "run_id": 26924547527,
+      "date": "2026-06-04",
+      "freed_root": 15669329920,
+      "duration_ms": 7193,
+      "n": 5
+    },
+    {
+      "run_id": 26942000183,
+      "date": "2026-06-04",
+      "freed_root": 15669329920,
+      "duration_ms": 9326,
+      "n": 30
+    },
+    {
+      "run_id": 27015369456,
+      "date": "2026-06-05",
+      "freed_root": 15669329920,
+      "duration_ms": 25028,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+gradle+julia": [
+    {
+      "run_id": 26924563125,
+      "date": "2026-06-04",
+      "freed_root": 12823162880,
+      "duration_ms": 25394,
+      "n": 5
+    },
+    {
+      "run_id": 26942001552,
+      "date": "2026-06-04",
+      "freed_root": 12823152640,
+      "duration_ms": 25088,
+      "n": 30
+    },
+    {
+      "run_id": 27015370739,
+      "date": "2026-06-05",
+      "freed_root": 12823154688,
+      "duration_ms": 25038,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+gradle+powershell": [
+    {
+      "run_id": 26924563951,
+      "date": "2026-06-04",
+      "freed_root": 13098029056,
+      "duration_ms": 25306,
+      "n": 5
+    },
+    {
+      "run_id": 26942003013,
+      "date": "2026-06-04",
+      "freed_root": 13098029056,
+      "duration_ms": 25298,
+      "n": 30
+    },
+    {
+      "run_id": 27015372010,
+      "date": "2026-06-05",
+      "freed_root": 13098033152,
+      "duration_ms": 7713,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+gradle+swift": [
+    {
+      "run_id": 26924561719,
+      "date": "2026-06-04",
+      "freed_root": 15275851776,
+      "duration_ms": 24926,
+      "n": 5
+    },
+    {
+      "run_id": 26942004256,
+      "date": "2026-06-04",
+      "freed_root": 15275855872,
+      "duration_ms": 25153,
+      "n": 30
+    },
+    {
+      "run_id": 27015373069,
+      "date": "2026-06-05",
+      "freed_root": 15275855872,
+      "duration_ms": 14782,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+haskell": [
+    {
+      "run_id": 26924350237,
+      "date": "2026-06-04",
+      "freed_root": 15511207936,
+      "duration_ms": 7370,
+      "n": 5
+    },
+    {
+      "run_id": 26942005772,
+      "date": "2026-06-04",
+      "freed_root": 15511212032,
+      "duration_ms": 26240,
+      "n": 30
+    }
+  ],
+  "android-sdk+chromium+haskell+julia": [
+    {
+      "run_id": 26924554891,
+      "date": "2026-06-04",
+      "freed_root": 16588038144,
+      "duration_ms": 7542,
+      "n": 5
+    },
+    {
+      "run_id": 26942007635,
+      "date": "2026-06-04",
+      "freed_root": 16588042240,
+      "duration_ms": 26811,
+      "n": 30
+    },
+    {
+      "run_id": 27015374186,
+      "date": "2026-06-05",
+      "freed_root": 16588046336,
+      "duration_ms": 25936,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+haskell+powershell": [
+    {
+      "run_id": 26924555856,
+      "date": "2026-06-04",
+      "freed_root": 16862920704,
+      "duration_ms": 26400,
+      "n": 5
+    },
+    {
+      "run_id": 26942009163,
+      "date": "2026-06-04",
+      "freed_root": 16862924800,
+      "duration_ms": 26597,
+      "n": 30
+    },
+    {
+      "run_id": 27015375391,
+      "date": "2026-06-05",
+      "freed_root": 16862924800,
+      "duration_ms": 16191,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+haskell+swift": [
+    {
+      "run_id": 26924552906,
+      "date": "2026-06-04",
+      "freed_root": 19040743424,
+      "duration_ms": 12966,
+      "n": 5
+    },
+    {
+      "run_id": 26942010749,
+      "date": "2026-06-04",
+      "freed_root": 19040745472,
+      "duration_ms": 25473,
+      "n": 30
+    },
+    {
+      "run_id": 27015376943,
+      "date": "2026-06-05",
+      "freed_root": 19040747520,
+      "duration_ms": 25667,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+julia": [
+    {
+      "run_id": 26924351923,
+      "date": "2026-06-04",
+      "freed_root": 12665040896,
+      "duration_ms": 25961,
+      "n": 5
+    },
+    {
+      "run_id": 26942012295,
+      "date": "2026-06-04",
+      "freed_root": 12665036800,
+      "duration_ms": 24457,
+      "n": 30
+    }
+  ],
+  "android-sdk+chromium+julia+powershell": [
+    {
+      "run_id": 26924572653,
+      "date": "2026-06-04",
+      "freed_root": 14016749568,
+      "duration_ms": 7926,
+      "n": 5
+    },
+    {
+      "run_id": 26942013850,
+      "date": "2026-06-04",
+      "freed_root": 14016749568,
+      "duration_ms": 26211,
+      "n": 30
+    },
+    {
+      "run_id": 27015378359,
+      "date": "2026-06-05",
+      "freed_root": 14016749568,
+      "duration_ms": 8174,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+julia+swift": [
+    {
+      "run_id": 26924570725,
+      "date": "2026-06-04",
+      "freed_root": 16194568192,
+      "duration_ms": 6963,
+      "n": 5
+    },
+    {
+      "run_id": 26942015217,
+      "date": "2026-06-04",
+      "freed_root": 16194572288,
+      "duration_ms": 25643,
+      "n": 30
+    },
+    {
+      "run_id": 27015379657,
+      "date": "2026-06-05",
+      "freed_root": 16194572288,
+      "duration_ms": 8012,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+powershell": [
+    {
+      "run_id": 26924347731,
+      "date": "2026-06-04",
+      "freed_root": 12939919360,
+      "duration_ms": 25168,
+      "n": 5
+    },
+    {
+      "run_id": 26942016360,
+      "date": "2026-06-04",
+      "freed_root": 12939913216,
+      "duration_ms": 25401,
+      "n": 30
+    }
+  ],
+  "android-sdk+chromium+powershell+swift": [
+    {
+      "run_id": 26924571814,
+      "date": "2026-06-04",
+      "freed_root": 16469450752,
+      "duration_ms": 6557,
+      "n": 5
+    },
+    {
+      "run_id": 26942017717,
+      "date": "2026-06-04",
+      "freed_root": 16469450752,
+      "duration_ms": 8031,
+      "n": 30
+    },
+    {
+      "run_id": 27015381066,
+      "date": "2026-06-05",
+      "freed_root": 16469450752,
+      "duration_ms": 7588,
+      "n": 100
+    }
+  ],
+  "android-sdk+chromium+swift": [
+    {
+      "run_id": 26924318879,
+      "date": "2026-06-04",
+      "freed_root": 15117737984,
+      "duration_ms": 7007,
+      "n": 5
+    },
+    {
+      "run_id": 26942019352,
+      "date": "2026-06-04",
+      "freed_root": 15117737984,
+      "duration_ms": 25177,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet": [
+    {
+      "run_id": 26922733415,
+      "date": "2026-06-04",
+      "freed_root": 16186482688,
+      "duration_ms": 23183,
+      "n": 30
+    },
+    {
+      "run_id": 27033093317,
+      "date": "2026-06-05",
+      "freed_root": 16186480640,
+      "duration_ms": 8470,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+gradle": [
+    {
+      "run_id": 26924373592,
+      "date": "2026-06-04",
+      "freed_root": 16344592384,
+      "duration_ms": 25489,
+      "n": 5
+    },
+    {
+      "run_id": 26942020841,
+      "date": "2026-06-04",
+      "freed_root": 16344598528,
+      "duration_ms": 30548,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet+gradle+haskell": [
+    {
+      "run_id": 26924604245,
+      "date": "2026-06-04",
+      "freed_root": 20267606016,
+      "duration_ms": 7418,
+      "n": 5
+    },
+    {
+      "run_id": 26942022353,
+      "date": "2026-06-04",
+      "freed_root": 20267606016,
+      "duration_ms": 29865,
+      "n": 30
+    },
+    {
+      "run_id": 27015382514,
+      "date": "2026-06-05",
+      "freed_root": 20267606016,
+      "duration_ms": 10839,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+gradle+julia": [
+    {
+      "run_id": 26924620727,
+      "date": "2026-06-04",
+      "freed_root": 17421434880,
+      "duration_ms": 8503,
+      "n": 5
+    },
+    {
+      "run_id": 26942023901,
+      "date": "2026-06-04",
+      "freed_root": 17421434880,
+      "duration_ms": 28907,
+      "n": 30
+    },
+    {
+      "run_id": 27015383851,
+      "date": "2026-06-05",
+      "freed_root": 17421434880,
+      "duration_ms": 15869,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+gradle+powershell": [
+    {
+      "run_id": 26924621489,
+      "date": "2026-06-04",
+      "freed_root": 17696309248,
+      "duration_ms": 31154,
+      "n": 5
+    },
+    {
+      "run_id": 26942025497,
+      "date": "2026-06-04",
+      "freed_root": 17696313344,
+      "duration_ms": 28614,
+      "n": 30
+    },
+    {
+      "run_id": 27015385350,
+      "date": "2026-06-05",
+      "freed_root": 17696313344,
+      "duration_ms": 11873,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+gradle+swift": [
+    {
+      "run_id": 26924619256,
+      "date": "2026-06-04",
+      "freed_root": 19874144256,
+      "duration_ms": 31223,
+      "n": 5
+    },
+    {
+      "run_id": 26942027251,
+      "date": "2026-06-04",
+      "freed_root": 19874136064,
+      "duration_ms": 19755,
+      "n": 30
+    },
+    {
+      "run_id": 27015386746,
+      "date": "2026-06-05",
+      "freed_root": 19874136064,
+      "duration_ms": 13619,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+haskell": [
+    {
+      "run_id": 26924380839,
+      "date": "2026-06-04",
+      "freed_root": 20109492224,
+      "duration_ms": 7654,
+      "n": 5
+    },
+    {
+      "run_id": 26942028791,
+      "date": "2026-06-04",
+      "freed_root": 20109490176,
+      "duration_ms": 19171,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet+haskell+julia": [
+    {
+      "run_id": 26924613192,
+      "date": "2026-06-04",
+      "freed_root": 21186322432,
+      "duration_ms": 7679,
+      "n": 5
+    },
+    {
+      "run_id": 26942030283,
+      "date": "2026-06-04",
+      "freed_root": 21186326528,
+      "duration_ms": 24476,
+      "n": 30
+    },
+    {
+      "run_id": 27015387989,
+      "date": "2026-06-05",
+      "freed_root": 21186326528,
+      "duration_ms": 12997,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+haskell+powershell": [
+    {
+      "run_id": 26924613987,
+      "date": "2026-06-04",
+      "freed_root": 21461196800,
+      "duration_ms": 9096,
+      "n": 5
+    },
+    {
+      "run_id": 26942032190,
+      "date": "2026-06-04",
+      "freed_root": 21461204992,
+      "duration_ms": 29178,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet+haskell+swift": [
+    {
+      "run_id": 26924611578,
+      "date": "2026-06-04",
+      "freed_root": 23639027712,
+      "duration_ms": 31003,
+      "n": 5
+    },
+    {
+      "run_id": 26942033693,
+      "date": "2026-06-04",
+      "freed_root": 23639003136,
+      "duration_ms": 14976,
+      "n": 30
+    },
+    {
+      "run_id": 27015390694,
+      "date": "2026-06-05",
+      "freed_root": 23639027712,
+      "duration_ms": 25929,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+julia": [
+    {
+      "run_id": 26924381691,
+      "date": "2026-06-04",
+      "freed_root": 17263316992,
+      "duration_ms": 8090,
+      "n": 5
+    },
+    {
+      "run_id": 26942035286,
+      "date": "2026-06-04",
+      "freed_root": 17263314944,
+      "duration_ms": 11067,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet+julia+powershell": [
+    {
+      "run_id": 26924628088,
+      "date": "2026-06-04",
+      "freed_root": 18615029760,
+      "duration_ms": 31992,
+      "n": 5
+    },
+    {
+      "run_id": 26942036767,
+      "date": "2026-06-04",
+      "freed_root": 18615029760,
+      "duration_ms": 31621,
+      "n": 30
+    },
+    {
+      "run_id": 27015392052,
+      "date": "2026-06-05",
+      "freed_root": 18615029760,
+      "duration_ms": 12162,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+julia+swift": [
+    {
+      "run_id": 26924626246,
+      "date": "2026-06-04",
+      "freed_root": 20792852480,
+      "duration_ms": 31588,
+      "n": 5
+    },
+    {
+      "run_id": 26942038269,
+      "date": "2026-06-04",
+      "freed_root": 20792852480,
+      "duration_ms": 31446,
+      "n": 30
+    },
+    {
+      "run_id": 27015393258,
+      "date": "2026-06-05",
+      "freed_root": 20792852480,
+      "duration_ms": 9215,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+powershell": [
+    {
+      "run_id": 26924378522,
+      "date": "2026-06-04",
+      "freed_root": 17538191360,
+      "duration_ms": 30598,
+      "n": 5
+    },
+    {
+      "run_id": 26942039641,
+      "date": "2026-06-04",
+      "freed_root": 17538195456,
+      "duration_ms": 30808,
+      "n": 30
+    }
+  ],
+  "android-sdk+dotnet+powershell+swift": [
+    {
+      "run_id": 26924627219,
+      "date": "2026-06-04",
+      "freed_root": 21067730944,
+      "duration_ms": 11448,
+      "n": 5
+    },
+    {
+      "run_id": 26942041227,
+      "date": "2026-06-04",
+      "freed_root": 21067730944,
+      "duration_ms": 29991,
+      "n": 30
+    },
+    {
+      "run_id": 27015394576,
+      "date": "2026-06-05",
+      "freed_root": 21067730944,
+      "duration_ms": 10335,
+      "n": 100
+    }
+  ],
+  "android-sdk+dotnet+swift": [
+    {
+      "run_id": 26924336404,
+      "date": "2026-06-04",
+      "freed_root": 19716014080,
+      "duration_ms": 7792,
+      "n": 5
+    },
+    {
+      "run_id": 26942042608,
+      "date": "2026-06-04",
+      "freed_root": 19716018176,
+      "duration_ms": 17591,
+      "n": 30
+    }
+  ],
+  "android-sdk+gradle": [
+    {
+      "run_id": 26924168792,
+      "date": "2026-06-04",
+      "freed_root": 11062616064,
+      "duration_ms": 24947,
+      "n": 5
+    },
+    {
+      "run_id": 26942044047,
+      "date": "2026-06-04",
+      "freed_root": 11062616064,
+      "duration_ms": 24344,
+      "n": 30
+    }
+  ],
+  "android-sdk+gradle+haskell": [
+    {
+      "run_id": 26924371297,
+      "date": "2026-06-04",
+      "freed_root": 14985621504,
+      "duration_ms": 7558,
+      "n": 5
+    },
+    {
+      "run_id": 26942045592,
+      "date": "2026-06-04",
+      "freed_root": 14985625600,
+      "duration_ms": 25740,
+      "n": 30
+    }
+  ],
+  "android-sdk+gradle+haskell+julia": [
+    {
+      "run_id": 26924608276,
+      "date": "2026-06-04",
+      "freed_root": 16062484480,
+      "duration_ms": 26403,
+      "n": 5
+    },
+    {
+      "run_id": 26942047123,
+      "date": "2026-06-04",
+      "freed_root": 16062464000,
+      "duration_ms": 26472,
+      "n": 30
+    },
+    {
+      "run_id": 27015395853,
+      "date": "2026-06-05",
+      "freed_root": 16062459904,
+      "duration_ms": 24502,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+haskell+powershell": [
+    {
+      "run_id": 26924609143,
+      "date": "2026-06-04",
+      "freed_root": 16337334272,
+      "duration_ms": 6922,
+      "n": 5
+    },
+    {
+      "run_id": 26942048548,
+      "date": "2026-06-04",
+      "freed_root": 16337338368,
+      "duration_ms": 25949,
+      "n": 30
+    },
+    {
+      "run_id": 27015397031,
+      "date": "2026-06-05",
+      "freed_root": 16337338368,
+      "duration_ms": 25449,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+haskell+swift": [
+    {
+      "run_id": 26924606849,
+      "date": "2026-06-04",
+      "freed_root": 18515161088,
+      "duration_ms": 7861,
+      "n": 5
+    },
+    {
+      "run_id": 26942050231,
+      "date": "2026-06-04",
+      "freed_root": 18515161088,
+      "duration_ms": 26066,
+      "n": 30
+    },
+    {
+      "run_id": 27015398127,
+      "date": "2026-06-05",
+      "freed_root": 18515161088,
+      "duration_ms": 7719,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+julia": [
+    {
+      "run_id": 26924372853,
+      "date": "2026-06-04",
+      "freed_root": 12139446272,
+      "duration_ms": 6069,
+      "n": 5
+    },
+    {
+      "run_id": 26942051677,
+      "date": "2026-06-04",
+      "freed_root": 12139446272,
+      "duration_ms": 25329,
+      "n": 30
+    }
+  ],
+  "android-sdk+gradle+julia+powershell": [
+    {
+      "run_id": 26924624653,
+      "date": "2026-06-04",
+      "freed_root": 13491159040,
+      "duration_ms": 26051,
+      "n": 5
+    },
+    {
+      "run_id": 26942053230,
+      "date": "2026-06-04",
+      "freed_root": 13491161088,
+      "duration_ms": 25977,
+      "n": 30
+    },
+    {
+      "run_id": 27015399368,
+      "date": "2026-06-05",
+      "freed_root": 13491159040,
+      "duration_ms": 8083,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+julia+swift": [
+    {
+      "run_id": 26924623050,
+      "date": "2026-06-04",
+      "freed_root": 15668985856,
+      "duration_ms": 7720,
+      "n": 5
+    },
+    {
+      "run_id": 26942054733,
+      "date": "2026-06-04",
+      "freed_root": 15668985856,
+      "duration_ms": 25782,
+      "n": 30
+    },
+    {
+      "run_id": 27015400535,
+      "date": "2026-06-05",
+      "freed_root": 15668985856,
+      "duration_ms": 8633,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+powershell": [
+    {
+      "run_id": 26924368868,
+      "date": "2026-06-04",
+      "freed_root": 12414324736,
+      "duration_ms": 6288,
+      "n": 5
+    },
+    {
+      "run_id": 26942056101,
+      "date": "2026-06-04",
+      "freed_root": 12414328832,
+      "duration_ms": 25336,
+      "n": 30
+    }
+  ],
+  "android-sdk+gradle+powershell+swift": [
+    {
+      "run_id": 26924623799,
+      "date": "2026-06-04",
+      "freed_root": 15943864320,
+      "duration_ms": 6483,
+      "n": 5
+    },
+    {
+      "run_id": 26942057398,
+      "date": "2026-06-04",
+      "freed_root": 15943862272,
+      "duration_ms": 21404,
+      "n": 30
+    },
+    {
+      "run_id": 27015401842,
+      "date": "2026-06-05",
+      "freed_root": 15943864320,
+      "duration_ms": 7237,
+      "n": 100
+    }
+  ],
+  "android-sdk+gradle+swift": [
+    {
+      "run_id": 26924327944,
+      "date": "2026-06-04",
+      "freed_root": 14592143360,
+      "duration_ms": 5970,
+      "n": 5
+    },
+    {
+      "run_id": 26942059084,
+      "date": "2026-06-04",
+      "freed_root": 14592151552,
+      "duration_ms": 25524,
+      "n": 30
+    }
+  ],
+  "android-sdk+haskell": [
+    {
+      "run_id": 26923531275,
+      "date": "2026-06-04",
+      "freed_root": 14827511808,
+      "duration_ms": 7194,
+      "n": 30
+    },
+    {
+      "run_id": 27033084458,
+      "date": "2026-06-05",
+      "freed_root": 14827503616,
+      "duration_ms": 7543,
+      "n": 100
+    }
+  ],
+  "android-sdk+haskell+julia": [
+    {
+      "run_id": 26924380005,
+      "date": "2026-06-04",
+      "freed_root": 15904337920,
+      "duration_ms": 6526,
+      "n": 5
+    },
+    {
+      "run_id": 26942060642,
+      "date": "2026-06-04",
+      "freed_root": 15904344064,
+      "duration_ms": 17450,
+      "n": 30
+    }
+  ],
+  "android-sdk+haskell+julia+powershell": [
+    {
+      "run_id": 26924617012,
+      "date": "2026-06-04",
+      "freed_root": 17256058880,
+      "duration_ms": 8247,
+      "n": 5
+    },
+    {
+      "run_id": 26942061831,
+      "date": "2026-06-04",
+      "freed_root": 17256048640,
+      "duration_ms": 27337,
+      "n": 30
+    },
+    {
+      "run_id": 27015403140,
+      "date": "2026-06-05",
+      "freed_root": 17256058880,
+      "duration_ms": 21451,
+      "n": 100
+    }
+  ],
+  "android-sdk+haskell+julia+swift": [
+    {
+      "run_id": 26924615468,
+      "date": "2026-06-04",
+      "freed_root": 19433881600,
+      "duration_ms": 27120,
+      "n": 5
+    },
+    {
+      "run_id": 26942063361,
+      "date": "2026-06-04",
+      "freed_root": 19433877504,
+      "duration_ms": 27129,
+      "n": 30
+    },
+    {
+      "run_id": 27015404302,
+      "date": "2026-06-05",
+      "freed_root": 19433877504,
+      "duration_ms": 11849,
+      "n": 100
+    }
+  ],
+  "android-sdk+haskell+powershell": [
+    {
+      "run_id": 26924375960,
+      "date": "2026-06-04",
+      "freed_root": 16179224576,
+      "duration_ms": 26593,
+      "n": 5
+    },
+    {
+      "run_id": 26942064973,
+      "date": "2026-06-04",
+      "freed_root": 16179220480,
+      "duration_ms": 26420,
+      "n": 30
+    }
+  ],
+  "android-sdk+haskell+powershell+swift": [
+    {
+      "run_id": 26924616205,
+      "date": "2026-06-04",
+      "freed_root": 19708760064,
+      "duration_ms": 7907,
+      "n": 5
+    },
+    {
+      "run_id": 26942066512,
+      "date": "2026-06-04",
+      "freed_root": 19708755968,
+      "duration_ms": 8442,
+      "n": 30
+    },
+    {
+      "run_id": 27015405614,
+      "date": "2026-06-05",
+      "freed_root": 19708755968,
+      "duration_ms": 25045,
+      "n": 100
+    }
+  ],
+  "android-sdk+haskell+swift": [
+    {
+      "run_id": 26924334161,
+      "date": "2026-06-04",
+      "freed_root": 18357043200,
+      "duration_ms": 9177,
+      "n": 5
+    },
+    {
+      "run_id": 26942067842,
+      "date": "2026-06-04",
+      "freed_root": 18357043200,
+      "duration_ms": 26263,
+      "n": 30
+    }
+  ],
+  "android-sdk+julia": [
+    {
+      "run_id": 26924168162,
+      "date": "2026-06-04",
+      "freed_root": 11981336576,
+      "duration_ms": 25670,
+      "n": 5
+    },
+    {
+      "run_id": 26942069387,
+      "date": "2026-06-04",
+      "freed_root": 11981332480,
+      "duration_ms": 25481,
+      "n": 30
+    }
+  ],
+  "android-sdk+julia+powershell": [
+    {
+      "run_id": 26924377761,
+      "date": "2026-06-04",
+      "freed_root": 13333057536,
+      "duration_ms": 6721,
+      "n": 5
+    },
+    {
+      "run_id": 26942070749,
+      "date": "2026-06-04",
+      "freed_root": 13333045248,
+      "duration_ms": 25609,
+      "n": 30
+    }
+  ],
+  "android-sdk+julia+powershell+swift": [
+    {
+      "run_id": 26924628981,
+      "date": "2026-06-04",
+      "freed_root": 16862576640,
+      "duration_ms": 7189,
+      "n": 5
+    },
+    {
+      "run_id": 26942072094,
+      "date": "2026-06-04",
+      "freed_root": 16862576640,
+      "duration_ms": 26266,
+      "n": 30
+    },
+    {
+      "run_id": 27015406988,
+      "date": "2026-06-05",
+      "freed_root": 16862580736,
+      "duration_ms": 10748,
+      "n": 100
+    }
+  ],
+  "android-sdk+julia+swift": [
+    {
+      "run_id": 26924335727,
+      "date": "2026-06-04",
+      "freed_root": 15510863872,
+      "duration_ms": 8119,
+      "n": 5
+    },
+    {
+      "run_id": 26942073592,
+      "date": "2026-06-04",
+      "freed_root": 15510865920,
+      "duration_ms": 25349,
+      "n": 30
+    }
+  ],
+  "android-sdk+powershell": [
+    {
+      "run_id": 26922730467,
+      "date": "2026-06-04",
+      "freed_root": 12256206848,
+      "duration_ms": 17800,
+      "n": 30
+    },
+    {
+      "run_id": 27033088231,
+      "date": "2026-06-05",
+      "freed_root": 12256210944,
+      "duration_ms": 7904,
+      "n": 100
+    }
+  ],
+  "android-sdk+powershell+swift": [
+    {
+      "run_id": 26924331520,
+      "date": "2026-06-04",
+      "freed_root": 15785750528,
+      "duration_ms": 25261,
+      "n": 5
+    },
+    {
+      "run_id": 26942075026,
+      "date": "2026-06-04",
+      "freed_root": 15785744384,
+      "duration_ms": 25719,
+      "n": 30
+    }
+  ],
+  "android-sdk+swift": [
+    {
+      "run_id": 26922720832,
+      "date": "2026-06-04",
+      "freed_root": 14434033664,
+      "duration_ms": 15865,
+      "n": 30
+    },
+    {
+      "run_id": 27033072730,
+      "date": "2026-06-05",
+      "freed_root": 14434033664,
+      "duration_ms": 13134,
+      "n": 100
+    }
+  ],
+  "aws-cli": [
+    {
+      "run_id": 26921138681,
+      "date": "2026-06-04",
+      "freed_root": 267550720,
+      "duration_ms": 1662,
+      "n": 1
+    },
+    {
+      "run_id": 26922089320,
+      "date": "2026-06-04",
+      "freed_root": 267538432,
+      "duration_ms": 1328,
+      "n": 30
+    },
+    {
+      "run_id": 27013653471,
+      "date": "2026-06-05",
+      "freed_root": 267538432,
+      "duration_ms": 1386,
+      "n": 100
+    }
+  ],
+  "aws-cli+chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26951514724,
+      "date": "2026-06-04",
+      "freed_root": 16271984640,
+      "duration_ms": 3900,
+      "n": 30
+    },
+    {
+      "run_id": 27043996378,
+      "date": "2026-06-05",
+      "freed_root": 16271986688,
+      "duration_ms": 3224,
+      "n": 100
+    }
+  ],
+  "aws-sam-cli": [
+    {
+      "run_id": 26921143972,
+      "date": "2026-06-04",
+      "freed_root": 211767296,
+      "duration_ms": 2718,
+      "n": 1
+    },
+    {
+      "run_id": 26922093217,
+      "date": "2026-06-04",
+      "freed_root": 211759104,
+      "duration_ms": 2892,
+      "n": 30
+    },
+    {
+      "run_id": 27030242062,
+      "date": "2026-06-05",
+      "freed_root": 211759104,
+      "duration_ms": 2868,
+      "n": 100
+    }
+  ],
+  "azure-cli": [
+    {
+      "run_id": 26921140768,
+      "date": "2026-06-04",
+      "freed_root": 1258733568,
+      "duration_ms": 5597,
+      "n": 1
+    },
+    {
+      "run_id": 26922090846,
+      "date": "2026-06-04",
+      "freed_root": 1258727424,
+      "duration_ms": 3787,
+      "n": 30
+    },
+    {
+      "run_id": 27030239729,
+      "date": "2026-06-05",
+      "freed_root": 1258729472,
+      "duration_ms": 5025,
+      "n": 100
+    }
+  ],
+  "chromium": [
+    {
+      "run_id": 26921133643,
+      "date": "2026-06-04",
+      "freed_root": 673865728,
+      "duration_ms": 468,
+      "n": 1
+    },
+    {
+      "run_id": 26922085298,
+      "date": "2026-06-04",
+      "freed_root": 673861632,
+      "duration_ms": 386,
+      "n": 30
+    },
+    {
+      "run_id": 27013647055,
+      "date": "2026-06-05",
+      "freed_root": 673857536,
+      "duration_ms": 418,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet": [
+    {
+      "run_id": 26922731430,
+      "date": "2026-06-04",
+      "freed_root": 5955870720,
+      "duration_ms": 4355,
+      "n": 30
+    },
+    {
+      "run_id": 27033092071,
+      "date": "2026-06-05",
+      "freed_root": 5955874816,
+      "duration_ms": 4349,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle": [
+    {
+      "run_id": 26924343865,
+      "date": "2026-06-04",
+      "freed_root": 6114000896,
+      "duration_ms": 4415,
+      "n": 5
+    },
+    {
+      "run_id": 26942076318,
+      "date": "2026-06-04",
+      "freed_root": 6113992704,
+      "duration_ms": 7110,
+      "n": 30
+    },
+    {
+      "run_id": 27036013789,
+      "date": "2026-06-05",
+      "freed_root": 6113992704,
+      "duration_ms": 4344,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell": [
+    {
+      "run_id": 26924544514,
+      "date": "2026-06-04",
+      "freed_root": 10036547584,
+      "duration_ms": 7151,
+      "n": 5
+    },
+    {
+      "run_id": 26942078006,
+      "date": "2026-06-04",
+      "freed_root": 10036539392,
+      "duration_ms": 2698,
+      "n": 30
+    },
+    {
+      "run_id": 27015408236,
+      "date": "2026-06-05",
+      "freed_root": 10036543488,
+      "duration_ms": 3362,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+julia": [
+    {
+      "run_id": 26936373255,
+      "date": "2026-06-04",
+      "freed_root": 11113381888,
+      "duration_ms": 7664,
+      "n": 5
+    },
+    {
+      "run_id": 26942079464,
+      "date": "2026-06-04",
+      "freed_root": 11113373696,
+      "duration_ms": 7519,
+      "n": 30
+    },
+    {
+      "run_id": 27038217875,
+      "date": "2026-06-05",
+      "freed_root": 11113377792,
+      "duration_ms": 3114,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26937041192,
+      "date": "2026-06-04",
+      "freed_root": 12465090560,
+      "duration_ms": 8044,
+      "n": 10
+    },
+    {
+      "run_id": 26944225698,
+      "date": "2026-06-04",
+      "freed_root": 12465090560,
+      "duration_ms": 5934,
+      "n": 30
+    },
+    {
+      "run_id": 27040186245,
+      "date": "2026-06-05",
+      "freed_root": 12465086464,
+      "duration_ms": 3024,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937312531,
+      "date": "2026-06-04",
+      "freed_root": 15994628096,
+      "duration_ms": 8201,
+      "n": 10
+    },
+    {
+      "run_id": 26944227135,
+      "date": "2026-06-04",
+      "freed_root": 15994626048,
+      "duration_ms": 7513,
+      "n": 30
+    },
+    {
+      "run_id": 27041856336,
+      "date": "2026-06-05",
+      "freed_root": 15994621952,
+      "duration_ms": 2682,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26937036833,
+      "date": "2026-06-04",
+      "freed_root": 14642917376,
+      "duration_ms": 7883,
+      "n": 10
+    },
+    {
+      "run_id": 26944228136,
+      "date": "2026-06-04",
+      "freed_root": 14642888704,
+      "duration_ms": 3142,
+      "n": 30
+    },
+    {
+      "run_id": 27040187304,
+      "date": "2026-06-05",
+      "freed_root": 14642913280,
+      "duration_ms": 2693,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+powershell": [
+    {
+      "run_id": 26936374424,
+      "date": "2026-06-04",
+      "freed_root": 11388252160,
+      "duration_ms": 7535,
+      "n": 5
+    },
+    {
+      "run_id": 26942080650,
+      "date": "2026-06-04",
+      "freed_root": 11388256256,
+      "duration_ms": 5110,
+      "n": 30
+    },
+    {
+      "run_id": 27038208586,
+      "date": "2026-06-05",
+      "freed_root": 11388252160,
+      "duration_ms": 2800,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26937040118,
+      "date": "2026-06-04",
+      "freed_root": 14917787648,
+      "duration_ms": 2585,
+      "n": 10
+    },
+    {
+      "run_id": 26944229454,
+      "date": "2026-06-04",
+      "freed_root": 14917787648,
+      "duration_ms": 7357,
+      "n": 30
+    },
+    {
+      "run_id": 27040183885,
+      "date": "2026-06-05",
+      "freed_root": 14917791744,
+      "duration_ms": 2378,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+haskell+swift": [
+    {
+      "run_id": 26936369893,
+      "date": "2026-06-04",
+      "freed_root": 13566074880,
+      "duration_ms": 2196,
+      "n": 5
+    },
+    {
+      "run_id": 26942082262,
+      "date": "2026-06-04",
+      "freed_root": 13566083072,
+      "duration_ms": 2904,
+      "n": 30
+    },
+    {
+      "run_id": 27038213342,
+      "date": "2026-06-05",
+      "freed_root": 13566074880,
+      "duration_ms": 2550,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+julia": [
+    {
+      "run_id": 26924557448,
+      "date": "2026-06-04",
+      "freed_root": 7190368256,
+      "duration_ms": 6568,
+      "n": 5
+    },
+    {
+      "run_id": 26942083740,
+      "date": "2026-06-04",
+      "freed_root": 7190364160,
+      "duration_ms": 2381,
+      "n": 30
+    },
+    {
+      "run_id": 27015409418,
+      "date": "2026-06-05",
+      "freed_root": 7190368256,
+      "duration_ms": 6404,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+julia+powershell": [
+    {
+      "run_id": 26936380193,
+      "date": "2026-06-04",
+      "freed_root": 8542085120,
+      "duration_ms": 7016,
+      "n": 5
+    },
+    {
+      "run_id": 26942085400,
+      "date": "2026-06-04",
+      "freed_root": 8542078976,
+      "duration_ms": 2833,
+      "n": 30
+    },
+    {
+      "run_id": 27038209594,
+      "date": "2026-06-05",
+      "freed_root": 8542076928,
+      "duration_ms": 2649,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26937042396,
+      "date": "2026-06-04",
+      "freed_root": 12071614464,
+      "duration_ms": 2657,
+      "n": 10
+    },
+    {
+      "run_id": 26944231107,
+      "date": "2026-06-04",
+      "freed_root": 12071614464,
+      "duration_ms": 3319,
+      "n": 30
+    },
+    {
+      "run_id": 27040188349,
+      "date": "2026-06-05",
+      "freed_root": 12071612416,
+      "duration_ms": 2455,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+julia+swift": [
+    {
+      "run_id": 26936377784,
+      "date": "2026-06-04",
+      "freed_root": 10719899648,
+      "duration_ms": 2279,
+      "n": 5
+    },
+    {
+      "run_id": 26942087177,
+      "date": "2026-06-04",
+      "freed_root": 10719903744,
+      "duration_ms": 6777,
+      "n": 30
+    },
+    {
+      "run_id": 27038214561,
+      "date": "2026-06-05",
+      "freed_root": 10719899648,
+      "duration_ms": 2293,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+powershell": [
+    {
+      "run_id": 26924558216,
+      "date": "2026-06-04",
+      "freed_root": 7465250816,
+      "duration_ms": 6633,
+      "n": 5
+    },
+    {
+      "run_id": 26942088805,
+      "date": "2026-06-04",
+      "freed_root": 7465244672,
+      "duration_ms": 4258,
+      "n": 30
+    },
+    {
+      "run_id": 27015410703,
+      "date": "2026-06-05",
+      "freed_root": 7465246720,
+      "duration_ms": 2198,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+powershell+swift": [
+    {
+      "run_id": 26936379115,
+      "date": "2026-06-04",
+      "freed_root": 10994774016,
+      "duration_ms": 2350,
+      "n": 5
+    },
+    {
+      "run_id": 26942090280,
+      "date": "2026-06-04",
+      "freed_root": 10994782208,
+      "duration_ms": 6581,
+      "n": 30
+    },
+    {
+      "run_id": 27038201623,
+      "date": "2026-06-05",
+      "freed_root": 10994778112,
+      "duration_ms": 2005,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+gradle+swift": [
+    {
+      "run_id": 26924556717,
+      "date": "2026-06-04",
+      "freed_root": 9643069440,
+      "duration_ms": 1612,
+      "n": 5
+    },
+    {
+      "run_id": 26942092116,
+      "date": "2026-06-04",
+      "freed_root": 9643067392,
+      "duration_ms": 1950,
+      "n": 30
+    },
+    {
+      "run_id": 27015411984,
+      "date": "2026-06-05",
+      "freed_root": 9643044864,
+      "duration_ms": 2085,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell": [
+    {
+      "run_id": 26924349452,
+      "date": "2026-06-04",
+      "freed_root": 9878429696,
+      "duration_ms": 2189,
+      "n": 5
+    },
+    {
+      "run_id": 26942093792,
+      "date": "2026-06-04",
+      "freed_root": 9878425600,
+      "duration_ms": 6995,
+      "n": 30
+    },
+    {
+      "run_id": 27036019228,
+      "date": "2026-06-05",
+      "freed_root": 9878425600,
+      "duration_ms": 2413,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+julia": [
+    {
+      "run_id": 26924549047,
+      "date": "2026-06-04",
+      "freed_root": 10955255808,
+      "duration_ms": 3235,
+      "n": 5
+    },
+    {
+      "run_id": 26942095463,
+      "date": "2026-06-04",
+      "freed_root": 10955259904,
+      "duration_ms": 7197,
+      "n": 30
+    },
+    {
+      "run_id": 27015413352,
+      "date": "2026-06-05",
+      "freed_root": 10955259904,
+      "duration_ms": 3344,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+julia+powershell": [
+    {
+      "run_id": 26936372041,
+      "date": "2026-06-04",
+      "freed_root": 12306968576,
+      "duration_ms": 3215,
+      "n": 5
+    },
+    {
+      "run_id": 26942096969,
+      "date": "2026-06-04",
+      "freed_root": 12306972672,
+      "duration_ms": 7796,
+      "n": 30
+    },
+    {
+      "run_id": 27038210737,
+      "date": "2026-06-05",
+      "freed_root": 12306972672,
+      "duration_ms": 3209,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937039006,
+      "date": "2026-06-04",
+      "freed_root": 15836516352,
+      "duration_ms": 8193,
+      "n": 10
+    },
+    {
+      "run_id": 26944232736,
+      "date": "2026-06-04",
+      "freed_root": 15836508160,
+      "duration_ms": 3111,
+      "n": 30
+    },
+    {
+      "run_id": 27040184965,
+      "date": "2026-06-05",
+      "freed_root": 15836504064,
+      "duration_ms": 2999,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+julia+swift": [
+    {
+      "run_id": 26936366330,
+      "date": "2026-06-04",
+      "freed_root": 14484795392,
+      "duration_ms": 7729,
+      "n": 5
+    },
+    {
+      "run_id": 26942098464,
+      "date": "2026-06-04",
+      "freed_root": 14484795392,
+      "duration_ms": 7634,
+      "n": 30
+    },
+    {
+      "run_id": 27038215709,
+      "date": "2026-06-05",
+      "freed_root": 14484795392,
+      "duration_ms": 3327,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+powershell": [
+    {
+      "run_id": 26924549871,
+      "date": "2026-06-04",
+      "freed_root": 11230138368,
+      "duration_ms": 2392,
+      "n": 5
+    },
+    {
+      "run_id": 26942100075,
+      "date": "2026-06-04",
+      "freed_root": 11230134272,
+      "duration_ms": 5257,
+      "n": 30
+    },
+    {
+      "run_id": 27015414648,
+      "date": "2026-06-05",
+      "freed_root": 11230136320,
+      "duration_ms": 3176,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+powershell+swift": [
+    {
+      "run_id": 26936368610,
+      "date": "2026-06-04",
+      "freed_root": 14759673856,
+      "duration_ms": 2295,
+      "n": 5
+    },
+    {
+      "run_id": 26942101621,
+      "date": "2026-06-04",
+      "freed_root": 14759673856,
+      "duration_ms": 2906,
+      "n": 30
+    },
+    {
+      "run_id": 27038202954,
+      "date": "2026-06-05",
+      "freed_root": 14759673856,
+      "duration_ms": 2717,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+haskell+swift": [
+    {
+      "run_id": 26924548207,
+      "date": "2026-06-04",
+      "freed_root": 13407965184,
+      "duration_ms": 7144,
+      "n": 5
+    },
+    {
+      "run_id": 26942103637,
+      "date": "2026-06-04",
+      "freed_root": 13407959040,
+      "duration_ms": 7118,
+      "n": 30
+    },
+    {
+      "run_id": 27015415656,
+      "date": "2026-06-05",
+      "freed_root": 13407956992,
+      "duration_ms": 2718,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+julia": [
+    {
+      "run_id": 26924351032,
+      "date": "2026-06-04",
+      "freed_root": 7032705024,
+      "duration_ms": 9404,
+      "n": 5
+    },
+    {
+      "run_id": 26942104992,
+      "date": "2026-06-04",
+      "freed_root": 7032709120,
+      "duration_ms": 8240,
+      "n": 30
+    },
+    {
+      "run_id": 27036020426,
+      "date": "2026-06-05",
+      "freed_root": 7032705024,
+      "duration_ms": 4918,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+julia+powershell": [
+    {
+      "run_id": 26924567234,
+      "date": "2026-06-04",
+      "freed_root": 8383963136,
+      "duration_ms": 2530,
+      "n": 5
+    },
+    {
+      "run_id": 26942106392,
+      "date": "2026-06-04",
+      "freed_root": 8383938560,
+      "duration_ms": 2864,
+      "n": 30
+    },
+    {
+      "run_id": 27015416734,
+      "date": "2026-06-05",
+      "freed_root": 8383961088,
+      "duration_ms": 3156,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+julia+powershell+swift": [
+    {
+      "run_id": 26936376604,
+      "date": "2026-06-04",
+      "freed_root": 11913506816,
+      "duration_ms": 2919,
+      "n": 5
+    },
+    {
+      "run_id": 26942108032,
+      "date": "2026-06-04",
+      "freed_root": 11913498624,
+      "duration_ms": 7200,
+      "n": 30
+    },
+    {
+      "run_id": 27038204012,
+      "date": "2026-06-05",
+      "freed_root": 11913498624,
+      "duration_ms": 2559,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+julia+swift": [
+    {
+      "run_id": 26924564668,
+      "date": "2026-06-04",
+      "freed_root": 10561781760,
+      "duration_ms": 2384,
+      "n": 5
+    },
+    {
+      "run_id": 26942109555,
+      "date": "2026-06-04",
+      "freed_root": 10561781760,
+      "duration_ms": 2418,
+      "n": 30
+    },
+    {
+      "run_id": 27015417959,
+      "date": "2026-06-05",
+      "freed_root": 10561785856,
+      "duration_ms": 2425,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+powershell": [
+    {
+      "run_id": 26924347029,
+      "date": "2026-06-04",
+      "freed_root": 7307563008,
+      "duration_ms": 3684,
+      "n": 5
+    },
+    {
+      "run_id": 26942111145,
+      "date": "2026-06-04",
+      "freed_root": 7307587584,
+      "duration_ms": 6756,
+      "n": 30
+    },
+    {
+      "run_id": 27036016891,
+      "date": "2026-06-05",
+      "freed_root": 7307585536,
+      "duration_ms": 4162,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+powershell+swift": [
+    {
+      "run_id": 26924565546,
+      "date": "2026-06-04",
+      "freed_root": 10836656128,
+      "duration_ms": 2177,
+      "n": 5
+    },
+    {
+      "run_id": 26942113070,
+      "date": "2026-06-04",
+      "freed_root": 10836660224,
+      "duration_ms": 4370,
+      "n": 30
+    },
+    {
+      "run_id": 27015419192,
+      "date": "2026-06-05",
+      "freed_root": 10836660224,
+      "duration_ms": 2336,
+      "n": 100
+    }
+  ],
+  "chromium+dotnet+swift": [
+    {
+      "run_id": 26924318007,
+      "date": "2026-06-04",
+      "freed_root": 9485410304,
+      "duration_ms": 4526,
+      "n": 5
+    },
+    {
+      "run_id": 26942114847,
+      "date": "2026-06-04",
+      "freed_root": 9485410304,
+      "duration_ms": 8027,
+      "n": 30
+    },
+    {
+      "run_id": 27036003538,
+      "date": "2026-06-05",
+      "freed_root": 9485410304,
+      "duration_ms": 4422,
+      "n": 100
+    }
+  ],
+  "chromium+gradle": [
+    {
+      "run_id": 26924166062,
+      "date": "2026-06-04",
+      "freed_root": 831979520,
+      "duration_ms": 421,
+      "n": 5
+    },
+    {
+      "run_id": 26942116243,
+      "date": "2026-06-04",
+      "freed_root": 831993856,
+      "duration_ms": 533,
+      "n": 30
+    }
+  ],
+  "chromium+gradle+haskell": [
+    {
+      "run_id": 26924342408,
+      "date": "2026-06-04",
+      "freed_root": 4754554880,
+      "duration_ms": 1497,
+      "n": 5
+    },
+    {
+      "run_id": 26942117768,
+      "date": "2026-06-04",
+      "freed_root": 4754552832,
+      "duration_ms": 1471,
+      "n": 30
+    },
+    {
+      "run_id": 27036011472,
+      "date": "2026-06-05",
+      "freed_root": 4754550784,
+      "duration_ms": 1428,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+julia": [
+    {
+      "run_id": 26924546099,
+      "date": "2026-06-04",
+      "freed_root": 5831393280,
+      "duration_ms": 1113,
+      "n": 5
+    },
+    {
+      "run_id": 26942119296,
+      "date": "2026-06-04",
+      "freed_root": 5831389184,
+      "duration_ms": 2109,
+      "n": 30
+    },
+    {
+      "run_id": 27015420340,
+      "date": "2026-06-05",
+      "freed_root": 5831389184,
+      "duration_ms": 1914,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26936370919,
+      "date": "2026-06-04",
+      "freed_root": 7183114240,
+      "duration_ms": 2522,
+      "n": 5
+    },
+    {
+      "run_id": 26942120798,
+      "date": "2026-06-04",
+      "freed_root": 7183106048,
+      "duration_ms": 2597,
+      "n": 30
+    },
+    {
+      "run_id": 27038211942,
+      "date": "2026-06-05",
+      "freed_root": 7183101952,
+      "duration_ms": 2166,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937035807,
+      "date": "2026-06-04",
+      "freed_root": 10712641536,
+      "duration_ms": 1909,
+      "n": 10
+    },
+    {
+      "run_id": 26944234165,
+      "date": "2026-06-04",
+      "freed_root": 10712639488,
+      "duration_ms": 2707,
+      "n": 30
+    },
+    {
+      "run_id": 27040182970,
+      "date": "2026-06-05",
+      "freed_root": 10712637440,
+      "duration_ms": 1988,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26936365120,
+      "date": "2026-06-04",
+      "freed_root": 9360932864,
+      "duration_ms": 2439,
+      "n": 5
+    },
+    {
+      "run_id": 26942122326,
+      "date": "2026-06-04",
+      "freed_root": 9360924672,
+      "duration_ms": 2296,
+      "n": 30
+    },
+    {
+      "run_id": 27038216714,
+      "date": "2026-06-05",
+      "freed_root": 9360924672,
+      "duration_ms": 1760,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+powershell": [
+    {
+      "run_id": 26924546801,
+      "date": "2026-06-04",
+      "freed_root": 6106275840,
+      "duration_ms": 1889,
+      "n": 5
+    },
+    {
+      "run_id": 26942123751,
+      "date": "2026-06-04",
+      "freed_root": 6106271744,
+      "duration_ms": 2026,
+      "n": 30
+    },
+    {
+      "run_id": 27015421532,
+      "date": "2026-06-05",
+      "freed_root": 6106267648,
+      "duration_ms": 1915,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26936367496,
+      "date": "2026-06-04",
+      "freed_root": 9635807232,
+      "duration_ms": 2147,
+      "n": 5
+    },
+    {
+      "run_id": 26942125154,
+      "date": "2026-06-04",
+      "freed_root": 9635807232,
+      "duration_ms": 1979,
+      "n": 30
+    },
+    {
+      "run_id": 27038205237,
+      "date": "2026-06-05",
+      "freed_root": 9635778560,
+      "duration_ms": 1816,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+haskell+swift": [
+    {
+      "run_id": 26924545266,
+      "date": "2026-06-04",
+      "freed_root": 8284086272,
+      "duration_ms": 1336,
+      "n": 5
+    },
+    {
+      "run_id": 26942126824,
+      "date": "2026-06-04",
+      "freed_root": 8284092416,
+      "duration_ms": 1797,
+      "n": 30
+    },
+    {
+      "run_id": 27015422645,
+      "date": "2026-06-05",
+      "freed_root": 8284090368,
+      "duration_ms": 1608,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+julia": [
+    {
+      "run_id": 26924343108,
+      "date": "2026-06-04",
+      "freed_root": 1908838400,
+      "duration_ms": 1282,
+      "n": 5
+    },
+    {
+      "run_id": 26942128717,
+      "date": "2026-06-04",
+      "freed_root": 1908834304,
+      "duration_ms": 1369,
+      "n": 30
+    },
+    {
+      "run_id": 27036012652,
+      "date": "2026-06-05",
+      "freed_root": 1908834304,
+      "duration_ms": 1318,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+julia+powershell": [
+    {
+      "run_id": 26924562404,
+      "date": "2026-06-04",
+      "freed_root": 3260096512,
+      "duration_ms": 1743,
+      "n": 5
+    },
+    {
+      "run_id": 26942130056,
+      "date": "2026-06-04",
+      "freed_root": 3260092416,
+      "duration_ms": 1636,
+      "n": 30
+    },
+    {
+      "run_id": 27015423716,
+      "date": "2026-06-05",
+      "freed_root": 3260088320,
+      "duration_ms": 1512,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26936375490,
+      "date": "2026-06-04",
+      "freed_root": 6789627904,
+      "duration_ms": 1688,
+      "n": 5
+    },
+    {
+      "run_id": 26942131553,
+      "date": "2026-06-04",
+      "freed_root": 6789627904,
+      "duration_ms": 1723,
+      "n": 30
+    },
+    {
+      "run_id": 27038206396,
+      "date": "2026-06-05",
+      "freed_root": 6789627904,
+      "duration_ms": 1545,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+julia+swift": [
+    {
+      "run_id": 26924560041,
+      "date": "2026-06-04",
+      "freed_root": 5437911040,
+      "duration_ms": 1363,
+      "n": 5
+    },
+    {
+      "run_id": 26942133255,
+      "date": "2026-06-04",
+      "freed_root": 5437911040,
+      "duration_ms": 1324,
+      "n": 30
+    },
+    {
+      "run_id": 27015424843,
+      "date": "2026-06-05",
+      "freed_root": 5437911040,
+      "duration_ms": 1284,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+powershell": [
+    {
+      "run_id": 26924341747,
+      "date": "2026-06-04",
+      "freed_root": 2183708672,
+      "duration_ms": 899,
+      "n": 5
+    },
+    {
+      "run_id": 26942134877,
+      "date": "2026-06-04",
+      "freed_root": 2183712768,
+      "duration_ms": 995,
+      "n": 30
+    },
+    {
+      "run_id": 27036010366,
+      "date": "2026-06-05",
+      "freed_root": 2183708672,
+      "duration_ms": 799,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+powershell+swift": [
+    {
+      "run_id": 26924560837,
+      "date": "2026-06-04",
+      "freed_root": 5712797696,
+      "duration_ms": 1150,
+      "n": 5
+    },
+    {
+      "run_id": 26942136427,
+      "date": "2026-06-04",
+      "freed_root": 5712789504,
+      "duration_ms": 1115,
+      "n": 30
+    },
+    {
+      "run_id": 27015426070,
+      "date": "2026-06-05",
+      "freed_root": 5712789504,
+      "duration_ms": 1111,
+      "n": 100
+    }
+  ],
+  "chromium+gradle+swift": [
+    {
+      "run_id": 26924314716,
+      "date": "2026-06-04",
+      "freed_root": 4361523200,
+      "duration_ms": 833,
+      "n": 5
+    },
+    {
+      "run_id": 26942138090,
+      "date": "2026-06-04",
+      "freed_root": 4361531392,
+      "duration_ms": 789,
+      "n": 30
+    },
+    {
+      "run_id": 27035998251,
+      "date": "2026-06-05",
+      "freed_root": 4361523200,
+      "duration_ms": 663,
+      "n": 100
+    }
+  ],
+  "chromium+haskell": [
+    {
+      "run_id": 26922723259,
+      "date": "2026-06-04",
+      "freed_root": 4596434944,
+      "duration_ms": 1220,
+      "n": 30
+    },
+    {
+      "run_id": 27033082946,
+      "date": "2026-06-05",
+      "freed_root": 4596432896,
+      "duration_ms": 1286,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+julia": [
+    {
+      "run_id": 26924348612,
+      "date": "2026-06-04",
+      "freed_root": 5673267200,
+      "duration_ms": 1633,
+      "n": 5
+    },
+    {
+      "run_id": 26942139687,
+      "date": "2026-06-04",
+      "freed_root": 5673275392,
+      "duration_ms": 2194,
+      "n": 30
+    },
+    {
+      "run_id": 27036017896,
+      "date": "2026-06-05",
+      "freed_root": 5673271296,
+      "duration_ms": 1849,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+julia+powershell": [
+    {
+      "run_id": 26924553771,
+      "date": "2026-06-04",
+      "freed_root": 7024996352,
+      "duration_ms": 2594,
+      "n": 5
+    },
+    {
+      "run_id": 26942141412,
+      "date": "2026-06-04",
+      "freed_root": 7024988160,
+      "duration_ms": 2197,
+      "n": 30
+    },
+    {
+      "run_id": 27015427197,
+      "date": "2026-06-05",
+      "freed_root": 7024984064,
+      "duration_ms": 2343,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26936363897,
+      "date": "2026-06-04",
+      "freed_root": 10554523648,
+      "duration_ms": 2876,
+      "n": 5
+    },
+    {
+      "run_id": 26942143183,
+      "date": "2026-06-04",
+      "freed_root": 10554527744,
+      "duration_ms": 2797,
+      "n": 30
+    },
+    {
+      "run_id": 27038207510,
+      "date": "2026-06-05",
+      "freed_root": 10554519552,
+      "duration_ms": 2243,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+julia+swift": [
+    {
+      "run_id": 26924551316,
+      "date": "2026-06-04",
+      "freed_root": 9202810880,
+      "duration_ms": 2298,
+      "n": 5
+    },
+    {
+      "run_id": 26942144414,
+      "date": "2026-06-04",
+      "freed_root": 9202808832,
+      "duration_ms": 2361,
+      "n": 30
+    },
+    {
+      "run_id": 27015428283,
+      "date": "2026-06-05",
+      "freed_root": 9202806784,
+      "duration_ms": 2196,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+powershell": [
+    {
+      "run_id": 26924345323,
+      "date": "2026-06-04",
+      "freed_root": 5948153856,
+      "duration_ms": 2067,
+      "n": 5
+    },
+    {
+      "run_id": 26942146025,
+      "date": "2026-06-04",
+      "freed_root": 5948149760,
+      "duration_ms": 2019,
+      "n": 30
+    },
+    {
+      "run_id": 27036014724,
+      "date": "2026-06-05",
+      "freed_root": 5948145664,
+      "duration_ms": 1513,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+powershell+swift": [
+    {
+      "run_id": 26924552022,
+      "date": "2026-06-04",
+      "freed_root": 9477689344,
+      "duration_ms": 1032,
+      "n": 5
+    },
+    {
+      "run_id": 26942147549,
+      "date": "2026-06-04",
+      "freed_root": 9477685248,
+      "duration_ms": 2152,
+      "n": 30
+    },
+    {
+      "run_id": 27015429503,
+      "date": "2026-06-05",
+      "freed_root": 9477685248,
+      "duration_ms": 2044,
+      "n": 100
+    }
+  ],
+  "chromium+haskell+swift": [
+    {
+      "run_id": 26924316310,
+      "date": "2026-06-04",
+      "freed_root": 8125976576,
+      "duration_ms": 1779,
+      "n": 5
+    },
+    {
+      "run_id": 26942148821,
+      "date": "2026-06-04",
+      "freed_root": 8125972480,
+      "duration_ms": 1730,
+      "n": 30
+    },
+    {
+      "run_id": 27036000725,
+      "date": "2026-06-05",
+      "freed_root": 8125972480,
+      "duration_ms": 1620,
+      "n": 100
+    }
+  ],
+  "chromium+julia": [
+    {
+      "run_id": 26924165278,
+      "date": "2026-06-04",
+      "freed_root": 1750716416,
+      "duration_ms": 878,
+      "n": 5
+    },
+    {
+      "run_id": 26942150424,
+      "date": "2026-06-04",
+      "freed_root": 1750720512,
+      "duration_ms": 1383,
+      "n": 30
+    }
+  ],
+  "chromium+julia+powershell": [
+    {
+      "run_id": 26924346144,
+      "date": "2026-06-04",
+      "freed_root": 3102433280,
+      "duration_ms": 1023,
+      "n": 5
+    },
+    {
+      "run_id": 26942152048,
+      "date": "2026-06-04",
+      "freed_root": 3102437376,
+      "duration_ms": 1745,
+      "n": 30
+    },
+    {
+      "run_id": 27036015888,
+      "date": "2026-06-05",
+      "freed_root": 3102431232,
+      "duration_ms": 1662,
+      "n": 100
+    }
+  ],
+  "chromium+julia+powershell+swift": [
+    {
+      "run_id": 26924569871,
+      "date": "2026-06-04",
+      "freed_root": 6631505920,
+      "duration_ms": 1655,
+      "n": 5
+    },
+    {
+      "run_id": 26942153356,
+      "date": "2026-06-04",
+      "freed_root": 6631514112,
+      "duration_ms": 1868,
+      "n": 30
+    },
+    {
+      "run_id": 27015430649,
+      "date": "2026-06-05",
+      "freed_root": 6631510016,
+      "duration_ms": 1696,
+      "n": 100
+    }
+  ],
+  "chromium+julia+swift": [
+    {
+      "run_id": 26924317174,
+      "date": "2026-06-04",
+      "freed_root": 5280256000,
+      "duration_ms": 1526,
+      "n": 5
+    },
+    {
+      "run_id": 26942154999,
+      "date": "2026-06-04",
+      "freed_root": 5280260096,
+      "duration_ms": 1552,
+      "n": 30
+    },
+    {
+      "run_id": 27036002145,
+      "date": "2026-06-05",
+      "freed_root": 5280251904,
+      "duration_ms": 1428,
+      "n": 100
+    }
+  ],
+  "chromium+powershell": [
+    {
+      "run_id": 26922728737,
+      "date": "2026-06-04",
+      "freed_root": 2025588736,
+      "duration_ms": 551,
+      "n": 30
+    },
+    {
+      "run_id": 27033086914,
+      "date": "2026-06-05",
+      "freed_root": 2025590784,
+      "duration_ms": 814,
+      "n": 100
+    }
+  ],
+  "chromium+powershell+swift": [
+    {
+      "run_id": 26924315472,
+      "date": "2026-06-04",
+      "freed_root": 5555130368,
+      "duration_ms": 909,
+      "n": 5
+    },
+    {
+      "run_id": 26942156491,
+      "date": "2026-06-04",
+      "freed_root": 5555130368,
+      "duration_ms": 1204,
+      "n": 30
+    },
+    {
+      "run_id": 27035999492,
+      "date": "2026-06-05",
+      "freed_root": 5555130368,
+      "duration_ms": 975,
+      "n": 100
+    }
+  ],
+  "chromium+swift": [
+    {
+      "run_id": 26922719189,
+      "date": "2026-06-04",
+      "freed_root": 4203411456,
+      "duration_ms": 659,
+      "n": 30
+    },
+    {
+      "run_id": 27033071474,
+      "date": "2026-06-05",
+      "freed_root": 4203413504,
+      "duration_ms": 691,
+      "n": 100
+    }
+  ],
+  "dotnet": [
+    {
+      "run_id": 26921136641,
+      "date": "2026-06-04",
+      "freed_root": 5272166400,
+      "duration_ms": 2663,
+      "n": 1
+    },
+    {
+      "run_id": 26922087740,
+      "date": "2026-06-04",
+      "freed_root": 5272166400,
+      "duration_ms": 4388,
+      "n": 30
+    },
+    {
+      "run_id": 27030237094,
+      "date": "2026-06-05",
+      "freed_root": 5272170496,
+      "duration_ms": 4276,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle": [
+    {
+      "run_id": 26924167567,
+      "date": "2026-06-04",
+      "freed_root": 5430288384,
+      "duration_ms": 4327,
+      "n": 5
+    },
+    {
+      "run_id": 26942157686,
+      "date": "2026-06-04",
+      "freed_root": 5430288384,
+      "duration_ms": 4616,
+      "n": 30
+    }
+  ],
+  "dotnet+gradle+haskell": [
+    {
+      "run_id": 26924370495,
+      "date": "2026-06-04",
+      "freed_root": 9352835072,
+      "duration_ms": 2615,
+      "n": 5
+    },
+    {
+      "run_id": 26942159407,
+      "date": "2026-06-04",
+      "freed_root": 9352835072,
+      "duration_ms": 6910,
+      "n": 30
+    },
+    {
+      "run_id": 27036054679,
+      "date": "2026-06-05",
+      "freed_root": 9352839168,
+      "duration_ms": 2359,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+julia": [
+    {
+      "run_id": 26924602728,
+      "date": "2026-06-04",
+      "freed_root": 10429673472,
+      "duration_ms": 3126,
+      "n": 5
+    },
+    {
+      "run_id": 26942161096,
+      "date": "2026-06-04",
+      "freed_root": 10429673472,
+      "duration_ms": 3302,
+      "n": 30
+    },
+    {
+      "run_id": 27015431807,
+      "date": "2026-06-05",
+      "freed_root": 10429669376,
+      "duration_ms": 3714,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26936404079,
+      "date": "2026-06-04",
+      "freed_root": 11781382144,
+      "duration_ms": 5371,
+      "n": 5
+    },
+    {
+      "run_id": 26942162430,
+      "date": "2026-06-04",
+      "freed_root": 11781382144,
+      "duration_ms": 5896,
+      "n": 30
+    },
+    {
+      "run_id": 27038222437,
+      "date": "2026-06-05",
+      "freed_root": 11781386240,
+      "duration_ms": 3286,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26937037954,
+      "date": "2026-06-04",
+      "freed_root": 15310915584,
+      "duration_ms": 8102,
+      "n": 10
+    },
+    {
+      "run_id": 26944235754,
+      "date": "2026-06-04",
+      "freed_root": 15310921728,
+      "duration_ms": 8046,
+      "n": 30
+    },
+    {
+      "run_id": 27040189499,
+      "date": "2026-06-05",
+      "freed_root": 15310917632,
+      "duration_ms": 3015,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+julia+swift": [
+    {
+      "run_id": 26936402035,
+      "date": "2026-06-04",
+      "freed_root": 13959213056,
+      "duration_ms": 7821,
+      "n": 5
+    },
+    {
+      "run_id": 26942164127,
+      "date": "2026-06-04",
+      "freed_root": 13959208960,
+      "duration_ms": 7744,
+      "n": 30
+    },
+    {
+      "run_id": 27038222858,
+      "date": "2026-06-05",
+      "freed_root": 13959208960,
+      "duration_ms": 3512,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+powershell": [
+    {
+      "run_id": 26924603471,
+      "date": "2026-06-04",
+      "freed_root": 10704551936,
+      "duration_ms": 3181,
+      "n": 5
+    },
+    {
+      "run_id": 26942165968,
+      "date": "2026-06-04",
+      "freed_root": 10704551936,
+      "duration_ms": 3238,
+      "n": 30
+    },
+    {
+      "run_id": 27015433013,
+      "date": "2026-06-05",
+      "freed_root": 10704549888,
+      "duration_ms": 2861,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26936403055,
+      "date": "2026-06-04",
+      "freed_root": 14234079232,
+      "duration_ms": 3046,
+      "n": 5
+    },
+    {
+      "run_id": 26942167325,
+      "date": "2026-06-04",
+      "freed_root": 14234085376,
+      "duration_ms": 3135,
+      "n": 30
+    },
+    {
+      "run_id": 27038218866,
+      "date": "2026-06-05",
+      "freed_root": 14234083328,
+      "duration_ms": 2758,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+haskell+swift": [
+    {
+      "run_id": 26924601895,
+      "date": "2026-06-04",
+      "freed_root": 12882374656,
+      "duration_ms": 2316,
+      "n": 5
+    },
+    {
+      "run_id": 26942168780,
+      "date": "2026-06-04",
+      "freed_root": 12882370560,
+      "duration_ms": 7218,
+      "n": 30
+    },
+    {
+      "run_id": 27015434249,
+      "date": "2026-06-05",
+      "freed_root": 12882370560,
+      "duration_ms": 2881,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+julia": [
+    {
+      "run_id": 26924372022,
+      "date": "2026-06-04",
+      "freed_root": 6507114496,
+      "duration_ms": 4599,
+      "n": 5
+    },
+    {
+      "run_id": 26942170278,
+      "date": "2026-06-04",
+      "freed_root": 6507122688,
+      "duration_ms": 9313,
+      "n": 30
+    },
+    {
+      "run_id": 27036055697,
+      "date": "2026-06-05",
+      "freed_root": 6507122688,
+      "duration_ms": 4911,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+julia+powershell": [
+    {
+      "run_id": 26924619977,
+      "date": "2026-06-04",
+      "freed_root": 7858368512,
+      "duration_ms": 2738,
+      "n": 5
+    },
+    {
+      "run_id": 26942171915,
+      "date": "2026-06-04",
+      "freed_root": 7858376704,
+      "duration_ms": 6852,
+      "n": 30
+    },
+    {
+      "run_id": 27015435510,
+      "date": "2026-06-05",
+      "freed_root": 7858376704,
+      "duration_ms": 2969,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+julia+powershell+swift": [
+    {
+      "run_id": 26936405323,
+      "date": "2026-06-04",
+      "freed_root": 11387912192,
+      "duration_ms": 6935,
+      "n": 5
+    },
+    {
+      "run_id": 26942173258,
+      "date": "2026-06-04",
+      "freed_root": 11387912192,
+      "duration_ms": 2992,
+      "n": 30
+    },
+    {
+      "run_id": 27038220015,
+      "date": "2026-06-05",
+      "freed_root": 11387912192,
+      "duration_ms": 2762,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+julia+swift": [
+    {
+      "run_id": 26924617801,
+      "date": "2026-06-04",
+      "freed_root": 10036195328,
+      "duration_ms": 2251,
+      "n": 5
+    },
+    {
+      "run_id": 26942174682,
+      "date": "2026-06-04",
+      "freed_root": 10036201472,
+      "duration_ms": 6708,
+      "n": 30
+    },
+    {
+      "run_id": 27015436808,
+      "date": "2026-06-05",
+      "freed_root": 10036199424,
+      "duration_ms": 2603,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+powershell": [
+    {
+      "run_id": 26924368105,
+      "date": "2026-06-04",
+      "freed_root": 6781997056,
+      "duration_ms": 8489,
+      "n": 5
+    },
+    {
+      "run_id": 26942175679,
+      "date": "2026-06-04",
+      "freed_root": 6781999104,
+      "duration_ms": 7522,
+      "n": 30
+    },
+    {
+      "run_id": 27036052538,
+      "date": "2026-06-05",
+      "freed_root": 6782001152,
+      "duration_ms": 4016,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+powershell+swift": [
+    {
+      "run_id": 26924618524,
+      "date": "2026-06-04",
+      "freed_root": 10311069696,
+      "duration_ms": 2349,
+      "n": 5
+    },
+    {
+      "run_id": 26942176883,
+      "date": "2026-06-04",
+      "freed_root": 10311077888,
+      "duration_ms": 6652,
+      "n": 30
+    },
+    {
+      "run_id": 27015438092,
+      "date": "2026-06-05",
+      "freed_root": 10311077888,
+      "duration_ms": 2284,
+      "n": 100
+    }
+  ],
+  "dotnet+gradle+swift": [
+    {
+      "run_id": 26924327006,
+      "date": "2026-06-04",
+      "freed_root": 8959819776,
+      "duration_ms": 5075,
+      "n": 5
+    },
+    {
+      "run_id": 26942178636,
+      "date": "2026-06-04",
+      "freed_root": 8959823872,
+      "duration_ms": 7225,
+      "n": 30
+    },
+    {
+      "run_id": 27036031051,
+      "date": "2026-06-05",
+      "freed_root": 8959823872,
+      "duration_ms": 4419,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell": [
+    {
+      "run_id": 26922723996,
+      "date": "2026-06-04",
+      "freed_root": 9194723328,
+      "duration_ms": 2748,
+      "n": 30
+    },
+    {
+      "run_id": 27033085727,
+      "date": "2026-06-05",
+      "freed_root": 9194717184,
+      "duration_ms": 2538,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+julia": [
+    {
+      "run_id": 26924379286,
+      "date": "2026-06-04",
+      "freed_root": 10271559680,
+      "duration_ms": 7543,
+      "n": 5
+    },
+    {
+      "run_id": 26942179968,
+      "date": "2026-06-04",
+      "freed_root": 10271555584,
+      "duration_ms": 5594,
+      "n": 30
+    },
+    {
+      "run_id": 27036059972,
+      "date": "2026-06-05",
+      "freed_root": 10271553536,
+      "duration_ms": 3089,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+julia+powershell": [
+    {
+      "run_id": 26924612361,
+      "date": "2026-06-04",
+      "freed_root": 11623264256,
+      "duration_ms": 3491,
+      "n": 5
+    },
+    {
+      "run_id": 26942181374,
+      "date": "2026-06-04",
+      "freed_root": 11623268352,
+      "duration_ms": 8001,
+      "n": 30
+    },
+    {
+      "run_id": 27015439253,
+      "date": "2026-06-05",
+      "freed_root": 11623268352,
+      "duration_ms": 7878,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26936400969,
+      "date": "2026-06-04",
+      "freed_root": 15152803840,
+      "duration_ms": 3796,
+      "n": 5
+    },
+    {
+      "run_id": 26942182738,
+      "date": "2026-06-04",
+      "freed_root": 15152803840,
+      "duration_ms": 4150,
+      "n": 30
+    },
+    {
+      "run_id": 27038221159,
+      "date": "2026-06-05",
+      "freed_root": 15152799744,
+      "duration_ms": 3484,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+julia+swift": [
+    {
+      "run_id": 26924610006,
+      "date": "2026-06-04",
+      "freed_root": 13801086976,
+      "duration_ms": 3282,
+      "n": 5
+    },
+    {
+      "run_id": 26942184210,
+      "date": "2026-06-04",
+      "freed_root": 13801091072,
+      "duration_ms": 7683,
+      "n": 30
+    },
+    {
+      "run_id": 27015440425,
+      "date": "2026-06-05",
+      "freed_root": 13801091072,
+      "duration_ms": 3219,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+powershell": [
+    {
+      "run_id": 26924375160,
+      "date": "2026-06-04",
+      "freed_root": 10546438144,
+      "duration_ms": 7299,
+      "n": 5
+    },
+    {
+      "run_id": 26942185765,
+      "date": "2026-06-04",
+      "freed_root": 10546432000,
+      "duration_ms": 7466,
+      "n": 30
+    },
+    {
+      "run_id": 27036057936,
+      "date": "2026-06-05",
+      "freed_root": 10546429952,
+      "duration_ms": 2828,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+powershell+swift": [
+    {
+      "run_id": 26924610736,
+      "date": "2026-06-04",
+      "freed_root": 14075973632,
+      "duration_ms": 2339,
+      "n": 5
+    },
+    {
+      "run_id": 26942187597,
+      "date": "2026-06-04",
+      "freed_root": 14075967488,
+      "duration_ms": 7716,
+      "n": 30
+    },
+    {
+      "run_id": 27015441511,
+      "date": "2026-06-05",
+      "freed_root": 14075967488,
+      "duration_ms": 3036,
+      "n": 100
+    }
+  ],
+  "dotnet+haskell+swift": [
+    {
+      "run_id": 26924333344,
+      "date": "2026-06-04",
+      "freed_root": 12724256768,
+      "duration_ms": 6866,
+      "n": 5
+    },
+    {
+      "run_id": 26942189022,
+      "date": "2026-06-04",
+      "freed_root": 12724260864,
+      "duration_ms": 7147,
+      "n": 30
+    },
+    {
+      "run_id": 27036036925,
+      "date": "2026-06-05",
+      "freed_root": 12724252672,
+      "duration_ms": 2571,
+      "n": 100
+    }
+  ],
+  "dotnet+julia": [
+    {
+      "run_id": 26924166768,
+      "date": "2026-06-04",
+      "freed_root": 6349012992,
+      "duration_ms": 8617,
+      "n": 5
+    },
+    {
+      "run_id": 26942190610,
+      "date": "2026-06-04",
+      "freed_root": 6349004800,
+      "duration_ms": 5462,
+      "n": 30
+    }
+  ],
+  "dotnet+julia+powershell": [
+    {
+      "run_id": 26924376830,
+      "date": "2026-06-04",
+      "freed_root": 7700717568,
+      "duration_ms": 4166,
+      "n": 5
+    },
+    {
+      "run_id": 26942192203,
+      "date": "2026-06-04",
+      "freed_root": 7700719616,
+      "duration_ms": 5358,
+      "n": 30
+    },
+    {
+      "run_id": 27036058900,
+      "date": "2026-06-05",
+      "freed_root": 7700717568,
+      "duration_ms": 5010,
+      "n": 100
+    }
+  ],
+  "dotnet+julia+powershell+swift": [
+    {
+      "run_id": 26924625420,
+      "date": "2026-06-04",
+      "freed_root": 11229790208,
+      "duration_ms": 2795,
+      "n": 5
+    },
+    {
+      "run_id": 26942193704,
+      "date": "2026-06-04",
+      "freed_root": 11229792256,
+      "duration_ms": 7216,
+      "n": 30
+    },
+    {
+      "run_id": 27015442598,
+      "date": "2026-06-05",
+      "freed_root": 11229792256,
+      "duration_ms": 3061,
+      "n": 100
+    }
+  ],
+  "dotnet+julia+swift": [
+    {
+      "run_id": 26924334912,
+      "date": "2026-06-04",
+      "freed_root": 9878540288,
+      "duration_ms": 9747,
+      "n": 5
+    },
+    {
+      "run_id": 26942195268,
+      "date": "2026-06-04",
+      "freed_root": 9878544384,
+      "duration_ms": 9065,
+      "n": 30
+    },
+    {
+      "run_id": 27036038139,
+      "date": "2026-06-05",
+      "freed_root": 9878540288,
+      "duration_ms": 5696,
+      "n": 100
+    }
+  ],
+  "dotnet+powershell": [
+    {
+      "run_id": 26922729618,
+      "date": "2026-06-04",
+      "freed_root": 6623883264,
+      "duration_ms": 3987,
+      "n": 30
+    },
+    {
+      "run_id": 27033089484,
+      "date": "2026-06-05",
+      "freed_root": 6623883264,
+      "duration_ms": 4716,
+      "n": 100
+    }
+  ],
+  "dotnet+powershell+swift": [
+    {
+      "run_id": 26924330615,
+      "date": "2026-06-04",
+      "freed_root": 10153418752,
+      "duration_ms": 3390,
+      "n": 5
+    },
+    {
+      "run_id": 26942196729,
+      "date": "2026-06-04",
+      "freed_root": 10153426944,
+      "duration_ms": 8765,
+      "n": 30
+    },
+    {
+      "run_id": 27036034762,
+      "date": "2026-06-05",
+      "freed_root": 10153418752,
+      "duration_ms": 4620,
+      "n": 100
+    }
+  ],
+  "dotnet+swift": [
+    {
+      "run_id": 26922719975,
+      "date": "2026-06-04",
+      "freed_root": 8801701888,
+      "duration_ms": 7909,
+      "n": 30
+    },
+    {
+      "run_id": 27033074036,
+      "date": "2026-06-05",
+      "freed_root": 8801705984,
+      "duration_ms": 4592,
+      "n": 100
+    }
+  ],
+  "gradle": [
+    {
+      "run_id": 26921141876,
+      "date": "2026-06-04",
+      "freed_root": 148275200,
+      "duration_ms": 403,
+      "n": 1
+    },
+    {
+      "run_id": 26922091582,
+      "date": "2026-06-04",
+      "freed_root": 148277248,
+      "duration_ms": 402,
+      "n": 30
+    },
+    {
+      "run_id": 27013657988,
+      "date": "2026-06-05",
+      "freed_root": 148275200,
+      "duration_ms": 435,
+      "n": 100
+    }
+  ],
+  "gradle+haskell": [
+    {
+      "run_id": 26924161471,
+      "date": "2026-06-04",
+      "freed_root": 4070846464,
+      "duration_ms": 1565,
+      "n": 5
+    },
+    {
+      "run_id": 26942198088,
+      "date": "2026-06-04",
+      "freed_root": 4070846464,
+      "duration_ms": 1589,
+      "n": 30
+    }
+  ],
+  "gradle+haskell+julia": [
+    {
+      "run_id": 26924369634,
+      "date": "2026-06-04",
+      "freed_root": 5147676672,
+      "duration_ms": 1126,
+      "n": 5
+    },
+    {
+      "run_id": 26942199450,
+      "date": "2026-06-04",
+      "freed_root": 5147684864,
+      "duration_ms": 2100,
+      "n": 30
+    },
+    {
+      "run_id": 27036053627,
+      "date": "2026-06-05",
+      "freed_root": 5147684864,
+      "duration_ms": 1979,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+julia+powershell": [
+    {
+      "run_id": 26924607604,
+      "date": "2026-06-04",
+      "freed_root": 6499401728,
+      "duration_ms": 2575,
+      "n": 5
+    },
+    {
+      "run_id": 26942201311,
+      "date": "2026-06-04",
+      "freed_root": 6499397632,
+      "duration_ms": 2698,
+      "n": 30
+    },
+    {
+      "run_id": 27015443901,
+      "date": "2026-06-05",
+      "freed_root": 6499397632,
+      "duration_ms": 2426,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+julia+powershell+swift": [
+    {
+      "run_id": 26936399773,
+      "date": "2026-06-04",
+      "freed_root": 10028933120,
+      "duration_ms": 2222,
+      "n": 5
+    },
+    {
+      "run_id": 26942202606,
+      "date": "2026-06-04",
+      "freed_root": 10028935168,
+      "duration_ms": 2815,
+      "n": 30
+    },
+    {
+      "run_id": 27038221919,
+      "date": "2026-06-05",
+      "freed_root": 10028933120,
+      "duration_ms": 2274,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+julia+swift": [
+    {
+      "run_id": 26924605188,
+      "date": "2026-06-04",
+      "freed_root": 8677220352,
+      "duration_ms": 1443,
+      "n": 5
+    },
+    {
+      "run_id": 26942203662,
+      "date": "2026-06-04",
+      "freed_root": 8677220352,
+      "duration_ms": 2271,
+      "n": 30
+    },
+    {
+      "run_id": 27015445021,
+      "date": "2026-06-05",
+      "freed_root": 8677220352,
+      "duration_ms": 2200,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+powershell": [
+    {
+      "run_id": 26924365719,
+      "date": "2026-06-04",
+      "freed_root": 5422559232,
+      "duration_ms": 1421,
+      "n": 5
+    },
+    {
+      "run_id": 26942204766,
+      "date": "2026-06-04",
+      "freed_root": 5422563328,
+      "duration_ms": 2013,
+      "n": 30
+    },
+    {
+      "run_id": 27036050264,
+      "date": "2026-06-05",
+      "freed_root": 5422563328,
+      "duration_ms": 1503,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+powershell+swift": [
+    {
+      "run_id": 26924606073,
+      "date": "2026-06-04",
+      "freed_root": 8952098816,
+      "duration_ms": 2240,
+      "n": 5
+    },
+    {
+      "run_id": 26942206700,
+      "date": "2026-06-04",
+      "freed_root": 8952102912,
+      "duration_ms": 2185,
+      "n": 30
+    },
+    {
+      "run_id": 27015446173,
+      "date": "2026-06-05",
+      "freed_root": 8952098816,
+      "duration_ms": 1976,
+      "n": 100
+    }
+  ],
+  "gradle+haskell+swift": [
+    {
+      "run_id": 26924325406,
+      "date": "2026-06-04",
+      "freed_root": 7600390144,
+      "duration_ms": 1171,
+      "n": 5
+    },
+    {
+      "run_id": 26942208645,
+      "date": "2026-06-04",
+      "freed_root": 7600390144,
+      "duration_ms": 1729,
+      "n": 30
+    },
+    {
+      "run_id": 27036028769,
+      "date": "2026-06-05",
+      "freed_root": 7600381952,
+      "duration_ms": 1505,
+      "n": 100
+    }
+  ],
+  "gradle+julia": [
+    {
+      "run_id": 26924169521,
+      "date": "2026-06-04",
+      "freed_root": 1225129984,
+      "duration_ms": 992,
+      "n": 5
+    },
+    {
+      "run_id": 26942210230,
+      "date": "2026-06-04",
+      "freed_root": 1225129984,
+      "duration_ms": 1415,
+      "n": 30
+    }
+  ],
+  "gradle+julia+powershell": [
+    {
+      "run_id": 26924366710,
+      "date": "2026-06-04",
+      "freed_root": 2576842752,
+      "duration_ms": 1676,
+      "n": 5
+    },
+    {
+      "run_id": 26942212558,
+      "date": "2026-06-04",
+      "freed_root": 2576848896,
+      "duration_ms": 1779,
+      "n": 30
+    },
+    {
+      "run_id": 27036051398,
+      "date": "2026-06-05",
+      "freed_root": 2576842752,
+      "duration_ms": 1698,
+      "n": 100
+    }
+  ],
+  "gradle+julia+powershell+swift": [
+    {
+      "run_id": 26924622247,
+      "date": "2026-06-04",
+      "freed_root": 6105915392,
+      "duration_ms": 891,
+      "n": 5
+    },
+    {
+      "run_id": 26942214365,
+      "date": "2026-06-04",
+      "freed_root": 6105923584,
+      "duration_ms": 1725,
+      "n": 30
+    },
+    {
+      "run_id": 27015447399,
+      "date": "2026-06-05",
+      "freed_root": 6105923584,
+      "duration_ms": 1697,
+      "n": 100
+    }
+  ],
+  "gradle+julia+swift": [
+    {
+      "run_id": 26924326203,
+      "date": "2026-06-04",
+      "freed_root": 4754661376,
+      "duration_ms": 967,
+      "n": 5
+    },
+    {
+      "run_id": 26942215960,
+      "date": "2026-06-04",
+      "freed_root": 4754669568,
+      "duration_ms": 1685,
+      "n": 30
+    },
+    {
+      "run_id": 27036029950,
+      "date": "2026-06-05",
+      "freed_root": 4754665472,
+      "duration_ms": 1469,
+      "n": 100
+    }
+  ],
+  "gradle+powershell": [
+    {
+      "run_id": 26924164567,
+      "date": "2026-06-04",
+      "freed_root": 1500004352,
+      "duration_ms": 836,
+      "n": 5
+    },
+    {
+      "run_id": 26942217418,
+      "date": "2026-06-04",
+      "freed_root": 1500004352,
+      "duration_ms": 829,
+      "n": 30
+    }
+  ],
+  "gradle+powershell+swift": [
+    {
+      "run_id": 26924324719,
+      "date": "2026-06-04",
+      "freed_root": 5029543936,
+      "duration_ms": 1104,
+      "n": 5
+    },
+    {
+      "run_id": 26942218751,
+      "date": "2026-06-04",
+      "freed_root": 5029543936,
+      "duration_ms": 1204,
+      "n": 30
+    },
+    {
+      "run_id": 27036027515,
+      "date": "2026-06-05",
+      "freed_root": 5029539840,
+      "duration_ms": 910,
+      "n": 100
+    }
+  ],
+  "gradle+swift": [
+    {
+      "run_id": 26924159909,
+      "date": "2026-06-04",
+      "freed_root": 3677827072,
+      "duration_ms": 686,
+      "n": 5
+    },
+    {
+      "run_id": 26942220359,
+      "date": "2026-06-04",
+      "freed_root": 3677822976,
+      "duration_ms": 678,
+      "n": 30
+    }
+  ],
+  "haskell": [
+    {
+      "run_id": 26921135722,
+      "date": "2026-06-04",
+      "freed_root": 3912740864,
+      "duration_ms": 1839,
+      "n": 1
+    },
+    {
+      "run_id": 26922086959,
+      "date": "2026-06-04",
+      "freed_root": 3912728576,
+      "duration_ms": 1158,
+      "n": 30
+    },
+    {
+      "run_id": 27013649542,
+      "date": "2026-06-05",
+      "freed_root": 3912732672,
+      "duration_ms": 1548,
+      "n": 100
+    }
+  ],
+  "haskell+julia": [
+    {
+      "run_id": 26924160689,
+      "date": "2026-06-04",
+      "freed_root": 4989571072,
+      "duration_ms": 2047,
+      "n": 5
+    },
+    {
+      "run_id": 26942221761,
+      "date": "2026-06-04",
+      "freed_root": 4989566976,
+      "duration_ms": 2125,
+      "n": 30
+    }
+  ],
+  "haskell+julia+powershell": [
+    {
+      "run_id": 26924374411,
+      "date": "2026-06-04",
+      "freed_root": 6341283840,
+      "duration_ms": 2553,
+      "n": 5
+    },
+    {
+      "run_id": 26942223405,
+      "date": "2026-06-04",
+      "freed_root": 6341283840,
+      "duration_ms": 2594,
+      "n": 30
+    },
+    {
+      "run_id": 27036056863,
+      "date": "2026-06-05",
+      "freed_root": 6341279744,
+      "duration_ms": 1994,
+      "n": 100
+    }
+  ],
+  "haskell+julia+powershell+swift": [
+    {
+      "run_id": 26924614692,
+      "date": "2026-06-04",
+      "freed_root": 9870811136,
+      "duration_ms": 938,
+      "n": 5
+    },
+    {
+      "run_id": 26942225318,
+      "date": "2026-06-04",
+      "freed_root": 9870819328,
+      "duration_ms": 2762,
+      "n": 30
+    },
+    {
+      "run_id": 27015448628,
+      "date": "2026-06-05",
+      "freed_root": 9870815232,
+      "duration_ms": 2514,
+      "n": 100
+    }
+  ],
+  "haskell+julia+swift": [
+    {
+      "run_id": 26924332256,
+      "date": "2026-06-04",
+      "freed_root": 8519102464,
+      "duration_ms": 1326,
+      "n": 5
+    },
+    {
+      "run_id": 26942226906,
+      "date": "2026-06-04",
+      "freed_root": 8519106560,
+      "duration_ms": 2285,
+      "n": 30
+    },
+    {
+      "run_id": 27036035800,
+      "date": "2026-06-05",
+      "freed_root": 8519102464,
+      "duration_ms": 1800,
+      "n": 100
+    }
+  ],
+  "haskell+powershell": [
+    {
+      "run_id": 26922722462,
+      "date": "2026-06-04",
+      "freed_root": 5264443392,
+      "duration_ms": 1662,
+      "n": 30
+    },
+    {
+      "run_id": 27033081817,
+      "date": "2026-06-05",
+      "freed_root": 5264445440,
+      "duration_ms": 1601,
+      "n": 100
+    }
+  ],
+  "haskell+powershell+swift": [
+    {
+      "run_id": 26924328782,
+      "date": "2026-06-04",
+      "freed_root": 8793980928,
+      "duration_ms": 1663,
+      "n": 5
+    },
+    {
+      "run_id": 26942228073,
+      "date": "2026-06-04",
+      "freed_root": 8793980928,
+      "duration_ms": 2116,
+      "n": 30
+    },
+    {
+      "run_id": 27036032221,
+      "date": "2026-06-05",
+      "freed_root": 8793976832,
+      "duration_ms": 1943,
+      "n": 100
+    }
+  ],
+  "haskell+swift": [
+    {
+      "run_id": 26922716993,
+      "date": "2026-06-04",
+      "freed_root": 7442270208,
+      "duration_ms": 1638,
+      "n": 30
+    },
+    {
+      "run_id": 27033068938,
+      "date": "2026-06-05",
+      "freed_root": 7442264064,
+      "duration_ms": 1307,
+      "n": 100
+    }
+  ],
+  "julia": [
+    {
+      "run_id": 26921137685,
+      "date": "2026-06-04",
+      "freed_root": 1067024384,
+      "duration_ms": 1544,
+      "n": 1
+    },
+    {
+      "run_id": 26922088480,
+      "date": "2026-06-04",
+      "freed_root": 1067012096,
+      "duration_ms": 1253,
+      "n": 30
+    },
+    {
+      "run_id": 27013652128,
+      "date": "2026-06-05",
+      "freed_root": 1067012096,
+      "duration_ms": 1264,
+      "n": 100
+    }
+  ],
+  "julia+powershell": [
+    {
+      "run_id": 26924163787,
+      "date": "2026-06-04",
+      "freed_root": 2418728960,
+      "duration_ms": 1006,
+      "n": 5
+    },
+    {
+      "run_id": 26942229820,
+      "date": "2026-06-04",
+      "freed_root": 2418728960,
+      "duration_ms": 1779,
+      "n": 30
+    }
+  ],
+  "julia+powershell+swift": [
+    {
+      "run_id": 26924329609,
+      "date": "2026-06-04",
+      "freed_root": 5948260352,
+      "duration_ms": 1944,
+      "n": 5
+    },
+    {
+      "run_id": 26942231451,
+      "date": "2026-06-04",
+      "freed_root": 5948266496,
+      "duration_ms": 1947,
+      "n": 30
+    },
+    {
+      "run_id": 27036033381,
+      "date": "2026-06-05",
+      "freed_root": 5948262400,
+      "duration_ms": 1807,
+      "n": 100
+    }
+  ],
+  "julia+swift": [
+    {
+      "run_id": 26924159167,
+      "date": "2026-06-04",
+      "freed_root": 4596547584,
+      "duration_ms": 1024,
+      "n": 5
+    },
+    {
+      "run_id": 26942233113,
+      "date": "2026-06-04",
+      "freed_root": 4596551680,
+      "duration_ms": 1490,
+      "n": 30
+    }
+  ],
+  "miniconda": [
+    {
+      "run_id": 26921142904,
+      "date": "2026-06-04",
+      "freed_root": 888254464,
+      "duration_ms": 2656,
+      "n": 1
+    },
+    {
+      "run_id": 26922092394,
+      "date": "2026-06-04",
+      "freed_root": 888248320,
+      "duration_ms": 6509,
+      "n": 30
+    },
+    {
+      "run_id": 27030240820,
+      "date": "2026-06-05",
+      "freed_root": 888248320,
+      "duration_ms": 6729,
+      "n": 100
+    }
+  ],
+  "powershell": [
+    {
+      "run_id": 26921134629,
+      "date": "2026-06-04",
+      "freed_root": 1341882368,
+      "duration_ms": 615,
+      "n": 1
+    },
+    {
+      "run_id": 26922086128,
+      "date": "2026-06-04",
+      "freed_root": 1341882368,
+      "duration_ms": 574,
+      "n": 30
+    },
+    {
+      "run_id": 27013648266,
+      "date": "2026-06-05",
+      "freed_root": 1341886464,
+      "duration_ms": 810,
+      "n": 100
+    }
+  ],
+  "powershell+swift": [
+    {
+      "run_id": 26922718488,
+      "date": "2026-06-04",
+      "freed_root": 4871421952,
+      "duration_ms": 925,
+      "n": 30
+    },
+    {
+      "run_id": 27033070270,
+      "date": "2026-06-05",
+      "freed_root": 4871421952,
+      "duration_ms": 979,
+      "n": 100
+    }
+  ],
+  "swift": [
+    {
+      "run_id": 26921131401,
+      "date": "2026-06-04",
+      "freed_root": 3519713280,
+      "duration_ms": 737,
+      "n": 1
+    },
+    {
+      "run_id": 26922083682,
+      "date": "2026-06-04",
+      "freed_root": 3519700992,
+      "duration_ms": 530,
+      "n": 30
+    },
+    {
+      "run_id": 26938634809,
+      "date": "2026-06-04",
+      "freed_root": 3519705088,
+      "duration_ms": 661,
+      "n": 7
+    },
+    {
+      "run_id": 27013644343,
+      "date": "2026-06-05",
+      "freed_root": 3519709184,
+      "duration_ms": 622,
+      "n": 100
+    }
+  ]
+}

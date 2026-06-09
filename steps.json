@@ -1,0 +1,96 @@
+[
+  {
+    "name": "swift",
+    "label": "Swift",
+    "paths": ["/usr/share/swift"],
+    "keep_if": "iOS/macOS builds",
+    "level": 1
+  },
+  {
+    "name": "powershell",
+    "label": "PowerShell",
+    "paths": ["/usr/local/share/powershell"],
+    "keep_if": "PowerShell scripts",
+    "level": 1
+  },
+  {
+    "name": "chromium",
+    "label": "Chromium",
+    "paths": ["/usr/local/share/chromium"],
+    "keep_if": "Browser UI tests",
+    "level": 1
+  },
+  {
+    "name": "android-ndk",
+    "label": "Android NDK",
+    "paths": ["/usr/local/lib/android/sdk/ndk"],
+    "keep_if": "Android, Flutter, React Native builds",
+    "level": 1
+  },
+  {
+    "name": "dotnet",
+    "label": ".NET",
+    "paths": ["/usr/share/dotnet", "/usr/share/doc/dotnet-*"],
+    "apt": "dotnet",
+    "keep_if": "C#/F#/VB.NET",
+    "level": 1
+  },
+  {
+    "name": "gradle",
+    "label": "Gradle",
+    "paths": ["/usr/share/gradle-*"],
+    "keep_if": "Gradle builds",
+    "level": 2
+  },
+  {
+    "name": "haskell",
+    "label": "Haskell",
+    "paths": ["/usr/local/.ghcup", "/opt/ghc", "/opt/cabal", "/home/runner/.ghcup", "/home/runner/.cabal"],
+    "apt": "(ghc|haskell|cabal)",
+    "keep_if": "Haskell/GHC builds",
+    "level": 2
+  },
+  {
+    "name": "julia",
+    "label": "Julia",
+    "paths": ["/usr/local/julia*"],
+    "keep_if": "Julia",
+    "level": 2
+  },
+  {
+    "name": "aws-cli",
+    "label": "AWS CLI",
+    "paths": ["/usr/local/aws-cli"],
+    "keep_if": "AWS CLI",
+    "level": 2
+  },
+  {
+    "name": "azure-cli",
+    "label": "Azure CLI",
+    "paths": ["/opt/az", "/usr/share/az*"],
+    "keep_if": "Azure CLI",
+    "level": 2
+  },
+  {
+    "name": "android-sdk",
+    "label": "Android (SDK, NDK & tools)",
+    "paths": ["/usr/local/lib/android", "/opt/android", "/usr/local/android-sdk", "/home/runner/Android"],
+    "apt": "(android|adb)",
+    "keep_if": "Android, Flutter, React Native builds",
+    "level": 3
+  },
+  {
+    "name": "aws-sam-cli",
+    "label": "AWS SAM CLI",
+    "paths": ["/usr/local/aws-sam-cli"],
+    "keep_if": "AWS serverless deployments",
+    "level": 4
+  },
+  {
+    "name": "miniconda",
+    "label": "Miniconda",
+    "paths": ["/usr/share/miniconda"],
+    "keep_if": "Conda/Python environments",
+    "level": 4
+  }
+]
