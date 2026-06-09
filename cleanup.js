@@ -68,14 +68,21 @@ function aptRemove(pattern) {
   }
 }
 
+const RMZ_VERSION = '3.1.1';
+const RMZ_SHA256 = '9017131f24a6a619568316d3cf1aabbf4fb8297d8082b11fd2b6817436876a3b';
+
 function installRmz() {
-  console.log('Downloading rmz for parallel removal...');
+  console.log(`Downloading rmz ${RMZ_VERSION} for parallel removal...`);
   const rmzBin = '/tmp/rmz';
   execFileSync('curl', [
     '-fsSL',
-    'https://github.com/SUPERCILEX/fuc/releases/latest/download/x86_64-unknown-linux-gnu-rmz',
+    `https://github.com/SUPERCILEX/fuc/releases/download/${RMZ_VERSION}/x86_64-unknown-linux-gnu-rmz`,
     '-o', rmzBin,
   ], { stdio: 'inherit' });
+  const actual = execFileSync('sha256sum', [rmzBin], { encoding: 'utf8' }).split(' ')[0];
+  if (actual !== RMZ_SHA256) {
+    throw new Error(`rmz checksum mismatch: expected ${RMZ_SHA256}, got ${actual}`);
+  }
   execFileSync('chmod', ['+x', rmzBin]);
   return rmzBin;
 }

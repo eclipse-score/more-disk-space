@@ -39,8 +39,7 @@ The step list is in README.md.
 
 ## GitHub-Hosted Runner Baselines
 
-The free GitHub-hosted runners (`ubuntu-24.04`, `ubuntu-22.04`) come in two pool
-variants with the **same installed software** but different disk sizes:
+The free GitHub-hosted `ubuntu-24.04` runners come in two pool variants with the **same installed software** but different disk sizes:
 
 | Pool variant | Root available at start |
 |---|---:|

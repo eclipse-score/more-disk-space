@@ -65,6 +65,10 @@ runs:
         DURATION=$((END_TS - START_TS))
         FREED_ROOT=$(( ${{ steps.after.outputs.root_avail }} - ${{ inputs.before_root_avail }} ))
         FREED_WS=$(( ${{ steps.after.outputs.ws_avail }} - ${{ inputs.before_ws_avail }} ))
+        if [[ $FREED_ROOT -lt 100 && $FREED_WS -lt 100 ]]; then
+          echo "❌ Cleanup freed less than 100 bytes — likely a configuration error"
+          exit 1
+        fi
         mkdir -p metrics
         OUT=metrics/metrics.csv
         if [[ ! -f "$OUT" ]]; then

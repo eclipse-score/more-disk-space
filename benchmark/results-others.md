@@ -12,7 +12,7 @@ This is the raw data behind [docs/comparison.md](../docs/comparison.md).
 - **Available After**: Total free space remaining after cleanup. Higher is better for comparing runner images.
 - **⚠️ easimon Note**: Shows negative root freed because it creates an LVM volume by consuming root space, then remounts workspace there. The workspace freed is what matters.
 
-Image | Option | Intensity | Freed (WS) | Freed (Root) | Avail After (WS) | Avail After (Root) | Duration | GB/s
+Image | Option | Intensity | Freed (WS) | Freed (Root) | Avail After (WS) | Avail After (Root) | Duration | GiB/s
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 ubuntu-24.04 | adityagarg | and | 10.2 GiB | 10.2 GiB | 98.3 GiB | 98.3 GiB | 13.8s | 0.73
 ubuntu-24.04 | adityagarg | and_cac | 15.6 GiB | 15.6 GiB | 103.7 GiB | 103.7 GiB | 133.2s | 0.12

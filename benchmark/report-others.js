@@ -59,7 +59,7 @@ const lines = [
   '- **Available After**: Total free space remaining after cleanup. Higher is better for comparing runner images.',
   '- **⚠️ easimon Note**: Shows negative root freed because it creates an LVM volume by consuming root space, then remounts workspace there. The workspace freed is what matters.',
   '',
-  'Image | Option | Intensity | Freed (WS) | Freed (Root) | Avail After (WS) | Avail After (Root) | Duration | GB/s',
+  'Image | Option | Intensity | Freed (WS) | Freed (Root) | Avail After (WS) | Avail After (Root) | Duration | GiB/s',
   '--- | --- | --- | --- | --- | --- | --- | --- | ---',
 ];
 
