@@ -25,7 +25,7 @@
     "label": "Android NDK",
     "paths": ["/usr/local/lib/android/sdk/ndk"],
     "keep_if": "Android, Flutter, React Native builds",
-    "level": 1
+    "level": 2
   },
   {
     "name": "dotnet",
