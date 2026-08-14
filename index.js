@@ -44,6 +44,14 @@ function persistForPostStep(stateObject) {
   }
 }
 
+function resetAndroidSdkEnvironment(steps) {
+  if (!steps.some(step => step.name === 'android-sdk')) return;
+  if (!process.env.GITHUB_ENV) throw new Error('GITHUB_ENV not set');
+
+  fs.appendFileSync(process.env.GITHUB_ENV, 'ANDROID_HOME=\nANDROID_SDK_ROOT=\n');
+  console.log('Cleared Android SDK environment after removing the Android SDK.');
+}
+
 async function run() {
   try {
     const githubHosted = isGithubHosted();
@@ -73,6 +81,7 @@ async function run() {
 
     if (githubHosted) {
       performCleanup(steps);
+      resetAndroidSdkEnvironment(steps);
       const after = getAvailableSpaceGiB();
       const freed = after - before;
       console.log('');

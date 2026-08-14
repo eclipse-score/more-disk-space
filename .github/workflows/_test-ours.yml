@@ -26,6 +26,9 @@ jobs:
   test-levels:
     name: level ${{ matrix.level }} | ${{ matrix.image }}
     runs-on: ${{ matrix.image }}
+    env:
+      ANDROID_HOME: /usr/local/lib/android/sdk
+      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
     strategy:
       fail-fast: false
       matrix:
@@ -56,6 +59,20 @@ jobs:
         uses: ./
         with:
           level: ${{ matrix.level }}
+
+      - name: Verify Android SDK environment
+        env:
+          LEVEL: ${{ matrix.level }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$LEVEL" -ge 3 ]]; then
+            [[ -z "${ANDROID_HOME:-}" ]]
+            [[ -z "${ANDROID_SDK_ROOT:-}" ]]
+          else
+            [[ "${ANDROID_HOME:-}" == "/usr/local/lib/android/sdk" ]]
+            [[ "${ANDROID_SDK_ROOT:-}" == "/usr/local/lib/android/sdk" ]]
+          fi
 
       - name: Measure after
         shell: bash
