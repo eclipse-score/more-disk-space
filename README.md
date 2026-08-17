@@ -27,6 +27,7 @@
 
 | Level | Freed Space | Duration | Efficiency | What Gets Deleted                              |
 | ----: | ----------- | -------- | ---------- | ---------------------------------------------- |
+|     0 | 0 GiB       | ~0s      | n/a        | Nothing — reports available space only         |
 |     1 | 16.5 GiB    | ~3s      | 6.4 GiB/s  | Swift, PowerShell, Chromium, Android NDK, .NET |
 |     2 | 22.8 GiB    | ~4s      | 6.2 GiB/s  | +Gradle, Haskell, Julia, AWS CLI, Azure CLI    |
 |     3 | 26.5 GiB    | ~10s     | 2.6 GiB/s  | +Android SDK                                   |

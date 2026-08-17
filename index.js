@@ -68,8 +68,8 @@ async function run() {
     const before = getAvailableSpaceGiB();
     const levelRaw = process.env['INPUT_LEVEL'] ?? '2';
     const level = parseInt(levelRaw, 10);
-    if (!Number.isInteger(level) || level < 1 || level > 4) {
-      console.error(`❌ Error: Invalid level '${levelRaw}'. Must be 1, 2, 3, or 4.`);
+    if (!Number.isInteger(level) || level < 0 || level > 4) {
+      console.error(`❌ Error: Invalid level '${levelRaw}'. Must be 0, 1, 2, 3, or 4.`);
       process.exit(1);
     }
     const steps = selectSteps(level);

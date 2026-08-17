@@ -21,7 +21,8 @@ branding:
 inputs:
   level:
     description: |
-      Cleanup level (1-4):
+      Cleanup level (0-4):
+      - 0: no cleanup, only reports available space
       - 1: ~16 GiB in ~3 s
       - 2: ~23 GiB in ~4 s [default]
       - 3: ~27 GiB in ~10 s
