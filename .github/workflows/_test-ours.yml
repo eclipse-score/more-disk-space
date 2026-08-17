@@ -33,6 +33,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # level 0 must not clean up anything; freed space should stay near zero
+          - image: ubuntu-24.04
+            level: 0
+            min_gib: 0
           # min_gib: conservative floor ~10% below 100-round benchmark median
           - image: ubuntu-24.04
             level: 1
@@ -134,7 +138,7 @@ jobs:
           {
             echo "## Test Results"
             echo ""
-            echo "### Levels 1–4"
+            echo "### Levels 0–4"
             echo ""
             echo "| Image | Level | Min (GiB) | Before | After | Freed | Duration | |"
             echo "|---|---:|---:|---:|---:|---:|---:|:---:|"
