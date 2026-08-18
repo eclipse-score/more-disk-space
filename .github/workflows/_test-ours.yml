@@ -132,7 +132,8 @@ jobs:
           printf 'MATCHER_BAZEL: Bazel: No %s left on device\n' space
           printf 'MATCHER_ENOSPC: tool failed with E%s\n' NOSPC
           printf "MATCHER_APT: E: You don't have enough free %s in /var/cache/apt/archives/.\n" space
-          printf 'MATCHER_IGNORED: E%s: System limit for number of file watchers reached\n' NOSPC
+          printf 'MATCHER_IGNORED_ENOSPC: E%s: System limit for number of file watchers reached\n' NOSPC
+          printf 'MATCHER_IGNORED_NO_SPACE: inotify_add_watch failed: No %s left on device\n' space
 
   problem-matcher-disabled:
     name: problem matcher disabled
@@ -205,7 +206,8 @@ jobs:
           assert_count "$ENABLED" "MATCHER_BAZEL" 1
           assert_count "$ENABLED" "MATCHER_ENOSPC" 1
           assert_count "$ENABLED" "MATCHER_APT" 1
-          assert_count "$ENABLED" "MATCHER_IGNORED" 0
+          assert_count "$ENABLED" "MATCHER_IGNORED_ENOSPC" 0
+          assert_count "$ENABLED" "MATCHER_IGNORED_NO_SPACE" 0
           assert_count "$DISABLED" "MATCHER_DISABLED" 0
 
   summary:

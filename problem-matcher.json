@@ -5,7 +5,7 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^(.*[Nn]o [Ss]pace [Ll]eft(?: [Oo]n [Dd]evice)?.*)$",
+          "regexp": "^((?!.*(?:[Ff]ile [Ww]atchers?|[Ii][Nn][Oo][Tt][Ii][Ff][Yy])).*[Nn]o [Ss]pace [Ll]eft(?: [Oo]n [Dd]evice)?.*)$",
           "message": 1
         }
       ]
@@ -15,7 +15,7 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^((?!.*(?:[Nn]o [Ss]pace [Ll]eft|[Ff]ile [Ww]atchers?|inotify)).*\\b[Ee][Nn][Oo][Ss][Pp][Cc]\\b.*)$",
+          "regexp": "^((?!.*(?:[Nn]o [Ss]pace [Ll]eft|[Ff]ile [Ww]atchers?|[Ii][Nn][Oo][Tt][Ii][Ff][Yy])).*\\b[Ee][Nn][Oo][Ss][Pp][Cc]\\b.*)$",
           "message": 1
         }
       ]
