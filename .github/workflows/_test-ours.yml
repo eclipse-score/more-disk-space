@@ -18,6 +18,8 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
+  checks: read
   contents: read
 
 jobs:
@@ -112,6 +114,99 @@ jobs:
         with:
           name: result-level-${{ matrix.level }}-${{ matrix.image }}
           path: result/result.csv
+
+  problem-matcher-enabled:
+    name: problem matcher enabled
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run more-disk-space with default matcher setting
+        uses: ./
+        with:
+          level: 0
+
+      - name: Emit representative disk-space errors
+        run: |
+          printf 'MATCHER_BAZEL: Bazel: No %s left on device\n' space
+          printf 'MATCHER_ENOSPC: tool failed with E%s\n' NOSPC
+          printf "MATCHER_APT: E: You don't have enough free %s in /var/cache/apt/archives/.\n" space
+          printf 'MATCHER_IGNORED: E%s: System limit for number of file watchers reached\n' NOSPC
+
+  problem-matcher-disabled:
+    name: problem matcher disabled
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run more-disk-space with matchers disabled
+        uses: ./
+        with:
+          level: 0
+          enable-problem-matchers: false
+
+      - name: Emit a disk-space error that must not be annotated
+        run: |
+          printf 'MATCHER_DISABLED: Bazel: No %s left on device\n' space
+
+  verify-problem-matchers:
+    name: Verify problem matcher annotations
+    runs-on: ubuntu-24.04
+    needs: [problem-matcher-enabled, problem-matcher-disabled]
+    steps:
+      - name: Verify annotations through the GitHub API
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          JOBS=$(gh api \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/attempts/$GITHUB_RUN_ATTEMPT/jobs?per_page=100")
+
+          check_run_id() {
+            local job_name=$1
+            jq -er --arg job_name "$job_name" '
+              [.jobs[] | select(.name | endswith($job_name))]
+              | if length == 1
+                then .[0].check_run_url | split("/")[-1]
+                else error("expected exactly one job ending in: " + $job_name)
+                end
+            ' <<< "$JOBS"
+          }
+
+          ENABLED_ID=$(check_run_id "problem matcher enabled")
+          DISABLED_ID=$(check_run_id "problem matcher disabled")
+
+          ENABLED=$(gh api \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "repos/$GITHUB_REPOSITORY/check-runs/$ENABLED_ID/annotations?per_page=100")
+          DISABLED=$(gh api \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "repos/$GITHUB_REPOSITORY/check-runs/$DISABLED_ID/annotations?per_page=100")
+
+          assert_count() {
+            local annotations=$1
+            local marker=$2
+            local expected=$3
+            local actual
+            actual=$(jq --arg marker "$marker" \
+              '[.[] | select(.message | contains($marker))] | length' \
+              <<< "$annotations")
+            if [[ "$actual" -ne "$expected" ]]; then
+              echo "Expected $expected annotation(s) for $marker, found $actual" >&2
+              return 1
+            fi
+          }
+
+          assert_count "$ENABLED" "MATCHER_BAZEL" 1
+          assert_count "$ENABLED" "MATCHER_ENOSPC" 1
+          assert_count "$ENABLED" "MATCHER_APT" 1
+          assert_count "$ENABLED" "MATCHER_IGNORED" 0
+          assert_count "$DISABLED" "MATCHER_DISABLED" 0
 
   summary:
     name: Summary

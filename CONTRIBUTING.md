@@ -10,6 +10,7 @@ before large builds. It deletes pre-installed tools the build doesn't need.
 - `action.yml` — action inputs/outputs, calls `index.js` and `post.js`
 - `index.js` — main logic: step selection, cleanup execution
 - `post.js` — post-step: reports freed vs. used by build
+- `problem-matcher.json` — job-scoped disk-full error matchers registered by `index.js`
 - `steps.json` — ordered list of cleanup steps with timing and size estimates
 - `benchmark/measure-ours.js` — dispatches `benchmark-ours.yml` runs per step combo,
   waits, and merges results into `results.json`; modes: `clever`, `rerun`, `run`
@@ -28,7 +29,8 @@ All on `main`, trigger via `gh workflow run ... --ref main`:
 - `benchmark-other-actions.yml` — exhaustive benchmark of all alternative actions on ubuntu-24.04
 - `collect-runner-inventory.yml` — captures runner filesystem snapshot (du 2-level, apt top-100);
   run once as a long-lived size reference
-- `_test-ours.yml` — correctness tests (callable); triggered by `on-pr.yml` on pull requests
+- `_test-ours.yml` — cleanup-level and problem-matcher tests (callable); triggered by
+  `on-pr.yml` on pull requests
 
 ## Cleanup Steps
 

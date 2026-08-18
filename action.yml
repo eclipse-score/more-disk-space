@@ -29,6 +29,12 @@ inputs:
       - 4: ~28 GiB in ~12 s
     required: false
     default: '2'
+  enable-problem-matchers:
+    description: |
+      Register job-scoped problem matchers that annotate disk-full errors from
+      subsequent steps. Set to false to avoid possible false-positive annotations.
+    required: false
+    default: 'true'
 
 runs:
   using: node24

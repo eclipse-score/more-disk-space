@@ -10,7 +10,30 @@
 //  SPDX-License-Identifier: Apache-2.0
 
 const fs = require('fs');
+const path = require('path');
 const { performCleanup, getAvailableSpaceGiB, selectSteps } = require('./cleanup');
+
+const DISK_SPACE_PROBLEM_MATCHER = path.join(__dirname, 'problem-matcher.json');
+
+
+// Keep these matchers active for the rest of the job so failures in later actions
+// are surfaced as annotations. Matchers are scoped to the current job and are
+// discarded automatically when the job ends.
+function registerDiskSpaceProblemMatchers() {
+  console.log(`::add-matcher::${DISK_SPACE_PROBLEM_MATCHER}`);
+}
+
+function problemMatchersEnabled() {
+  const value = process.env['INPUT_ENABLE-PROBLEM-MATCHERS'] ?? 'true';
+  const normalized = value.toLowerCase();
+
+  if (normalized === 'true') return true;
+  if (normalized === 'false') return false;
+
+  throw new Error(
+    `Invalid enable-problem-matchers value '${value}'. Must be true or false.`
+  );
+}
 
 
 // Detect the runner environment from RUNNER_ENVIRONMENT variable
@@ -63,6 +86,10 @@ async function run() {
       console.log('');
       persistForPostStep({ before: 0, after: 0, githubHosted, supportedPlatform });
       return;
+    }
+
+    if (problemMatchersEnabled()) {
+      registerDiskSpaceProblemMatchers();
     }
 
     const before = getAvailableSpaceGiB();

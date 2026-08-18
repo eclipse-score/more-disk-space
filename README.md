@@ -21,6 +21,7 @@
 - uses: eclipse-score/more-disk-space@v1.1
   with:
     level: 2  # Default
+    # enable-problem-matchers: false  # Optional; default: true
 ```
 
 ## Overview
@@ -34,5 +35,12 @@
 |     4 | 27.5 GiB    | ~12s     | 2.3 GiB/s  | +AWS SAM CLI, Miniconda                        |
 
 This action is **2–6× faster** than alternatives at equivalent cleanup sizes.
+
+By default, it registers job-scoped problem matchers that highlight disk-full
+errors from subsequent steps, such as Bazel builds, as GitHub Actions error
+annotations. It recognizes Linux `ENOSPC`, Bazel's `No space left on device`
+error, and APT's insufficient-space message, while excluding the unrelated
+inotify file-watcher `ENOSPC` error. The matchers remain active until the job
+ends and can be disabled with `enable-problem-matchers: false` if necessary.
 
 → [Why it's faster than other actions](docs/comparison.md)
